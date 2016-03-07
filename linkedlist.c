@@ -14,11 +14,11 @@
 
 ///  
 
-///（本文件实现的功能的详述）  
+///
 
 ///  
 
-/// @version 1.1      （版本声明）  
+/// @version 1.1        
 
 /// @author           熊锐  
 
@@ -31,13 +31,17 @@
 ///     修订说明：最初版本  
 
 //////////////////////////////////////////////////////////////////////////
+
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
-typedef struct node{
+
+typedef struct node
+{
 	struct node *next,*front;     ///双向指针,next指向后面结点,front指向前面结点
 	void *datapointer;           ///数据指针
 }N;
+
 ///      下面是一个显示回调函数   
 
 ///     
@@ -52,10 +56,13 @@ typedef struct node{
 
 ///      @see       
 
-///      @note        
-void callbackshow(N *h,void (*show)(N *)){
+///      @note    
+
+void callbackshow(N *h,void (*show)(N *))
+{
 	show(h);
 }
+
 ///      下面是一个int类型的显示函数   
 
 ///     
@@ -63,18 +70,23 @@ void callbackshow(N *h,void (*show)(N *)){
 ///      遍历链表显示int类型的数据     
 
 ///      @param h 要显示的链表的头指针  
-   
+
 ///      @return     void   
 
 ///      @see       
 
 ///      @note
-void int_show(N *head){
+
+void int_show(N *head)
+{
 	N *p;
-	for(p=head->next;p!=NULL;p=p->next){
+
+	for(p = head->next;p != NULL;p = p->next)
+	{
 		printf("the data is :%d\n",*(int *)(p->datapointer));
 	}
 }
+
 ///      下面是一个float类型的显示函数   
 
 ///     
@@ -82,18 +94,23 @@ void int_show(N *head){
 ///      遍历链表显示float类型的数据     
 
 ///      @param h 要显示的链表的头指针  
-   
+
 ///      @return     void   
 
 ///      @see       
 
 ///      @note
-void float_show(N *head){
-	N *p;
-	for(p=head->next;p!=NULL;p=p->next){
+
+void float_show(N *head)
+{
+	N *p=NULL;
+
+	for(p = head->next;p != NULL;p = p->next)
+	{
 		printf("the data is :%f\n",*(float *)(p->datapointer));
 	}
 }
+
 ///      下面是一个string类型的显示函数   
 
 ///     
@@ -101,18 +118,23 @@ void float_show(N *head){
 ///      遍历链表显示string类型的数据     
 
 ///      @param h 要显示的链表的头指针  
-   
+
 ///      @return     void   
 
 ///      @see       
 
 ///      @note
-void string_show(N *head){
+
+void string_show(N *head)
+{
 	N *p;
-	for(p=head->next;p!=NULL;p=p->next){
+
+	for(p = head->next;p != NULL;p = p->next)
+	{
 		printf("the data is :%s\n",(char *)(p->datapointer));
 	}
 }
+
 ///      下面是一个增加结点的函数   
 
 ///     
@@ -122,30 +144,37 @@ void string_show(N *head){
 ///      @param h 要显示的链表的头指针 
 
 ///      @param data 要增加的数据指针  
-   
+
 ///      @return     int 如果成功返回1,不成功返回0   
 
 ///      @see       
 
 ///      @note
-int add(N *head,void *data){
-	N *p1;
-	N *p=(N *)malloc(sizeof(N));
-	if(p!=NULL){
-		p->next=NULL;
-		p->front=NULL;
-		p->datapointer=data;
-		for(p1=head;p1->next!=NULL;p1=p1->next){
+
+int add(N *head,void *data)
+{
+	N *p1 = NULL;
+	N *p = (N *)malloc(sizeof(N));
+
+	if(p != NULL)
+	{
+		p->next = NULL;
+		p->front = NULL;
+		p->datapointer = data;
+		for(p1 = head;p1->next != NULL;p1 = p1->next)
+		{
 		}
-		p1->next=p;
-		p->front=p1;
+		p1->next = p;
+		p->front = p1;
 		return 1;
 	}
-	else{
+	else
+	{
 		return 0;
 	}
 
 }
+
 ///      下面是一个int类型数据的比较函数 
 
 ///     
@@ -155,23 +184,29 @@ int add(N *head,void *data){
 ///      @param a 要比较的数据指针
 
 ///      @param b 要比较的数据指针  
-   
+
 ///      @return     int 如果a=b返回0,如果a>b返回1,如果a<b返回-1   
 
 ///      @see       
 
 ///      @note
-int int_compare(void *a,void *b){
-	if(*(int *)a==*(int *)b){
+
+int int_compare(void *a,void *b)
+{
+	if(*(int *)a == *(int *)b)
+	{
 		return 0;
 	}
-	else if(*(int *)a>*(int *)b){
+	else if(*(int *)a > *(int *)b)
+	{
 		return 1;
 	}
-	else{
+	else
+	{
 		return -1;
 	}
 }
+
 ///      下面是一个string类型数据的比较函数 
 
 ///     
@@ -181,15 +216,18 @@ int int_compare(void *a,void *b){
 ///      @param a 要比较的数据指针
 
 ///      @param b 要比较的数据指针  
-   
+
 ///      @return     int 如果a=b返回0,如果a>b返回1,如果a<b返回-1   
 
 ///      @see       
 
 ///      @note
-int string_compare(void *a,void *b){
+
+int string_compare(void *a,void *b)
+{
 	return strcmp((char *)a,(char *)b);
 }
+
 ///      下面是一个查找函数 
 
 ///     
@@ -201,22 +239,28 @@ int string_compare(void *a,void *b){
 ///      @param (*compare)(void *,void *) 要回调的比较函数 
 
 ///      @param value 要查找的数据指针  
-   
+
 ///      @return     N * 如果找到改结点则返回,没找到返回NULL   
 
 ///      @see       
 
 ///      @note
-N *search(N *head,int (*compare)(void *,void *),void *value){
-	N *p=head->next;
-	while(p!=NULL){
-		if(compare(p->datapointer,value)==0){
+
+N *search(N *head,int (*compare)(void *,void *),void *value)
+{
+	N *p = head->next;
+
+	while(p != NULL)
+	{
+		if(compare(p->datapointer,value) == 0)
+		{
 			break;
 		}
-		p=p->next;
+		p = p->next;
 	}
 	return p;
 }
+
 ///      下面是一个删除函数 
 
 ///     
@@ -228,30 +272,37 @@ N *search(N *head,int (*compare)(void *,void *),void *value){
 ///      @param (*compare)(void *,void *) 要回调的比较函数 
 
 ///      @param value 要删除的数据指针  
-   
+
 ///      @return     int 如果删除成功返回1 否则返回0   
 
 ///      @see       
 
 ///      @note
-int del(N *head,int(*compare)(void *,void *),void *value){
-	N *p=head->next;
+
+int del(N *head,int(*compare)(void *,void *),void *value)
+{
+	N *p = head->next;
+
 	//printf("1\n");
-	while(p!=NULL){
-		if(compare(p->datapointer,value)==0){
-			p->front->next=p->next;
-			if(p->next!=NULL){
-				p->next->front=p->front;
+	while(p != NULL){
+		if(compare(p->datapointer,value) == 0)
+		{
+			p->front->next = p->next;
+			if(p->next != NULL)
+			{
+				p->next->front = p->front;
 			}
 			free(p);
 			//	printf("2\n");
+			p = NULL;
 			return 1;
 		}
 		//	printf("3\n");
-		p=p->next;
+		p = p->next;
 	}
 	return 0;
 } 
+
 ///      下面是一个修改回调函数
 
 ///     
@@ -265,15 +316,18 @@ int del(N *head,int(*compare)(void *,void *),void *value){
 ///      @param oldvalue 要修改的数据指针
 
 ///      @param newvalue 新的数据指针  
-   
+
 ///      @return     N * 如果修改成功则返回1,否则0
 
 ///      @see       
 
 ///      @note
-int callbackmodify(N *head,int (*modify)(N *,void *,void*),void *oldvalue,void *newvalue){
+
+int callbackmodify(N *head,int (*modify)(N *,void *,void*),void *oldvalue,void *newvalue)
+{
 	return modify(head,oldvalue,newvalue);
 }
+
 ///      下面是一个int类型的修改函数
 
 ///     
@@ -285,23 +339,29 @@ int callbackmodify(N *head,int (*modify)(N *,void *,void*),void *oldvalue,void *
 ///      @param oldvalue 要修改的数据指针
 
 ///      @param newvalue 新的数据指针  
-   
+
 ///      @return     N * 如果修改成功则返回1,否则0
 
 ///      @see       
 
 ///      @note
-int int_modify(N *head,void *oldvalue,void *newvalue){
-	N *p=search(head,int_compare,oldvalue);
-	if(p!=NULL){
+
+int int_modify(N *head,void *oldvalue,void *newvalue)
+{
+	N *p = search(head,int_compare,oldvalue);
+
+	if(p != NULL)
+	{
 		free(p->datapointer);
-		p->datapointer=newvalue;
+		p->datapointer = newvalue;
 		return 1;
 	}
-	else{
+	else
+	{
 		return 0;
 	}
 }
+
 ///      下面是一个string类型的修改函数
 
 ///     
@@ -313,23 +373,29 @@ int int_modify(N *head,void *oldvalue,void *newvalue){
 ///      @param oldvalue 要修改的数据指针
 
 ///      @param newvalue 新的数据指针  
-   
+
 ///      @return     N * 如果修改成功则返回1,否则0
 
 ///      @see       
 
 ///      @note
-int string_modify(N *head,void *oldvalue,void *newvalue){
-	N *p=search(head,string_compare,oldvalue);
-	if(p!=NULL){
+
+int string_modify(N *head,void *oldvalue,void *newvalue)
+{
+	N *p = search(head,string_compare,oldvalue);
+
+	if(p != NULL)
+	{
 		free(p->datapointer);
-		p->datapointer=newvalue;
+		p->datapointer = newvalue;
 		return 1;
 	}
-	else{
+	else
+	{
 		return 0;
 	}
 }
+
 ///      下面是一个排序回调函数
 
 ///     
@@ -339,15 +405,18 @@ int string_modify(N *head,void *oldvalue,void *newvalue){
 ///      @param head 链表的头指针
 
 ///      @param (*sort)(N *) 要回调的排序函数
-   
+
 ///      @return     void
 
 ///      @see       
 
 ///      @note
-void callbacksort(N *head,void (*sort)(N *)){
+
+void callbacksort(N *head,void (*sort)(N *))
+{
 	sort(head);
 }
+
 ///      下面是一个int类型的排序函数
 
 ///     
@@ -355,29 +424,37 @@ void callbacksort(N *head,void (*sort)(N *)){
 ///      按照降序排列  
 
 ///      @param head 链表的头指针
-   
+
 ///      @return     void
 
 ///      @see       
 
 ///      @note
-void int_sort(N *head){
-	N *p=NULL,*p1=NULL,*p2=NULL;
-	void *temp=NULL;
-	for(p=head->next;p->next!=NULL;p=p->next){
-		p2=p;
-		for(p1=p->next;p1!=NULL;p1=p1->next){
-			if(*(int *)(p1->datapointer)>*(int *)(p2->datapointer)){
-				p2=p1;
+
+void int_sort(N *head)
+{
+	N *p = NULL,*p1 = NULL,*p2 = NULL;
+	void *temp = NULL;
+
+	for(p = head->next;p->next != NULL;p = p->next)
+	{
+		p2 = p;
+		for(p1 = p->next;p1 != NULL;p1 = p1->next)
+		{
+			if(*(int *)(p1->datapointer) > *(int *)(p2->datapointer))
+			{
+				p2 = p1;
 			}
 		}
-		if(p2!=p){
-			temp=p->datapointer;
-			p->datapointer=p2->datapointer;
-			p2->datapointer=temp;
+		if(p2 != p)
+		{
+			temp = p->datapointer;
+			p->datapointer = p2->datapointer;
+			p2->datapointer = temp;
 		}
 	}
 }
+
 ///      下面是一个string类型的排序函数
 
 ///     
@@ -385,26 +462,33 @@ void int_sort(N *head){
 ///      按照降序排列  
 
 ///      @param head 链表的头指针
-   
+
 ///      @return     void
 
 ///      @see       
 
 ///      @note
-void string_sort(N *head){
-	N *p=NULL,*p1=NULL,*p2=NULL;
-	void *temp=NULL;
-	for(p=head->next;p->next!=NULL;p=p->next){
-		p2=p;
-		for(p1=p->next;p1!=NULL;p1=p1->next){
-			if(strcmp((char *)p1->datapointer,(char *)p2->datapointer)>0){
-				p2=p1;
+
+void string_sort(N *head)
+{
+	N *p = NULL,*p1 = NULL,*p2 = NULL;
+	void *temp = NULL;
+
+	for(p = head->next;p->next != NULL;p = p->next)
+	{
+		p2 = p;
+		for(p1 = p->next;p1 != NULL;p1 = p1->next)
+		{
+			if(strcmp((char *)p1->datapointer,(char *)p2->datapointer) > 0)
+			{
+				p2 = p1;
 			}
 		}
-		if(p2!=p){
-			temp=p->datapointer;
-			p->datapointer=p2->datapointer;
-			p2->datapointer=temp;
+		if(p2 != p)
+		{
+			temp = p->datapointer;
+			p->datapointer = p2->datapointer;
+			p2->datapointer = temp;
 		}
 	}
 }
