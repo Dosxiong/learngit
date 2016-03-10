@@ -24,6 +24,8 @@ int article_symbol = 0;
 int main(int argc,char ** argv){
 	N head;
 	int start = 0,end = 0;
+	int i = 0;
+	int w = 0,s = 0,l = 0,c = 0;
 	int flag = 0; ///是否录入过文件
 	int oc = 0; /// 选项字符
 	char ec = 'l'; ///无效的选项字符
@@ -39,83 +41,106 @@ int main(int argc,char ** argv){
 	head.front = NULL;
 	head.datapointer = NULL;
 
-	while((oc = getopt_long(argc,argv,":w:s:hl:c:",long_options,&potion_index)) != -1)
+	while((oc = getopt_long(argc,argv,":w::s::hl::c::t::",long_options,&potion_index)) != -1)
 	{
 		switch(oc)
 		{
 			case 'c':
-				if(flag == 0)
-				{
-					load(&head,optarg);
-					flag = 1;
-				}
-				printf("%s  共有  %d  个字符\n",optarg,article_symbol);
-				break;
-			case 'w':
-				if(flag == 0)
-				{
-					load(&head,optarg);
-					flag = 1;
-				}
-				printf("%s  共有  %d  个单词\n",optarg,linkedlist_count(&head));
-				break;
-			case 's':
-				if(flag == 0)
-				{
-					load(&head,optarg);
-					flag = 1;
-				}
-				string_sort_xier(&head);
-				write_tofile(&head);
-				printf("结果已经输出到output.txt文件！\n");
+				c = 1;
 				break;
 			case 'h':
 				help();
+				flag = 1;
 				break;
 			case 'l':
-				if(flag == 0)
+				l = 1;
+				break;
+			case 's':
+				s = 1;
+				break;
+			case 't':
+				for(i = optind-1;i < argc;i++)
 				{
-					load(&head,optarg);
-					flag = 1;
+					printf("%s\n",argv[i]);
 				}
-				printf("%s  共有  %d  行\n",optarg,article_line);
+				printf("argc=%d,optind=%d\n",argc,optind);
+				break;
+			case 'w':
+				w = 1;
 				break;
 			case '?':
 				ec = (char)optopt;
-				printf("无效的字符（ %c ）\n",ec);
+				printf("无效的字符\'%c\'\n",ec);
+				flag = 1;
 				break;
 			case ':':
+				flag = 1;
 				printf("缺少选项参数\n");
 				break;
 		}
 	}
-
-	/*start = clock();
-	load(&head);
-	end = clock();
-	printf("load time %f\n",(float)(end-start)/CLOCKS_PER_SEC);
-	printf("words %d\n",linkedlist_count(&head));
-
-	start = clock();
-	string_sort_xier(&head);
-	end = clock();
-	printf("xier_sort time %f\n",(float)(end-start)/CLOCKS_PER_SEC);
-
-	start = clock();
-	write(&head);
-	end = clock();
-	printf("write to file time %f\n",(float)(end-start)/CLOCKS_PER_SEC);*/
-
-	linkedlist_destory(&head);
-	//callback_show(&head,string_show);
-
-	/*data=(char *)malloc(sizeof(char)*10);
-	  strcpy((char *)data,"hello");
-	  printf("the amount is:%d\n",statistics_value(&head,string_compare,(void *)data));*/
-
-	//string_statistics(&head,string_compare);
-
+	if(flag == 1)
+		return 0;
+	if((w+l+s+c) == 0)
+	{
+		if(optind != argc)
+		{
+			for(i = optind;i <argc;i++)
+			{
+				printf("%s\n",argv[i]);
+				load(&head,argv[i]);
+				printf("共有  %d  个字符\n",article_symbol);
+				article_symbol = 0;
+				printf("共有  %d  行\n",article_line);
+				article_line = 0;
+				printf("共有  %d  个单词\n",linkedlist_count(&head));
+				string_sort_xier(&head);
+				write_tofile(&head);
+				printf("结果已经输出到output.txt文件！\n");
+				linkedlist_destory(&head);
+			}
+		}
+		else
+		{
+		}
+	}
+	else
+	{
+		if(optind != argc)
+		{
+			for(i = optind;i < argc;i++)
+			{
+				printf("%s\n",argv[i]);
+				load(&head,argv[i]);
+				if(c == 1)
+				{
+					printf("共有  %d  个字符\n",article_symbol);
+					article_symbol = 0;
+				}
+				if(l == 1)
+				{
+					article_symbol = 0;
+					printf("共有  %d  行\n",article_line);
+				}
+				if(w == 1)
+				{
+					printf("共有  %d  个单词\n",linkedlist_count(&head));
+				}
+				if(s == 1)
+				{
+					string_sort_xier(&head);
+					write_tofile(&head);
+					printf("结果已经输出到output.txt文件！\n");
+				}
+				linkedlist_destory(&head);
+			}
+		}
+		else
+		{
+		}
+	}
 	return 0;
+
 }
 
 void help()
@@ -123,14 +148,14 @@ void help()
 	printf("\n文章统计指令说明\n");
 	printf("\n");
 	printf("参数\n");
-	printf("\n  -h                                帮助信息\n");
-	printf("\n  -w[filename]                      统计单词个数 filename:要打开的文件名\n");
-	printf("\n  -s[filename]                      词频统计 filename:要打开的文件名\n");
-	printf("\n  -l[filename]                      词频文章的长度 filename:要打开的文件名\n");
-	printf("\n  -c[filename]                      词频字符数 filename:要打开的文件名\n");
-	printf("\n  --help                            帮助信息\n");
-	printf("\n  --words[filename]                 统计单词个数 filename:要打开的文件名\n");
-	printf("\n  --statistic[filename]             词频统计 filename:要打开的文件名\n");
+	printf("\n  -h                            帮助信息\n");
+	printf("\n  -w[filename]                  统计单词个数\n");
+	printf("\n  -s[filename]                  词频统计\n");
+	printf("\n  -l[filename]                  词频文章的长度\n");
+	printf("\n  -c[filename]                  词频字符数\n");
+	printf("\n  --help                        帮助信息\n");
+	printf("\n  --words[filename]             统计单词个数\n");
+	printf("\n  --statistic[filename]         词频统计\n");
 
 
 
