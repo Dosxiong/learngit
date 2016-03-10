@@ -627,6 +627,8 @@ void linkedlist_destory(N * head)
 {
 	N * p = NULL,* p1 = NULL;
 
+	if(head->next != NULL)
+	{
 	p = head->next;
 	p1 = p->next;
 	while(p1 != NULL)
@@ -641,4 +643,5 @@ void linkedlist_destory(N * head)
 	free(p);
 	p = NULL;
 	head->next = NULL;
+	}
 }
