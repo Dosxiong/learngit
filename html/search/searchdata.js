@@ -3,7 +3,7 @@ var indexSectionsWithContent =
   0: "acdfilns",
   1: "n",
   2: "l",
-  3: "acdfis",
+  3: "acdfils",
   4: "d",
   5: "n"
 };
