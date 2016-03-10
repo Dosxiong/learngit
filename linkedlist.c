@@ -58,7 +58,7 @@ typedef struct node
 
 ///      @note    
 
-void callbackshow(N *h,void (*show)(N *))
+void callback_show(N *h,void (*show)(N *))
 {
 	show(h);
 }
@@ -153,7 +153,6 @@ void string_show(N *head)
 
 int add(N *head,void *data)
 {
-	N *p1 = NULL;
 	N *p = (N *)malloc(sizeof(N));
 
 	if(p != NULL)
@@ -161,18 +160,22 @@ int add(N *head,void *data)
 		p->next = NULL;
 		p->front = NULL;
 		p->datapointer = data;
-		for(p1 = head;p1->next != NULL;p1 = p1->next)
+
+		if(head->next == NULL)
 		{
+			head->next = p;
+			p->front = head;
 		}
-		p1->next = p;
-		p->front = p1;
+		else
+		{
+			p->next = head->next;
+			p->front = head;
+			head->next->front = p;
+			head->next = p;
+		}
 		return 1;
 	}
-	else
-	{
-		return 0;
-	}
-
+	return 0;
 }
 
 ///      下面是一个int类型数据的比较函数 
@@ -261,6 +264,38 @@ N *search(N *head,int (*compare)(void *,void *),void *value)
 	return p;
 }
 
+
+///     下面是一个查找有多少个相同结点的函数
+
+///      @param head 链表的头指针
+
+///      @param (*compare)(void *,void *) 要回调的比较函数 
+
+///      @param value 要查找的数据指针  
+
+///      @return      返回找到的结点的个数 
+
+///      @see       
+
+///      @note
+
+int statistics_value(N *head,int (*compare)(void *,void *),void *value)
+{
+	N *p = head->next;
+	int count = 0;
+
+	while(p != NULL)
+	{
+		if(compare(p->datapointer,value) == 0)
+		{
+			count++;
+		}
+		p = p->next;
+	}
+	return count;
+}
+
+
 ///      下面是一个删除函数 
 
 ///     
@@ -292,6 +327,7 @@ int del(N *head,int(*compare)(void *,void *),void *value)
 			{
 				p->next->front = p->front;
 			}
+			free(p->datapointer);
 			free(p);
 			//	printf("2\n");
 			p = NULL;
@@ -323,7 +359,7 @@ int del(N *head,int(*compare)(void *,void *),void *value)
 
 ///      @note
 
-int callbackmodify(N *head,int (*modify)(N *,void *,void*),void *oldvalue,void *newvalue)
+int callback_modify(N *head,int (*modify)(N *,void *,void*),void *oldvalue,void *newvalue)
 {
 	return modify(head,oldvalue,newvalue);
 }
@@ -412,7 +448,7 @@ int string_modify(N *head,void *oldvalue,void *newvalue)
 
 ///      @note
 
-void callbacksort(N *head,void (*sort)(N *))
+void callback_sort(N *head,void (*sort)(N *))
 {
 	sort(head);
 }
@@ -455,6 +491,88 @@ void int_sort(N *head)
 	}
 }
 
+///      下面是一个统计个数函数
+
+///     
+
+///      @param head 链表的头指针
+
+///      @return     返回链表的结点个数
+
+///      @see       
+
+///      @note
+
+int linkedlist_count(N *head)
+{
+	N * p = NULL;
+	int count = 0;
+
+	for(p = head->next;p != NULL;p = p->next,count++)
+	{
+	}
+	return count;
+}
+
+
+///      下面是一个string类型的希尔排序函数
+
+///     
+
+///      按照降序排列  
+
+///      @param head 链表的头指针
+
+///      @return     void
+
+///      @see       
+
+///      @note
+
+void string_sort_xier(N *head)
+{
+	N ** linkedlist_array = NULL;
+	N * p = NULL;
+	int i = 0,j = 0;;
+	int k = 0;
+	int count = 0,increment = 0;
+	void * temp_pointer = NULL;
+
+	count = linkedlist_count(head);
+	linkedlist_array = (N **)malloc(sizeof(N * )*(count));	
+	if(linkedlist_array != NULL)
+	{
+		for(p = head->next,i = 0;p !=NULL;p = p->next,i++)
+		{
+			linkedlist_array[i] = (N *)p;
+		}
+		increment = count;
+		while(increment > 1)
+		{
+			k++;
+			increment = increment/3+1;
+			for(i = increment;i < count;i++)
+			{
+				if(string_compare(linkedlist_array[i]->datapointer,linkedlist_array[i-increment]->datapointer) < 0)
+				{
+					temp_pointer = (void *)(linkedlist_array[i]->datapointer); /// 
+					for(j = i-increment;j >= 0 &&string_compare(temp_pointer,linkedlist_array[j]->datapointer) < 0;j = j-increment)
+					{
+						linkedlist_array[j+increment]->datapointer = linkedlist_array[j]->datapointer;
+					}
+					linkedlist_array[j+increment]->datapointer = temp_pointer;
+				}
+			}
+		}
+	}
+	if(linkedlist_array != NULL)
+	{
+		free(linkedlist_array);
+		linkedlist_array = NULL;
+	}
+}
+
+
 ///      下面是一个string类型的排序函数
 
 ///     
@@ -493,3 +611,34 @@ void string_sort(N *head)
 	}
 }
 
+
+///      下面是一个销毁函数
+
+
+///      @param head 链表的头指针
+
+///      @return     void
+
+///      @see       
+
+///      @note
+
+void linkedlist_destory(N * head)
+{
+	N * p = NULL,* p1 = NULL;
+
+	p = head->next;
+	p1 = p->next;
+	while(p1 != NULL)
+	{
+		free(p->datapointer);
+		free(p);
+		p = NULL;
+		p = p1;
+		p1 = p1->next;
+	}
+	free(p->datapointer);
+	free(p);
+	p = NULL;
+	head->next = NULL;
+}
