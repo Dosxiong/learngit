@@ -20,43 +20,51 @@ void help();
 
 int article_line = 0;
 int article_symbol = 0;
+char * output_filename = NULL;
 
 int main(int argc,char ** argv){
 	N head;
 	int start = 0,end = 0;
 	int i = 0;
-	int w = 0,s = 0,l = 0,c = 0;
+	int flag_w = 0,flag_s = 0,flag_l = 0,flag_c = 0,flag_o = 0;
 	int flag = 0; ///是否录入过文件
 	int oc = 0; /// 选项字符
 	char ec = 'l'; ///无效的选项字符
 	char * b_opt_arg = NULL; ///选项参数字符串
 	int potion_index = 0;
 	static struct option long_options[] = {
-		{"words",required_argument,NULL,'w'},
-		{"statistic",required_argument,NULL,'s'},
+		{"words",optional_argument,NULL,'w'},
+		{"statistic",optional_argument,NULL,'s'},
 		{"help",no_argument,NULL,'h'},
+		{"outputfilename",optional_argument,NULL,'o'},
+		{"byte",optional_argument,NULL,'c'},
+		{"line",optional_argument,NULL,'l'}
 	};
 
+	output_filename = "output.txt";
 	head.next = NULL;
 	head.front = NULL;
 	head.datapointer = NULL;
 
-	while((oc = getopt_long(argc,argv,":w::s::hl::c::t::",long_options,&potion_index)) != -1)
+	while((oc = getopt_long(argc,argv,":w::o::s::hl::c::t::",long_options,&potion_index)) != -1)
 	{
 		switch(oc)
 		{
 			case 'c':
-				c = 1;
+				flag_c = 1;
 				break;
 			case 'h':
 				help();
 				flag = 1;
 				break;
 			case 'l':
-				l = 1;
+				flag_l = 1;
+				break;
+			case 'o':
+				flag_o = 1;
 				break;
 			case 's':
-				s = 1;
+				flag_s = 1;
 				break;
 			case 't':
 				for(i = optind-1;i < argc;i++)
@@ -66,7 +74,7 @@ int main(int argc,char ** argv){
 				printf("argc=%d,optind=%d\n",argc,optind);
 				break;
 			case 'w':
-				w = 1;
+				flag_w = 1;
 				break;
 			case '?':
 				ec = (char)optopt;
@@ -81,56 +89,48 @@ int main(int argc,char ** argv){
 	}
 	if(flag == 1)
 		return 0;
-	if((w+l+s+c) == 0)
+	if(flag_o == 1)
 	{
+		if(flag_s == 0 && (flag_l == 1 || flag_w == 1 || flag_c == 1))
+		{
+			printf("-o必须和-s或者--statistic配合使用\n");
+			return 0;
+		}
 		if(optind != argc)
 		{
-			for(i = optind;i <argc;i++)
-			{
-				printf("%s\n",argv[i]);
-				load(&head,argv[i]);
-				printf("共有  %d  个字符\n",article_symbol);
-				article_symbol = 0;
-				printf("共有  %d  行\n",article_line);
-				article_line = 0;
-				printf("共有  %d  个单词\n",linkedlist_count(&head));
-				string_sort_xier(&head);
-				write_tofile(&head);
-				printf("结果已经输出到output.txt文件！\n");
-				linkedlist_destory(&head);
-			}
-		}
-		else
-		{
+			output_filename = argv[optind];
+			optind ++;
 		}
 	}
-	else
+	if((flag_w+flag_l+flag_s+flag_c) == 0)
 	{
+		flag_w = flag_l = flag_s = flag_c = 1;
+	}
 		if(optind != argc)
 		{
 			for(i = optind;i < argc;i++)
 			{
 				printf("%s\n",argv[i]);
 				load(&head,argv[i]);
-				if(c == 1)
+				if(flag_c == 1)
 				{
 					printf("共有  %d  个字符\n",article_symbol);
 					article_symbol = 0;
 				}
-				if(l == 1)
+				if(flag_l == 1)
 				{
 					article_symbol = 0;
 					printf("共有  %d  行\n",article_line);
 				}
-				if(w == 1)
+				if(flag_w == 1)
 				{
 					printf("共有  %d  个单词\n",linkedlist_count(&head));
 				}
-				if(s == 1)
+				if(flag_s == 1)
 				{
 					string_sort_xier(&head);
 					write_tofile(&head);
-					printf("结果已经输出到output.txt文件！\n");
+					printf("结果已经输出到%s文件！\n",output_filename);
 				}
 				linkedlist_destory(&head);
 			}
@@ -138,7 +138,6 @@ int main(int argc,char ** argv){
 		else
 		{
 		}
-	}
 	return 0;
 
 }
@@ -148,15 +147,12 @@ void help()
 	printf("\n文章统计指令说明\n");
 	printf("\n");
 	printf("参数\n");
-	printf("\n  -h                            帮助信息\n");
-	printf("\n  -w[filename]                  统计单词个数\n");
-	printf("\n  -s[filename]                  词频统计\n");
-	printf("\n  -l[filename]                  词频文章的长度\n");
-	printf("\n  -c[filename]                  词频字符数\n");
-	printf("\n  --help                        帮助信息\n");
-	printf("\n  --words[filename]             统计单词个数\n");
-	printf("\n  --statistic[filename]         词频统计\n");
-
+	printf("\n  -h           --help                帮助信息\n");
+	printf("\n  -w[filename] --words               统计单词个数\n");
+	printf("\n  -s[filename] --statistic           词频统计\n");
+	printf("\n  -o[filename] --statistic           指定输出文件（必须和-o结合和使用）\n");
+	printf("\n  -l[filename] --line                词频文章的长度\n");
+	printf("\n  -c[filename] --byte                词频字符数\n");
 
 
 }
@@ -182,7 +178,7 @@ void write_tofile(N *head)
 	N * p = NULL;
 	int count = 1;
 
-	if((fp = fopen("output.txt","w")) == NULL)
+	if((fp = fopen(output_filename,"w")) == NULL)
 	{
 		printf("can not find this file!\n");
 		exit(0);
