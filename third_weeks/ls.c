@@ -1,9 +1,11 @@
 #include <stdio.h>
+#include<syslog.h>
 #include<stdlib.h>
 #include<getopt.h>
 #include <sys/types.h>
 #include <dirent.h>
 #include <sys/stat.h>
+#include<sys/ioctl.h>
 #include <string.h>
 #include <unistd.h>
 #include <grp.h>
@@ -19,6 +21,8 @@ int name_length_compare(void *a,void *b);
 int file_size_compare(void *a,void *b);
 int file_ctime_compare(void *a,void *b);
 int recursion(char * path,int flag_a,int flag_t,int flag_s,int flag_l,int flag_r);
+void adapt_width_show(N *head);
+int file_name_compare(void *a,void *b);
 
 typedef struct file{
 	char      file_path[MAX_SIZE];
@@ -87,6 +91,87 @@ int main(int argc,char **argv)
 	return 0;
 }
 
+void adapt_width_show(N *head)
+{
+	struct winsize size;
+	int max_col_width = 0;
+	int row = 1;
+	N ** linkedlist_array = NULL;
+	int count = 0;
+	int col = 0;
+	N * p = NULL;
+	int i = 0,j = 0,k = 0;
+	int is_success = 1;
+	int sum_length = 0;
+	file_info * temp = NULL;
+	int *maxsize_array = NULL;
+
+	ioctl(STDIN_FILENO,TIOCGWINSZ,&size);
+	count = linkedlist_count(head);
+	linkedlist_array = (N **)malloc(sizeof(N * )*(count));	
+	if(linkedlist_array != NULL)
+	{
+		for(p = head->next,i = 0;p !=NULL;p = p->next,i++)
+		{
+			linkedlist_array[i] = (N *)p;
+		}
+		while(1)
+		{
+			for(i = 0;i < count;i += row)
+			{
+				for(k = i;(k < (i+row)) && (k < count);k ++)
+				{
+					temp = ((file_info *)linkedlist_array[k]->datapointer);
+					if(max_col_width < temp->file_name_length)
+					{
+						max_col_width = temp->file_name_length;
+					}
+				}
+				sum_length += max_col_width+2;
+				max_col_width = 0;
+			}
+			if(sum_length <= size.ws_col)
+			{
+				break;
+			}
+			row ++;
+			sum_length = 0;
+		}
+		if(count%row == 0)
+		{
+			col = count/row;
+		}
+		else
+		{
+			col = count/row+1;
+		}
+
+		maxsize_array = (int *)malloc(sizeof(int)*col);
+		for(i = 0,j = 0;i < count;i += row,j++)
+		{
+			for(k = i;(k < (i + row)) && k < count;k ++)
+			{
+				temp = ((file_info *)linkedlist_array[k]->datapointer);
+				if(max_col_width < temp->file_name_length)
+				{
+					max_col_width = temp->file_name_length;
+				}
+			}
+			maxsize_array[j] = max_col_width;
+			max_col_width = 0;
+		}
+		for(i = 0;i < row ;i++)
+		{
+			for(j = i,k = 0;j < count;j += row,k++)
+			{
+				temp = ((file_info *)linkedlist_array[j]->datapointer);
+				printf("%*s",-(maxsize_array[k]+2),temp->file_name);
+			}
+			printf("\n");
+		}
+	}
+}
+
 int recursion(char * path,int flag_a,int flag_t,int flag_s,int flag_l,int flag_r)
 {
 	DIR *dp = NULL;
@@ -133,10 +218,11 @@ int recursion(char * path,int flag_a,int flag_t,int flag_s,int flag_l,int flag_r
 	}
 	else
 	{
-		string_sort_xier(head,name_length_compare);
+		string_sort_xier(head,file_name_compare);
 	}
 	printf("%s\n",path);
-	show_l(head,flag_l);
+	adapt_width_show(head);
+	//show_l(head,flag_l);
 	if(flag_r == 1)
 	{
 		for(p = head->next;p != NULL;p = p->next)
@@ -343,6 +429,14 @@ int name_length_compare(void *a,void *b)
 	{
 		return -1;
 	}
+}
+
+int file_name_compare(void *a,void *b)
+{
+	file_info *temp_a = NULL,*temp_b = NULL;
+	temp_a = (file_info *)a;
+	temp_b = (file_info *)b;
+	return strcmp(temp_a->file_name,temp_b->file_name);
 }
 
 int file_size_compare(void *a,void *b)
