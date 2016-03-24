@@ -114,6 +114,22 @@ void CallBackShowStr(void *data);
 
 
 /**
+* @brief CallBackDeleteNode \n
+* 回调函数，删除Node
+* @param[in]	*p		需要删除的内容
+*/
+void CallBackDeleteNode(DLNode *p);
+
+
+/**
+* @brief CallBackDropList \n
+* 回调函数，删除List
+* @param[in]	*List		需要删除的内容
+*/
+void CallBackDropList(DLNode * List);
+
+
+/**
 * @brief  Partition\n
 * 快速排序 
 * @param[in]	*List					双向链表默认链表接口
@@ -235,9 +251,10 @@ void UpdateList(DLNode *List, void *data_search, void *data_change, int (*CallBa
  * @param  : 参数说明如下表：
  * name      | type      |description of param 
  * ----------|-----------|--------------------
- * *List       | DLNode    |双向链表默认链表接口
- * *data       | void      |显示格式flag
- * *CallBackCmp| int       |判断回调函数
+ * *List          | DLNode    |双向链表默认链表接口
+ * *data          | void      |显示格式flag
+ * *CallBackCmp   | int       |判断回调函数
+ * *CallBackDelete| int       |删除回调函数
  * @return    返回值说明如下：
  * name      | type      | description of value
  * ----------|-----------|----------------------
@@ -247,7 +264,7 @@ void UpdateList(DLNode *List, void *data_search, void *data_change, int (*CallBa
  * @note      删除双向链表，查询节点位置，将前后地址相连接，然后free此节点位置
  * @todo      null
  */
-void DeleteList(DLNode *List, void *data, int (*CallBackCmp)(const void *, const void *));
+int DeleteList(DLNode *List, void (*CallBackDelete)(DLNode *));
 
 
 /**
@@ -281,7 +298,8 @@ int ShowList(DLNode *List, int judge, void (*CallBackShow)(const void *));
  * @param  : 参数说明如下表：
  * name      | type      |description of param 
  * ----------|-----------|--------------------
- * *List     | DLNode    |双向链表默认链表接口
+ * *List        | DLNode    |双向链表默认链表接口
+ * *CallBackDrop| void      |删除的回调函数
  * @return    返回值说明如下：
  * name      | type      | description of value
  * ----------|-----------|----------------------
@@ -291,6 +309,6 @@ int ShowList(DLNode *List, int judge, void (*CallBackShow)(const void *));
  * @note      此操作会清空双向链表的数据，系统暂存空间,谨慎操作
  * @todo      null
  */
-void DropList(DLNode *List);
+void DropList(DLNode *List, void (*CallBackDrop)(DLNode *));
 
 #endif

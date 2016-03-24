@@ -143,6 +143,32 @@ void CallBackShowStr(void *data)
 {
 	printf("%s\n", (char *)data);
 }
+/**
+* @brief CallBackDeleteNode \n
+* 回调函数，删除Node
+* @param[in]	*p		需要删除的内容
+*/
+void CallBackDeleteNode(DLNode *p)
+{
+	p->back->next = p->next;
+	p->next->back = p->back;
+	free(p->data);
+	p->data = NULL;
+	DLNode *temp = NULL;
+	temp = p;
+	p = p->next;
+	free(temp);
+}
+/**
+* @brief CallBackDropList \n
+* 回调函数，删除List
+* @param[in]	*List		需要删除的内容
+*/
+void CallBackDropList(DLNode * temp)
+{
+	free(temp->data);
+	temp->data = NULL;
+}
 
 
 /**
@@ -250,7 +276,7 @@ DLNode *SearchList(DLNode *List, void *data, int (*CallBackCmp)(const void *, co
 			return p;
 		p = p->next;
 	}
-	return NULL;
+	return p;
 }
 
 
@@ -364,58 +390,22 @@ DLNode *SequenceList(DLNode *List, int flag, int (*CallBackCmp)(const void *,con
  * @note      插入双向链表，根据双向链表的接口插入数据
  * @todo      null
  */
-void InsertList(DLNode *List, void *data, int (*CallBackCmp)(const void *, const void *))
+void InsertList(DLNode *List, void *data)
 {
 	DLNode *p = NULL;
-	void *p1 = NULL;
+	p = (DLNode *)malloc(sizeof(DLNode));
 
-	p = SearchList(List, data, CallBackCmp);
-	if(p == NULL)
+	if( p == NULL )
 	{
-		p = (DLNode *)malloc(sizeof(DLNode));
-		if( p == NULL )
-		{
-			printf ("Create MEM ERROR!\n");
-		}
-		else
-		{
-			p->back = List;
-			p->next = List->next;
-			List->next->back = p;
-			List->next = p;
-			p->data = data;
-		}
+		printf ("Create MEM ERROR!\n");
 	}
 	else
 	{
-		p1 = p->data;
-		while(p1 != NULL)
-		{
-			if(p1->next == NULL)
-			{
-				p1->next = data;
-				data->front = p1;
-				break;
-			}
-			if(CallBackCmp(p1,data) > 0)
-			{
-				if(p1->front == NULL)
-				{
-					p->data = data;
-					data->next = p1;
-					p1->front = data;
-				}
-				else
-				{
-					data->front = p1->front;
-					p1->front->next = data;
-
-					data->next = p1;
-					p1->front = data;
-				}
-			}
-			p1 = p1->next;
-		}
+		p->back = List;
+		p->next = List->next;
+		List->next->back = p;
+		List->next = p;
+		p->data = data;
 	}
 }
 
@@ -467,9 +457,10 @@ void UpdateList(DLNode *List, void *data_search, void *data_change, int (*CallBa
  * @param  : 参数说明如下表：
  * name      | type      |description of param 
  * ----------|-----------|--------------------
- * *List       | DLNode    |双向链表默认链表接口
- * *data       | void      |显示格式flag
- * *CallBackCmp| int       |判断回调函数
+ * *List          | DLNode    |双向链表默认链表接口
+ * *data          | void      |显示格式flag
+ * *CallBackCmp   | int       |判断回调函数
+ * *CallBackDelete| int       |删除回调函数
  * @return    返回值说明如下：
  * name      | type      | description of value
  * ----------|-----------|----------------------
@@ -479,33 +470,19 @@ void UpdateList(DLNode *List, void *data_search, void *data_change, int (*CallBa
  * @note      删除双向链表，查询节点位置，将前后地址相连接，然后free此节点位置
  * @todo      null
  */
-void DeleteList(DLNode *List, void *data, int (*CallBackCmp)(const void *, const void *))
+int DeleteList(DLNode *List,  void (*CallBackDelete)(DLNode *))
 {
-	DLNode *p = NULL;
-	p = (DLNode *)malloc(sizeof(DLNode));
+	DLNode *p = List;
 
-	if( p == NULL )
+	if(p != NULL)
 	{
-		printf ("Create MEM ERROR!\n");
-	}
-	else
-	{
-		p = SearchList(List, data, CallBackCmp);
 		p->back->next = p->next;
 		p->next->back = p->back;
+		CallBackDelete(p);
 		free(p->data);
-		p->data = NULL;
-		DLNode *temp = NULL;
-		temp = p;
-		p = p->next;
-		free(temp);
-		if( SearchList(List, data, CallBackCmp ) == 0)
-		{
-			printf("Delete Error!\n");
-		}
-		else
-			printf("Delete OK!\n");	
+		free(p);
 	}
+	return 0;
 }
 
 
@@ -556,7 +533,8 @@ int ShowList(DLNode *List, int judge, void (*CallBackShow)(const void *))
  * @param  : 参数说明如下表：
  * name      | type      |description of param 
  * ----------|-----------|--------------------
- * *List     | DLNode    |双向链表默认链表接口
+ * *List        | DLNode    |双向链表默认链表接口
+ * *CallBackDrop| void      |删除的回调函数
  * @return    返回值说明如下：
  * name      | type      | description of value
  * ----------|-----------|----------------------
@@ -566,7 +544,7 @@ int ShowList(DLNode *List, int judge, void (*CallBackShow)(const void *))
  * @note      此操作会清空双向链表的数据，系统暂存空间,谨慎操作
  * @todo      null
  */
-void DropList(DLNode *List)
+void DropList(DLNode *List, void (*CallBackDrop)(DLNode *))
 {
 	DLNode *p = NULL;
 
@@ -575,11 +553,14 @@ void DropList(DLNode *List)
 	{
 		DLNode *temp = NULL;
 		temp = p;
-		free(temp->data);
-		temp->data = NULL;
+		CallBackDrop(temp);
+		p->back->next = p->next;
+		p->next->back = p->back;
 		p = p->next;
 		free(temp);
 	}
 	free(List);
+	//List = NULL;
 }
+
 

@@ -21,7 +21,7 @@ AR = ar rcs
 RM = rm -fr *.o *.a *.out
 
 ip_recombination : pcap.o libDoubleLink.a 
-	$(CC)	-o	ip_recombination pcap.o libDoubleLink.a 
+	$(CC)	-o	ip_recombination pcap.o libDoubleLink.a -lpcap -lpthread
 
 pcap.o : pcap.c DoubleLink.h 
 	$(CC)	-c	pcap.c
