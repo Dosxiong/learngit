@@ -15,10 +15,10 @@ struct sniff_ip
 	u_char  ip_tos:8;               ///协议类型
 	u_short ip_len:16;				///总长度
 	u_short ip_id:16;               ///标示符id
-	u_short ip_off:16;
-	u_char  ip_ttl:8;
-	u_char  ip_p:8;
-	u_short ip_sum:16;
+	u_short ip_off:16;				///标志位加偏移量
+	u_char  ip_ttl:8;				///生存时间
+	u_char  ip_p:8;					///协议
+	u_short ip_sum:16;				///校验和
 	struct in_addr ip_src;
 	struct in_addr ip_dst;
 };
@@ -67,10 +67,11 @@ int main(int argc,char *argv[]){
 	bpf_u_int32 net;
 	pcap_t *handle = NULL;
 	pcap_dumper_t *pcap_dumper = NULL;
+	DLNode *p = NULL, *p1 = NULL;
 
 	head = CreateList();
 	pthread_mutex_init(&testlock, NULL);
-	pthread_create(&test_thread, NULL, test, NULL);
+	//pthread_create(&test_thread, NULL, test, NULL);
 
 	/*dev = pcap_lookupdev(errbuf);  
 	if(dev == NULL)
@@ -82,16 +83,26 @@ int main(int argc,char *argv[]){
 	printf("Device: %s\n",dev);  
 	pcap_lookupnet(dev, &net, &mask, errbuf);
 	handle = pcap_open_live(dev, BUFSIZ, 1, 0, errbuf);*/
-	handle = pcap_open_offline("gb_frag_merge.pcap", errbuf);
+	handle = pcap_open_offline("frag_gn5-10.pcap", errbuf);
 
-	/*pcap_compile(handle,&filter, filter_app, 0, net);
-	pcap_setfilter(handle, &filter);*/
-	pcap_dumper = pcap_dump_open(handle, "libcaptest1.pcap");
+	pcap_compile(handle,&filter, filter_app, 0, net);
+	pcap_setfilter(handle, &filter);
+	pcap_dumper = pcap_dump_open(handle, "output.pcap");
 
 	i = pcap_loop(handle, -1, ip_recombination, (u_char *)pcap_dumper);
 
 	pcap_dump_flush(pcap_dumper);
 	pcap_dump_close(pcap_dumper);
+	for(p = head->next; p != head; )
+	{
+		p1 = p->next;
+		DeleteList(p, deletepacket);
+		p = p1;
+	}
+	free(head);
+	head = NULL;
+	p = NULL;
+	p1 = NULL;
 
 	printf("%-10d     %-10d*******\n",cap_count, handle_count);
 	pcap_close(handle);
@@ -123,10 +134,11 @@ void ip_recombination(u_char *arg, const struct pcap_pkthdr *pkthdr, const u_cha
 	npacket->mf = ((ntohs(ip_head->ip_off) & 0x2000) >> 13);
 	npacket->offset = (ntohs(ip_head-> ip_off) & 0x01fff)*8;
 	npacket->len = (ntohs(ip_head->ip_len));
-	new_uchar = (u_char *)malloc(sizeof(u_char)*npacket->len);
+
+	new_uchar = (u_char *)malloc((sizeof(u_char)*npacket->len + 14));
 	if(new_uchar != NULL)
 	{
-		memcpy(new_uchar, packet, npacket->len);
+		memcpy(new_uchar, packet, (npacket->len + 14));
 	}
 	else
 	{
@@ -146,24 +158,24 @@ void ip_recombination(u_char *arg, const struct pcap_pkthdr *pkthdr, const u_cha
 		info->cap_len = 0;
 		info->Two_List = CreateList();
 
-		pthread_mutex_lock(&testlock); 
+		//pthread_mutex_lock(&testlock); 
 		InsertList(head, (void *)info);
-		pthread_mutex_unlock(&testlock); 
+		//pthread_mutex_unlock(&testlock); 
 
 		drop_p = drop_p->next;
 
-		pthread_mutex_lock(&testlock); 
+		//pthread_mutex_lock(&testlock); 
 		InsertList(info->Two_List, (void *)npacket);
-		pthread_mutex_unlock(&testlock); 
+		//pthread_mutex_unlock(&testlock); 
 	}
 	else
 	{
 		info = (Info *)(p->data);
 		p = SearchList(info->Two_List, (void *)npacket, offset_compare);
 
-		pthread_mutex_lock(&testlock); 
+		//pthread_mutex_lock(&testlock); 
 		InsertList(p->back, (void *)npacket);
-		pthread_mutex_unlock(&testlock); 
+		//pthread_mutex_unlock(&testlock); 
 	}
 
 	info->start = clock();
@@ -194,7 +206,7 @@ void ip_recombination(u_char *arg, const struct pcap_pkthdr *pkthdr, const u_cha
 			new_packet[i] = packet[i];
 		}
 
-		new_head = (struct sniff_ip *)malloc(sizeof(struct sniff_ip));
+		new_head = (struct sniff_ip *)malloc((sizeof(struct sniff_ip)));
 		memcpy(new_head, (packet + 14), 20);
 		new_head->ip_len = htons(info->tol_len + 20);
 		new_head->ip_off = 0;
@@ -205,17 +217,17 @@ void ip_recombination(u_char *arg, const struct pcap_pkthdr *pkthdr, const u_cha
 		{
 			checksum += (((temp_uchar[i]) << 8) | temp_uchar[i + 1]);
 		}
-		checksum=(checksum>>16)+(checksum & 0xffff);     
-		checksum+=(checksum>>16);     
-		checksum=0xffff-checksum; 
+		checksum = (checksum >> 16) + (checksum & 0xffff);     
+		checksum += (checksum >> 16);     
+		checksum = 0xffff - checksum; 
 		/*checksum = ((checksum >> 16) & 0x00001)+(checksum & 0x0ffff);     
-		  checksum=0xffff-checksum*/;   
+		  checksum=0xffff-checksum;*/   
 		new_head->ip_sum = htons(checksum);
 
 		memcpy((new_packet + 14), new_head, 20);
 		temp_uchar = new_packet+34;
 
-		for(p = (info->Two_List->next);p != info->Two_List;p = p->next)
+		for(p = (info->Two_List->next); p != info->Two_List; p = p->next)
 		{
 			temp_npacket = (netpacket *)(p->data);
 			memcpy(temp_uchar, (temp_npacket->packet + 34), (temp_npacket->len - 20));
@@ -231,6 +243,9 @@ void ip_recombination(u_char *arg, const struct pcap_pkthdr *pkthdr, const u_cha
 		DeleteList(drop_p, deletepacket);
 
 	}
+	temp_uchar = NULL;
+	temp_npacket = NULL;
+	ip_head = NULL;
 
 }
 
@@ -294,13 +309,16 @@ void deletepacket(DLNode *head)
 		temp_npacket = (netpacket *)(p->data);
 		free(temp_npacket->packet);
 		free(temp_npacket);
+		temp_npacket = NULL;
 		p1 = p;
 		p = p->next;
 		free(p1);
 	}
+	free(temp_info);
+	free(temp_head);
 }
 
-void *test()
+/*void *test()
 {
 	DLNode *p = NULL;
 
@@ -330,4 +348,4 @@ void *test()
 		sleep(2);
 	}
 
-}
+}*/
