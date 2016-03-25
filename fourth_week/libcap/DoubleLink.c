@@ -479,7 +479,7 @@ int DeleteList(DLNode *List,  void (*CallBackDelete)(DLNode *))
 		p->back->next = p->next;
 		p->next->back = p->back;
 		CallBackDelete(p);
-		free(p->data);
+		//free(p->data);
 		free(p);
 	}
 	return 0;
@@ -544,7 +544,7 @@ int ShowList(DLNode *List, int judge, void (*CallBackShow)(const void *))
  * @note      此操作会清空双向链表的数据，系统暂存空间,谨慎操作
  * @todo      null
  */
-void DropList(DLNode *List, void (*CallBackDrop)(DLNode *))
+void DropList(DLNode *List)
 {
 	DLNode *p = NULL;
 
@@ -553,7 +553,6 @@ void DropList(DLNode *List, void (*CallBackDrop)(DLNode *))
 	{
 		DLNode *temp = NULL;
 		temp = p;
-		CallBackDrop(temp);
 		p->back->next = p->next;
 		p->next->back = p->back;
 		p = p->next;
