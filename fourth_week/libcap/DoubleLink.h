@@ -309,6 +309,6 @@ int ShowList(DLNode *List, int judge, void (*CallBackShow)(const void *));
  * @note      此操作会清空双向链表的数据，系统暂存空间,谨慎操作
  * @todo      null
  */
-void DropList(DLNode *List);
+void DropList(DLNode *List, void (*CallBackDrop)(DLNode *));
 
 #endif
