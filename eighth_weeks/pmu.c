@@ -4,207 +4,123 @@
 #include <stdlib.h>
 #include <getopt.h>
 #include <sys/socket.h>
-
-#define CORRLEN 16 
+#include <netinet/in.h>
+#include <math.h>
+#include "zlog.h"
+#include "message.h"
+#include "cmdline.h"
 
 typedef enum
 {
-	RUL_ADD_REQ = 0x01,
-	RUL_ADD_ACK,
-	RUL_DEL_REQ,
-	RUL_DEL_ACK,
-	RUL_QRY_REQ,
-	RUL_QRY_ACK,
-	RUL_CLR_REQ,
-	RUL_CLR_ACK,
-	RUL_STA_REQ,
-	RUL_STA_ACK,
+	SUCCESS = 0,
+	FAIL = -1,
+}return_value_t;
 
-	KEEP_ALIVE_ACK = 0x11,
-	KEEP_ALIVE_REQ = 0x10,
-
-	PRC_PKG_ACK = 0xf1,
-	PRC_PKG_REQ = 0xf0,
-	SNT_PKG_ACK = 0xf3,
-	SNT_PKG_REQ = 0xf2,
-	SYS_REST_ACK = 0xf5,
-	SYS_REST_REQ = 0xf4,
-
-	F_PRC_PKG_ACK = 0xe1,
-	F_PRC_PKG_REQ = 0xe0,
-	F_EVT_RPT_ACK = 0xe5,
-	F_EVT_RPT_REQ = 0xe4,
-
-
-	RULE_TYPE_MAX = 0xff,
-} tcu_msg_t;
-
-
-typedef struct rule_req_s
+int rul_add_req (rule_req_t *packet, int seq, options_t op)
 {
-	uint8_t msg_type;
-	uint8_t grp_id : 4;
-	uint8_t msg_version:4;
-	uint16_t msg_len;
-	uint32_t seqs;
-	uint32_t outer_src_ip;
-	uint32_t outer_dst_ip;
-	uint32_t inner_src_ip;
-	uint32_t inner_dst_ip;
-	uint16_t outer_src_port;
-	uint16_t outer_dst_port;
-	uint16_t inner_src_port;
-	uint16_t inner_dst_port;
-	uint8_t base;
-	uint16_t offset;
-	uint8_t resved;
-	uint32_t value;
-	uint32_t mask;	
-	uint8_t phy_portId;
-	uint8_t  rule_type;
-	uint8_t packet_param;
-	uint8_t controllerId;
-	uint32_t volumeParam;
-	//uint16_t rsvd;
-	uint8_t correlationInfo[CORRLEN];
-} rule_req_t;
-
-typedef struct options
-{
-	struct in_addr remote;
-	int rule_port;
-	int rule_count;
-	int packet_port;
-	int flow_port;
-	int debug;
-}options_t;
-
-/* init the options */
-void init_options(options_t *op)
-{
-	memset(&(op->remote), '0', sizeof(op->remote));
-	op->rule_port = 3789;				
-	op->rule_cout = 0;
-	op->packet_port = 3799;
-	op->flow_port = 3800;
-	op->debug = 0;
-}
-
-int cmdline_parser (int argc, char **argv, options_t *op)
-{
-	struct option long_options[] =
-	{
-		{"debug", 0, NULL, 'd'},
-		{"remote", 0, NULL, 'r'},
-		{"rule_port", 0, NULL, 0},
-		{"rule_count", 0, NULL, 0},
-		{"packet_port", 0, NULL, 0},
-		{"flow_port", 0, NULL, 0}
-	};
-	int option_index = 0;
-	int c = 0;
-	while(1)
-	{
-		c = getopt_long (argc, argv, "r:d", long_options, &option_index);
-
-		if (c == -1) break;			/* all options have been processed */
-
-		switch(c)
-		{
-			case 'd':
-				op->debug = 1;
-				break;
-			case 'r':				/* remote host */
-				op->remote.s_addr = inet_addr(optarg);
-				break;
-			case '?':
-				break;
-			case 0:					/* long option with no short option*/
-#if 0
-				printf("\nopt:%c\n", c);
-				printf("optarg = %s\n", optarg);
-				printf("optind = %d\n", optind);
-				printf("argv[optind -  1]= %s\n", argv[optind]);
-				printf("option_index = %d\n", option_index);
-#endif
-				/* rule port of the remote host*/
-				if(strcmp (long_options[option_index].name, "rule_port") == 0)
-				{
-					op->rule_port = atoi (argv[optind]);
-				}
-				/* rule count */
-				if(strcmp (long_options[option_index].name, "rule_count") == 0)
-				{
-					op->rule_port = atoi (argv[optind]);
-				}
-				/* packet port of the remote host*/
-				if(strcmp (long_options[option_index].name, "packet_port") == 0)
-				{
-					op->packet_port = atoi (argv[optind]);
-				}
-				/* flow port of the remote host*/
-				if(strcmp (long_options[option_index].name, "flow_port") == 0)
-				{
-					op->flow_port = atoi (argv[optind]);
-				}
-				break;
-			default :
-				break;
-		}
-	}
-}
-
-int rul_add_req (char *buf)
-{
-	rule_req_t packet;
 	int i = 0;
 
-	packet.msg_type = RUL_ADD_REQ; 
-	packet.msg_version = 0x4;
-	packet.grp_id = 0x0;
-	packet.msg_len = htons (sizeof(packet));
-	packet.seqs = 0x00000001;
-	packet.outer_src_ip = inet_addr ("192.168.8.144");
-	packet.outer_dst_ip = inet_addr ("192.168.8.34");
-	packet.inner_src_ip = inet_addr ("10.0.0.1");
-	packet.inner_dst_ip = inet_addr ("180.97.33.107");
-	packet.outer_src_port = 0x1235;
-	packet.outer_dst_port = 0x1235;
-	packet.inner_src_port = 0x7070;
-	packet.inner_dst_port = 0x7070;
-	packet.base = 0x00;
-	packet.offset = 0x0000;
-	packet.resver = 0x00;
-	packet.value = 0x00000000;
-	packet.mask = 0x00000000;
-	packet.phy_portId = 0x01;
-	packet.rule_type = 0x01;
-	packet.packet_param = 0xff;
-	packet.controllerId = 0x00;
-	packet.volumeParam = 0x00000000;
-	for(i = 0; i < 16; i++)
+	packet->msg_type = op.msg_type; 
+	packet->msg_version = op.msg_version;
+	packet->grp_id = op.grp_id;
+	packet->msg_len = htons (sizeof(rule_req_t));
+	packet->seqs = htonl (seq);
+	packet->outer_src_ip = op.outer_src_ip.s_addr;
+	packet->outer_dst_ip = op.outer_dst_ip.s_addr;
+	packet->inner_src_ip = op.inner_src_ip.s_addr;
+	packet->inner_dst_ip = op.inner_dst_ip.s_addr;
+	packet->outer_src_port = op.outer_src_port;
+	packet->outer_dst_port = op.outer_dst_port;
+	packet->inner_src_port = op.inner_src_port;
+	packet->inner_dst_port = op.inner_dst_port;
+	packet->base = op.base;
+	packet->offset = op.offset;
+	packet->resved = op.resved;
+	packet->value = op.value;
+	packet->mask = op.mask;
+	packet->phy_portId = op.phy_portId;
+	packet->rule_type = op.rule_type;
+	packet->packet_param = op.packet_param;
+	packet->controllerId = op.controllerId;
+	packet->volumeParam = op.volumeParam;
+	memcpy(packet->correlationInfo, &packet->outer_dst_ip, 4);
+	memcpy(packet->correlationInfo + 4, &packet->inner_src_ip, 4);
+	for(i = 8; i < CORRLEN; i++)
 	{
-		packet.correlationInfo[i] = 0x00;
+		packet->correlationInfo[i] = 0x00;
 	}
+	return sizeof(rule_req_t);
 }
 
 int main(int argc, char **argv)
 {
-	options_t options;
+	options_t options, temp_options;
+	rule_req_t rule;
 	int send_socket_descriptor = 0;
 	struct sockaddr_in send_addr;
-	char *buf;
+	struct in_addr outer_dst_ip, inner_src_ip;
+	u_char *buf = NULL;
+	int length = 0;
+	int count;
+	int rc;
+	zlog_category_t *c;
+	int i = 0;
 
+	rc = zlog_init("zlog.conf");
+	if(rc)
+	{
+		printf("init fail\n");
+		return -1;
+	}
+	c = zlog_get_category("pmu_cat");
+	if(!c)
+	{
+		printf("get cat fail\n");
+		zlog_fini();
+		return -2;
+	}
+	//zlog_info(c, "hello ,zlog");
 	init_options (&options);
 	cmdline_parser (argc, argv, &options);
-	
-	if (options.debug) printf ("remote: %s\nrule_port: %d\npacket_port: %d\nflow_port: %d\n", inet_ntoa(options.remote), options.rule_port, options.packet_port, options.flow_port);
 
+	if (options.debug)
+	{
+		printf ("remote: %s\nrule_port: %d\npacket_port: %d\nflow_port: %d\n", inet_ntoa(options.remote), options.rule_port, options.packet_port, options.flow_port);
+		printf("outer_dst_ip:%s,mask:%d\n", inet_ntoa (options.outer_dst_ip), options.outer_dst_ip_mask);
+		printf("inner_src_ip:%s,mask:%d\n", inet_ntoa (options.inner_src_ip), options.inner_src_ip_mask);
+	}
 	memset (&send_addr, '0', sizeof (send_addr));
+	//bzero(&send_addr, sizeof(send_addr));
 	send_addr.sin_family = AF_INET;
-	memcpy (& (send_addr.sin_addr), & (options.remote), sizeof (send_addr.sin_addr));
+	send_addr.sin_addr.s_addr = options.remote.s_addr;
 	send_addr.sin_port = options.rule_port;
+	send_socket_descriptor = socket (AF_INET, SOCK_DGRAM, 0);
 
-	sendto (send_socket_descriptor, buf, sizeof(buf), 0, (struct sockaddr) &send_addr, sizeof (send_addr));
+	memcpy(&temp_options, &options, sizeof(options));
+	for(i = 0; i < 1000; i++)
+	{
+		if(i % (2 << (32 - options.outer_dst_ip_mask - 1)) == 0)
+		{
+			temp_options.outer_dst_ip.s_addr = options.outer_dst_ip.s_addr;
+		}
+		if(i % (2 << (32 - options.inner_src_ip_mask - 1)) == 0)
+		{
+			temp_options.inner_src_ip.s_addr = options.inner_src_ip.s_addr;
+		}
+		temp_options.outer_dst_ip.s_addr = htonl (ntohl(temp_options.outer_dst_ip.s_addr) + 0x1);
+		temp_options.inner_src_ip.s_addr = htonl (ntohl(temp_options.inner_src_ip.s_addr) + 0x1);
+		length = rul_add_req (&rule, i, temp_options);
+		count = sendto (send_socket_descriptor, &rule, length, 0, (struct sockaddr *) &(send_addr), sizeof (send_addr));
+		if(count == -1)
+		{
+			zlog_info(c, "send fail.sendto return value:%d", count);
+		}
+		else
+		{
+			zlog_info(c, "send success.sendto return value:%d", count);
+		}
+	}
+
+	zlog_fini();
 	return 0;
 }
