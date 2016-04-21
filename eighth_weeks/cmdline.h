@@ -14,11 +14,13 @@ typedef struct options
 	uint8_t grp_id : 4;
 	uint8_t msg_version:4;
 	struct in_addr outer_src_ip;
+	int outer_src_ip_mask;
 	struct in_addr outer_dst_ip;
 	int outer_dst_ip_mask;
 	struct in_addr inner_src_ip;
 	struct in_addr inner_dst_ip;
 	int inner_src_ip_mask;
+	int inner_dst_ip_mask;
 	uint16_t outer_src_port;
 	uint16_t outer_dst_port;
 	uint16_t inner_src_port;

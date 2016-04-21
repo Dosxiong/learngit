@@ -5,97 +5,37 @@
 #include <getopt.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include <pthread.h>
 #include <math.h>
 #include "zlog.h"
 #include "message.h"
 #include "cmdline.h"
 
-typedef enum
-{
-	SUCCESS = 0,
-	FAIL = -1,
-}return_value_t;
+#define MAXMSGSIZE 1024
+#define HOST "127.0.0.1"
 
-int rul_add_req (rule_req_t *packet, int seq, options_t op)
+int send_socket_descriptor = 0;
+int rc;
+zlog_category_t *debug, *error;
+queue_t queue;
+options_t options;
+
+void *send_add_rule_req()
 {
 	int i = 0;
-
-	packet->msg_type = op.msg_type; 
-	packet->msg_version = op.msg_version;
-	packet->grp_id = op.grp_id;
-	packet->msg_len = htons (sizeof(rule_req_t));
-	packet->seqs = htonl (seq);
-	packet->outer_src_ip = op.outer_src_ip.s_addr;
-	packet->outer_dst_ip = op.outer_dst_ip.s_addr;
-	packet->inner_src_ip = op.inner_src_ip.s_addr;
-	packet->inner_dst_ip = op.inner_dst_ip.s_addr;
-	packet->outer_src_port = op.outer_src_port;
-	packet->outer_dst_port = op.outer_dst_port;
-	packet->inner_src_port = op.inner_src_port;
-	packet->inner_dst_port = op.inner_dst_port;
-	packet->base = op.base;
-	packet->offset = op.offset;
-	packet->resved = op.resved;
-	packet->value = op.value;
-	packet->mask = op.mask;
-	packet->phy_portId = op.phy_portId;
-	packet->rule_type = op.rule_type;
-	packet->packet_param = op.packet_param;
-	packet->controllerId = op.controllerId;
-	packet->volumeParam = op.volumeParam;
-	memcpy(packet->correlationInfo, &packet->outer_dst_ip, 4);
-	memcpy(packet->correlationInfo + 4, &packet->inner_src_ip, 4);
-	for(i = 8; i < CORRLEN; i++)
-	{
-		packet->correlationInfo[i] = 0x00;
-	}
-	return sizeof(rule_req_t);
-}
-
-int main(int argc, char **argv)
-{
-	options_t options, temp_options;
+	options_t temp_options;
 	rule_req_t rule;
-	int send_socket_descriptor = 0;
-	struct sockaddr_in send_addr;
-	struct in_addr outer_dst_ip, inner_src_ip;
 	u_char *buf = NULL;
 	int length = 0;
 	int count;
-	int rc;
-	zlog_category_t *c;
-	int i = 0;
+	struct sockaddr_in send_addr;
 
-	rc = zlog_init("zlog.conf");
-	if(rc)
-	{
-		printf("init fail\n");
-		return -1;
-	}
-	c = zlog_get_category("pmu_cat");
-	if(!c)
-	{
-		printf("get cat fail\n");
-		zlog_fini();
-		return -2;
-	}
-	//zlog_info(c, "hello ,zlog");
-	init_options (&options);
-	cmdline_parser (argc, argv, &options);
-
-	if (options.debug)
-	{
-		printf ("remote: %s\nrule_port: %d\npacket_port: %d\nflow_port: %d\n", inet_ntoa(options.remote), options.rule_port, options.packet_port, options.flow_port);
-		printf("outer_dst_ip:%s,mask:%d\n", inet_ntoa (options.outer_dst_ip), options.outer_dst_ip_mask);
-		printf("inner_src_ip:%s,mask:%d\n", inet_ntoa (options.inner_src_ip), options.inner_src_ip_mask);
-	}
 	memset (&send_addr, '0', sizeof (send_addr));
 	//bzero(&send_addr, sizeof(send_addr));
 	send_addr.sin_family = AF_INET;
 	send_addr.sin_addr.s_addr = options.remote.s_addr;
 	send_addr.sin_port = options.rule_port;
 	send_socket_descriptor = socket (AF_INET, SOCK_DGRAM, 0);
-
 	memcpy(&temp_options, &options, sizeof(options));
 	for(i = 0; i < 1000; i++)
 	{
@@ -113,12 +53,92 @@ int main(int argc, char **argv)
 		count = sendto (send_socket_descriptor, &rule, length, 0, (struct sockaddr *) &(send_addr), sizeof (send_addr));
 		if(count == -1)
 		{
-			zlog_info(c, "send fail.sendto return value:%d", count);
+			zlog_info(debug, "send fail.sendto return value:%d", count);
 		}
 		else
 		{
-			zlog_info(c, "send success.sendto return value:%d", count);
+			add_msg_queue (&queue, i, options.msg_type, debug, error);
+			zlog_info(debug, "send success.sendto return value:%d,seq:%d,msg_type:%d", count, i, options.msg_type);
 		}
+	}
+
+}
+
+int main(int argc, char **argv)
+{
+	pthread_t send_thread;
+	struct sockaddr_in sin,r_sin;
+	int sin_len = 0, r_sin_len = 0;
+	char message[MAXMSGSIZE];
+	fd_set fds;
+	int length;
+	struct timeval timeout;
+
+	rc = zlog_init("zlog.conf");
+	if(rc)
+	{
+		printf("init fail\n");
+		return -1;
+	}
+	debug = zlog_get_category("pmu_debug");
+	if(!debug)
+	{
+		printf("get debug cat fail\n");
+		zlog_fini();
+		return -2;
+	}
+	error = zlog_get_category("pmu_error");
+	if(!error)
+	{
+		printf("get error cat fail\n");
+		zlog_fini();
+		return -2;
+	}
+
+	init_queue (&queue);
+	init_options (&options);
+	cmdline_parser (argc, argv, &options);
+	timeout.tv_sec = 1;
+	timeout.tv_usec = 500000;
+	bzero(&sin, sizeof(sin));
+	sin.sin_family = AF_INET;
+	sin.sin_port = options.rule_port;
+	sin.sin_addr.s_addr = inet_addr (HOST);
+	sin_len = sizeof(sin);
+	bzero (&r_sin, sizeof (r_sin));
+	r_sin_len = sizeof (r_sin);
+	bind(send_socket_descriptor, (struct sockaddr *)&sin, sizeof(sin));
+
+	if (options.debug)
+	{
+		printf ("remote: %s\nrule_port: %d\npacket_port: %d\nflow_port: %d\n", inet_ntoa(options.remote), options.rule_port, options.packet_port, options.flow_port);
+		printf("outer_dst_ip:%s,mask:%d\n", inet_ntoa (options.outer_dst_ip), options.outer_dst_ip_mask);
+		printf("inner_src_ip:%s,mask:%d\n", inet_ntoa (options.inner_src_ip), options.inner_src_ip_mask);
+		printf("msg_type:%0x\n", options.msg_type);
+		printf("grp_id:%0x\n",options.grp_id);
+		printf("controllerid:%0x\n",options.controllerId);
+	}
+	
+	pthread_create(&send_thread, NULL, send_add_rule_req, NULL);
+
+	while(1)
+	{
+		FD_ZERO (&fds);
+		FD_SET (send_socket_descriptor, &fds);
+		switch (select (send_socket_descriptor + 1, &fds, NULL, NULL, &timeout) > 0)
+		{
+			case 0:
+				break;
+			case -1:
+				break;
+			default:
+				break;
+		}
+		if(FD_ISSET (send_socket_descriptor, &fds))
+		{
+			length = recvfrom (send_socket_descriptor, message, sizeof(message), 0, (struct sockaddr *)&r_sin, &r_sin_len);
+		}
+
 	}
 
 	zlog_fini();

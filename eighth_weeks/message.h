@@ -1,4 +1,13 @@
+#include <pthread.h>
+
 #define CORRLEN 16 
+#define QUEUE_SIZE 65535
+
+typedef enum
+{
+	SUCCESS = 0,
+	FAIL = -1,
+}return_value_t;
 
 typedef enum
 {
@@ -32,6 +41,33 @@ typedef enum
 	RULE_TYPE_MAX = 0xff,
 } tcu_msg_t;
 
+typedef enum {
+	RULE_PORT = 0x0100,
+	RULE_COUNT,
+	PACKET_PORT,
+	FLOW_PORT,
+	MSG_TYPE,
+	GRP_ID,
+	MSG_VERSION,
+	OUTER_SRC_IP,
+	OUTER_DST_IP,
+	INNER_SRC_IP,
+	INNER_DST_IP,
+	OUTER_SRC_PORT,
+	OUTER_DST_PORT,
+	INNER_SRC_PORT,
+	INNER_DST_PORT,
+	BASE,
+	OFFSET,
+	RESVED,
+	VALUE,
+	MASK,
+	PHY_PORTID,
+	RULE_TYPE,
+	PACKET_PARAM,
+	CONTROLLERID,
+	VOLUMEPARAM,
+}getopt_long_t;
 
 #pragma pack(1)
 typedef struct rule_req_s
@@ -63,4 +99,23 @@ typedef struct rule_req_s
 	uint8_t correlationInfo[CORRLEN];
 } rule_req_t;
 #pragma pack(4)
+
+typedef struct queue_body
+{
+	int seq;
+	int msg_type;
+	struct queue_body *next;
+}queue_body_t;
+
+typedef struct queue_head
+{
+	pthread_mutex_t lock;
+	queue_body_t *head;
+}queue_head_t;
+
+typedef struct queue
+{
+	queue_head_t queue_hash[QUEUE_SIZE];
+	int count;
+}queue_t;
 
