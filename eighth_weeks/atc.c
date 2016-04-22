@@ -9,7 +9,7 @@
 #include "zlog.h"
 
 /* fill the rule add packet */
-int rul_add_req (rule_req_t *packet, int seq, options_t op)
+int rul_add_req (rule_req_t *packet, uint32_t seq, options_t op)
 {
 	int i = 0;
 
@@ -61,7 +61,7 @@ int init_queue(queue_t *queue)
 }
 
 /* add a message to queue*/
-int add_msg_queue(queue_t *queue, int seq, int msg_type, zlog_category_t *debug, zlog_category_t *error)
+int add_msg_queue(queue_t *queue, uint32_t seq, int msg_type)
 {
 	int subscript = 0;
 	queue_body_t *msg;
@@ -70,13 +70,12 @@ int add_msg_queue(queue_t *queue, int seq, int msg_type, zlog_category_t *debug,
 	msg = (queue_body_t *)malloc (sizeof(queue_body_t));
 	if(msg == NULL)
 	{
-		zlog_info(error, "alloc queue body fail");
 		return FAIL;
 	}
 	msg->next = NULL;
 	msg->seq = seq;
 	msg->msg_type = msg_type;
-	subscript = seq % HASH_VALUE;
+	subscript = seq % (HASH_VALUE);
 
 	/* lock the list */
 	pthread_mutex_lock (&(queue->queue_hash[subscript].lock));
@@ -89,6 +88,56 @@ int add_msg_queue(queue_t *queue, int seq, int msg_type, zlog_category_t *debug,
 	pthread_mutex_unlock (&(temp_head->lock));
     temp_head = NULL;
 	/* release the lock*/
-	zlog_info(debug, "add a msg to queue !seq:%d hash code:%d", seq, subscript);
 	return SUCCESS;
+}
+
+/* delete a message from queue*/
+int del_msg_queue (queue_t *queue, uint32_t seq)
+{
+	int subscript = 0;
+	queue_head_t *temp_head = NULL;;
+	queue_body_t *p = NULL, *p1 = NULL;
+
+	subscript = seq % (HASH_VALUE);
+
+	/* lock the list */
+	pthread_mutex_lock (&(queue->queue_hash[subscript].lock));
+	if((queue->queue_hash[subscript].head) == NULL)
+	{
+		pthread_mutex_unlock (&(queue->queue_hash[subscript].lock));
+		return FAIL;
+	}
+	temp_head = queue->queue_hash + subscript;
+
+	p = temp_head->head;
+	p1 = p->next;
+	if(p->seq == seq)
+	{
+		temp_head->head = p->next;
+		p->next = NULL;
+		free (p);
+		queue->count --;
+		pthread_mutex_unlock (&(queue->queue_hash[subscript].lock));
+		return SUCCESS;
+	}
+	else
+	{
+		for(;p1 != NULL;p1 = p1->next, p = p->next)
+		{
+			if(p1->seq == seq)
+			{
+				p->next = p1->next;
+				p1->next = NULL;
+				free (p1);
+				queue->count --;
+				pthread_mutex_unlock (&(queue->queue_hash[subscript].lock));
+				return SUCCESS;
+			}
+		}
+	}
+
+	pthread_mutex_unlock (&(temp_head->lock));
+    temp_head = NULL;
+	/* release the lock*/
+	return FAIL;
 }

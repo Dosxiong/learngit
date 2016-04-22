@@ -5,7 +5,7 @@
 
 typedef enum
 {
-	SUCCESS = 0,
+	SUCCESS = 1,
 	FAIL = -1,
 }return_value_t;
 
@@ -102,7 +102,7 @@ typedef struct rule_req_s
 
 typedef struct queue_body
 {
-	int seq;
+	uint32_t seq;
 	int msg_type;
 	struct queue_body *next;
 }queue_body_t;

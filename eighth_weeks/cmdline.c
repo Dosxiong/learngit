@@ -309,7 +309,7 @@ int cmdline_parser (int argc, char **argv, options_t *op)
 					break;
 			case VOLUMEPARAM:
 					/* volumeParam */
-					op->volumeParam = htonl (atoi (argv[optind]));
+					op->volumeParam = htonl (atof (argv[optind]));
 					break;
 
 			default :
