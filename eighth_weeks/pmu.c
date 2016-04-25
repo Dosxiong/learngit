@@ -71,7 +71,7 @@ void *send_add_rule_req()
 			s_count ++;
 			if (add_msg_queue (&queue, i, options.msg_type))
 			{
-				zlog_info (debug, "add a msg to queue!seq:%d", i);
+				zlog_info (debug, "add a msg to queue!seq:%d,queue count:%d", i, queue.count);
 			}
 			else
 			{
@@ -102,6 +102,7 @@ int main(int argc, char **argv)
 	int length;
 	struct timeval timeout;
 	uint32_t seq = 0;
+	rule_rep_t *rep;
 
 	/* init and load log */
 	rc = zlog_init("zlog.conf");
@@ -129,6 +130,10 @@ int main(int argc, char **argv)
 	init_options (&options);
 	cmdline_parser (argc, argv, &options);
 
+	if(options.help_give)
+	{
+		return 0;
+	}
 	timeout.tv_sec = 1;
 	timeout.tv_usec = 500000;
 	bzero(&sin, sizeof(sin));
@@ -181,14 +186,23 @@ int main(int argc, char **argv)
 			if(length != -1)
 			{
 				r_count ++;
-				seq = atof (message);
-				if(del_msg_queue (&queue, seq) == FAIL)
+				//seq = atof (message);
+				rep = (rule_rep_t *)message;
+				if(rep->res_code == 0x00)
 				{
-					zlog_info (error, "can not find this seq in the queue! seq:%u", seq);
+					zlog_info (debug, "add rule success!rule id:%u", ntohl(rep->rule_id));
+					if(del_msg_queue (&queue, ntohl (rep->seqs)) == FAIL)
+					{
+						zlog_info (error, "can not find this seq in the queue! seq:%u", seq);
+					}
+					else
+					{
+						zlog_info (debug, "find this seq in the queue!seq:%u queue count:%d", seq, queue.count);
+					}
 				}
 				else
 				{
-					zlog_info (debug, "find this seq in the queue!seq:%u queue count:%d", seq, queue.count);
+					zlog_info (error, "rule add fail");
 				}
 			}
 			//printf("receive msg:%u,count:%d\n", seq, queue.count);

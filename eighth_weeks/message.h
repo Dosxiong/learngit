@@ -98,7 +98,22 @@ typedef struct rule_req_s
 	//uint16_t rsvd;
 	uint8_t correlationInfo[CORRLEN];
 } rule_req_t;
-#pragma pack(4)
+#pragma pack()
+
+#pragma pack(1)
+typedef struct rule_rep_s
+{
+	uint8_t msg_type;
+	uint8_t grp_id : 4;
+	uint8_t msg_version:4;
+	uint16_t msg_len;
+	uint32_t seqs;
+	uint8_t res_code;
+	uint8_t reserved;
+	uint16_t reserved16;
+	uint32_t rule_id;
+} rule_rep_t;
+#pragma pack()
 
 typedef struct queue_body
 {

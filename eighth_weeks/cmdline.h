@@ -36,6 +36,7 @@ typedef struct options
 	uint8_t controllerId;
 	uint32_t volumeParam;
 	int debug;
+	int help_give;
 }options_t;
 
 void init_options(options_t *op);

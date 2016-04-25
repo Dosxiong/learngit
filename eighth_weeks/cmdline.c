@@ -8,6 +8,7 @@
 #define REMOTEHOST "192.168.3.34"
 #define DEFAULTIP "10.0.0.0"
 #define DEFAULTPORT 7070
+#define HELPLENG 28
 
 /* init the options */
 void init_options(options_t *op)
@@ -40,8 +41,8 @@ void init_options(options_t *op)
 	op->packet_param = 0xff;
 	op->controllerId = 0x00;
 	op->volumeParam = htonl (0);
-
 	op->debug = 0;
+	op->help_give = 0;
 }
 
 int cmdline_parser (int argc, char **argv, options_t *op)
@@ -51,6 +52,7 @@ int cmdline_parser (int argc, char **argv, options_t *op)
 	char *ip_char = NULL, *mask_char = NULL;
 	struct option long_options[] =
 	{
+		{"help", 0, NULL, 'h'},
 		{"debug", 0, NULL, 'd'},
 		{"remote", 0, NULL, 'r'},
 		{"rule_port", 0, NULL, RULE_PORT},
@@ -81,9 +83,41 @@ int cmdline_parser (int argc, char **argv, options_t *op)
 	};
 	int option_index = 0;
 	int c = 0;
+	char help[HELPLENG][100] = 
+	{
+		"\n  help(h)               帮助信息\n",
+		"  debug(d)              显示调试信息\n",
+		"  remote(r)             远程tcu ip\n",
+		"  rule_port             规则端口\n",
+		"  rule_count            要发送规则的数目\n",
+		"  packet_port           报文端口\n",
+		"  flow_port             数据流端口\n",
+		"  msg_type              消息类型\n",
+		"  msg_version           消息版本号\n",
+		"  grp_id                组id\n",
+		"  outer_src_ip          outer src ip\n",
+		"  outer_dst_ip          outer dst ip\n",
+		"  inner_src_ip          inner src ip\n",
+		"  inner_dst_ip          inner dst ip\n",
+		"  outer_src_port        outer src port\n",
+		"  outer_dst_port        outer dst port\n",
+		"  inner_src_port        inner src port\n",
+		"  inner_dst_port        inner dst port\n",
+		"  base                  base\n",
+		"  offset                offset\n",
+		"  resved                resved\n",
+		"  value                 offset value\n",
+		"  mask                  mask\n",
+		"  phy_portId            phy portid\n",
+		"  rule_type             rule type\n",
+		"  packet_param          packet param\n",
+		"  controllerid          controllerid\n",
+		"  volumeparam           volumeparam\n\n"
+	};
+
 	while(1)
 	{
-		c = getopt_long (argc, argv, "r:d", long_options, &option_index);
+		c = getopt_long (argc, argv, "r:dh", long_options, &option_index);
 
 		if (c == -1) break;			/* all options have been processed */
 
@@ -91,6 +125,14 @@ int cmdline_parser (int argc, char **argv, options_t *op)
 		{
 			case 'd':
 				op->debug = 1;
+				break;
+			case 'h':
+				op->help_give = 1;
+				for(i = 0; i < HELPLENG; i++)
+				{
+					printf("%s", help[i]);
+				}
+				//printf("%d\n", strlen (help));
 				break;
 			case 'r':				/* remote host */
 #if 0
