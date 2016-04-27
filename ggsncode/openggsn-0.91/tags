@@ -1,0 +1,2244 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACLOCAL	Makefile	/^ACLOCAL = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run aclocal-1.11$/;"	m
+ACLOCAL	doc/Makefile	/^ACLOCAL = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run aclocal-1.11$/;"	m
+ACLOCAL	ggsn/Makefile	/^ACLOCAL = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run aclocal-1.11$/;"	m
+ACLOCAL	gtp/Makefile	/^ACLOCAL = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run aclocal-1.11$/;"	m
+ACLOCAL	sgsnemu/Makefile	/^ACLOCAL = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run aclocal-1.11$/;"	m
+ACLOCAL_M4	Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+ACLOCAL_M4	doc/Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+ACLOCAL_M4	ggsn/Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+ACLOCAL_M4	gtp/Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+ACLOCAL_M4	sgsnemu/Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+ADDITIONAL_ERROR	ggsn/cmdline.c	903;"	d	file:
+ADDITIONAL_ERROR	sgsnemu/cmdline.c	1381;"	d	file:
+AMTAR	Makefile	/^AMTAR = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run tar$/;"	m
+AMTAR	doc/Makefile	/^AMTAR = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run tar$/;"	m
+AMTAR	ggsn/Makefile	/^AMTAR = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run tar$/;"	m
+AMTAR	gtp/Makefile	/^AMTAR = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run tar$/;"	m
+AMTAR	sgsnemu/Makefile	/^AMTAR = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run tar$/;"	m
+AM_CFLAGS	ggsn/Makefile	/^AM_CFLAGS = -O2 -D_GNU_SOURCE -fno-builtin -Wall -DSBINDIR='"$(sbindir)"' -ggdb$/;"	m
+AM_CFLAGS	gtp/Makefile	/^AM_CFLAGS = -O2 -fno-builtin -Wall -DSBINDIR='"$(sbindir)"' -ggdb$/;"	m
+AM_CFLAGS	sgsnemu/Makefile	/^AM_CFLAGS = -O2 -D_GNU_SOURCE -fno-builtin -Wall -DSBINDIR='"$(sbindir)"' -ggdb$/;"	m
+AM_LDFLAGS	ggsn/Makefile	/^AM_LDFLAGS = $/;"	m
+AM_LDFLAGS	sgsnemu/Makefile	/^AM_LDFLAGS = $/;"	m
+AM_RECURSIVE_TARGETS	Makefile	/^AM_RECURSIVE_TARGETS = $(RECURSIVE_TARGETS:-recursive=) \\$/;"	m
+AR	Makefile	/^AR = ar$/;"	m
+AR	doc/Makefile	/^AR = ar$/;"	m
+AR	ggsn/Makefile	/^AR = ar$/;"	m
+AR	gtp/Makefile	/^AR = ar$/;"	m
+AR	sgsnemu/Makefile	/^AR = ar$/;"	m
+AUTOCONF	Makefile	/^AUTOCONF = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run autoconf$/;"	m
+AUTOCONF	doc/Makefile	/^AUTOCONF = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run autoconf$/;"	m
+AUTOCONF	ggsn/Makefile	/^AUTOCONF = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run autoconf$/;"	m
+AUTOCONF	gtp/Makefile	/^AUTOCONF = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run autoconf$/;"	m
+AUTOCONF	sgsnemu/Makefile	/^AUTOCONF = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run autoconf$/;"	m
+AUTOHEADER	Makefile	/^AUTOHEADER = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run autoheader$/;"	m
+AUTOHEADER	doc/Makefile	/^AUTOHEADER = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run autoheader$/;"	m
+AUTOHEADER	ggsn/Makefile	/^AUTOHEADER = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run autoheader$/;"	m
+AUTOHEADER	gtp/Makefile	/^AUTOHEADER = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run autoheader$/;"	m
+AUTOHEADER	sgsnemu/Makefile	/^AUTOHEADER = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run autoheader$/;"	m
+AUTOMAKE	Makefile	/^AUTOMAKE = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run automake-1.11$/;"	m
+AUTOMAKE	doc/Makefile	/^AUTOMAKE = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run automake-1.11$/;"	m
+AUTOMAKE	ggsn/Makefile	/^AUTOMAKE = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run automake-1.11$/;"	m
+AUTOMAKE	gtp/Makefile	/^AUTOMAKE = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run automake-1.11$/;"	m
+AUTOMAKE	sgsnemu/Makefile	/^AUTOMAKE = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run automake-1.11$/;"	m
+AWK	Makefile	/^AWK = mawk$/;"	m
+AWK	doc/Makefile	/^AWK = mawk$/;"	m
+AWK	ggsn/Makefile	/^AWK = mawk$/;"	m
+AWK	gtp/Makefile	/^AWK = mawk$/;"	m
+AWK	sgsnemu/Makefile	/^AWK = mawk$/;"	m
+CC	Makefile	/^CC = gcc$/;"	m
+CC	doc/Makefile	/^CC = gcc$/;"	m
+CC	ggsn/Makefile	/^CC = gcc$/;"	m
+CC	gtp/Makefile	/^CC = gcc$/;"	m
+CC	sgsnemu/Makefile	/^CC = gcc$/;"	m
+CCDEPMODE	Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCDEPMODE	doc/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCDEPMODE	ggsn/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCDEPMODE	gtp/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCDEPMODE	sgsnemu/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCLD	ggsn/Makefile	/^CCLD = $(CC)$/;"	m
+CCLD	gtp/Makefile	/^CCLD = $(CC)$/;"	m
+CCLD	sgsnemu/Makefile	/^CCLD = $(CC)$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -O2$/;"	m
+CFLAGS	doc/Makefile	/^CFLAGS = -g -O2$/;"	m
+CFLAGS	ggsn/Makefile	/^CFLAGS = -g -O2$/;"	m
+CFLAGS	gtp/Makefile	/^CFLAGS = -g -O2$/;"	m
+CFLAGS	sgsnemu/Makefile	/^CFLAGS = -g -O2$/;"	m
+CHECKSTATE	gtp/lookupa.h	22;"	d
+CMDLINE_H	ggsn/cmdline.h	6;"	d
+CMDLINE_H	sgsnemu/cmdline.h	6;"	d
+CMDLINE_PARSER_PACKAGE	ggsn/cmdline.h	18;"	d
+CMDLINE_PARSER_PACKAGE	sgsnemu/cmdline.h	18;"	d
+CMDLINE_PARSER_VERSION	ggsn/cmdline.h	22;"	d
+CMDLINE_PARSER_VERSION	sgsnemu/cmdline.h	22;"	d
+COMPILE	ggsn/Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+COMPILE	gtp/Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+COMPILE	sgsnemu/Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+CONFIG_CLEAN_FILES	Makefile	/^CONFIG_CLEAN_FILES = intl\/Makefile po\/Makefile src\/Makefile \\$/;"	m
+CONFIG_CLEAN_FILES	doc/Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_FILES	ggsn/Makefile	/^CONFIG_CLEAN_FILES = getopt.h$/;"	m
+CONFIG_CLEAN_FILES	gtp/Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_FILES	sgsnemu/Makefile	/^CONFIG_CLEAN_FILES = getopt.h$/;"	m
+CONFIG_CLEAN_VPATH_FILES	Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	doc/Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	ggsn/Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	gtp/Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	sgsnemu/Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_FILE_LINE_BUFFER_SIZE	ggsn/cmdline.c	905;"	d	file:
+CONFIG_FILE_LINE_BUFFER_SIZE	sgsnemu/cmdline.c	1383;"	d	file:
+CONFIG_FILE_LINE_SIZE	ggsn/cmdline.c	901;"	d	file:
+CONFIG_FILE_LINE_SIZE	sgsnemu/cmdline.c	1379;"	d	file:
+CONFIG_HEADER	Makefile	/^CONFIG_HEADER = config.h$/;"	m
+CONFIG_HEADER	doc/Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+CONFIG_HEADER	ggsn/Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+CONFIG_HEADER	gtp/Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+CONFIG_HEADER	sgsnemu/Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+CPP	Makefile	/^CPP = gcc -E$/;"	m
+CPP	doc/Makefile	/^CPP = gcc -E$/;"	m
+CPP	ggsn/Makefile	/^CPP = gcc -E$/;"	m
+CPP	gtp/Makefile	/^CPP = gcc -E$/;"	m
+CPP	sgsnemu/Makefile	/^CPP = gcc -E$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS = $/;"	m
+CPPFLAGS	doc/Makefile	/^CPPFLAGS = $/;"	m
+CPPFLAGS	ggsn/Makefile	/^CPPFLAGS = $/;"	m
+CPPFLAGS	gtp/Makefile	/^CPPFLAGS = $/;"	m
+CPPFLAGS	sgsnemu/Makefile	/^CPPFLAGS = $/;"	m
+CREATEPING_ICMP	sgsnemu/sgsnemu.c	117;"	d	file:
+CREATEPING_IP	sgsnemu/sgsnemu.c	116;"	d	file:
+CREATEPING_MAX	sgsnemu/sgsnemu.c	115;"	d	file:
+CTAGS	Makefile	/^CTAGS = ctags$/;"	m
+CTAGS	ggsn/Makefile	/^CTAGS = ctags$/;"	m
+CTAGS	gtp/Makefile	/^CTAGS = ctags$/;"	m
+CTAGS	sgsnemu/Makefile	/^CTAGS = ctags$/;"	m
+CXX	Makefile	/^CXX = g++$/;"	m
+CXX	doc/Makefile	/^CXX = g++$/;"	m
+CXX	ggsn/Makefile	/^CXX = g++$/;"	m
+CXX	gtp/Makefile	/^CXX = g++$/;"	m
+CXX	sgsnemu/Makefile	/^CXX = g++$/;"	m
+CXXCPP	Makefile	/^CXXCPP = g++ -E$/;"	m
+CXXCPP	doc/Makefile	/^CXXCPP = g++ -E$/;"	m
+CXXCPP	ggsn/Makefile	/^CXXCPP = g++ -E$/;"	m
+CXXCPP	gtp/Makefile	/^CXXCPP = g++ -E$/;"	m
+CXXCPP	sgsnemu/Makefile	/^CXXCPP = g++ -E$/;"	m
+CXXDEPMODE	Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+CXXDEPMODE	doc/Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+CXXDEPMODE	ggsn/Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+CXXDEPMODE	gtp/Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+CXXDEPMODE	sgsnemu/Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = -g -O2$/;"	m
+CXXFLAGS	doc/Makefile	/^CXXFLAGS = -g -O2$/;"	m
+CXXFLAGS	ggsn/Makefile	/^CXXFLAGS = -g -O2$/;"	m
+CXXFLAGS	gtp/Makefile	/^CXXFLAGS = -g -O2$/;"	m
+CXXFLAGS	sgsnemu/Makefile	/^CXXFLAGS = -g -O2$/;"	m
+CYGPATH_W	Makefile	/^CYGPATH_W = echo$/;"	m
+CYGPATH_W	doc/Makefile	/^CYGPATH_W = echo$/;"	m
+CYGPATH_W	ggsn/Makefile	/^CYGPATH_W = echo$/;"	m
+CYGPATH_W	gtp/Makefile	/^CYGPATH_W = echo$/;"	m
+CYGPATH_W	sgsnemu/Makefile	/^CYGPATH_W = echo$/;"	m
+DEFAULT_INCLUDES	ggsn/Makefile	/^DEFAULT_INCLUDES = -I. -I$(top_builddir)$/;"	m
+DEFAULT_INCLUDES	gtp/Makefile	/^DEFAULT_INCLUDES = -I. -I$(top_builddir)$/;"	m
+DEFAULT_INCLUDES	sgsnemu/Makefile	/^DEFAULT_INCLUDES = -I. -I$(top_builddir)$/;"	m
+DEFS	Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEFS	doc/Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEFS	ggsn/Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEFS	gtp/Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEFS	sgsnemu/Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEPDIR	Makefile	/^DEPDIR = .deps$/;"	m
+DEPDIR	doc/Makefile	/^DEPDIR = .deps$/;"	m
+DEPDIR	ggsn/Makefile	/^DEPDIR = .deps$/;"	m
+DEPDIR	gtp/Makefile	/^DEPDIR = .deps$/;"	m
+DEPDIR	sgsnemu/Makefile	/^DEPDIR = .deps$/;"	m
+DISTFILES	Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DISTFILES	doc/Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DISTFILES	ggsn/Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DISTFILES	gtp/Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DISTFILES	sgsnemu/Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DIST_ARCHIVES	Makefile	/^DIST_ARCHIVES = $(distdir).tar.gz$/;"	m
+DIST_COMMON	Makefile	/^DIST_COMMON = README $(am__configure_deps) $(srcdir)\/Makefile.am \\$/;"	m
+DIST_COMMON	doc/Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(srcdir)\/Makefile.in$/;"	m
+DIST_COMMON	ggsn/Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(srcdir)\/Makefile.in \\$/;"	m
+DIST_COMMON	gtp/Makefile	/^DIST_COMMON = $(include_HEADERS) $(srcdir)\/Makefile.am \\$/;"	m
+DIST_COMMON	sgsnemu/Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(srcdir)\/Makefile.in \\$/;"	m
+DIST_SOURCES	Makefile	/^DIST_SOURCES =$/;"	m
+DIST_SOURCES	doc/Makefile	/^DIST_SOURCES =$/;"	m
+DIST_SOURCES	ggsn/Makefile	/^DIST_SOURCES = $(ggsn_SOURCES)$/;"	m
+DIST_SOURCES	gtp/Makefile	/^DIST_SOURCES = $(libgtp_la_SOURCES)$/;"	m
+DIST_SOURCES	sgsnemu/Makefile	/^DIST_SOURCES = $(sgsnemu_SOURCES)$/;"	m
+DIST_SUBDIRS	Makefile	/^DIST_SUBDIRS = $(SUBDIRS)$/;"	m
+DSYMUTIL	Makefile	/^DSYMUTIL = $/;"	m
+DSYMUTIL	doc/Makefile	/^DSYMUTIL = $/;"	m
+DSYMUTIL	ggsn/Makefile	/^DSYMUTIL = $/;"	m
+DSYMUTIL	gtp/Makefile	/^DSYMUTIL = $/;"	m
+DSYMUTIL	sgsnemu/Makefile	/^DSYMUTIL = $/;"	m
+DUMPBIN	Makefile	/^DUMPBIN = $/;"	m
+DUMPBIN	doc/Makefile	/^DUMPBIN = $/;"	m
+DUMPBIN	ggsn/Makefile	/^DUMPBIN = $/;"	m
+DUMPBIN	gtp/Makefile	/^DUMPBIN = $/;"	m
+DUMPBIN	sgsnemu/Makefile	/^DUMPBIN = $/;"	m
+ECHO_C	Makefile	/^ECHO_C = $/;"	m
+ECHO_C	doc/Makefile	/^ECHO_C = $/;"	m
+ECHO_C	ggsn/Makefile	/^ECHO_C = $/;"	m
+ECHO_C	gtp/Makefile	/^ECHO_C = $/;"	m
+ECHO_C	sgsnemu/Makefile	/^ECHO_C = $/;"	m
+ECHO_N	Makefile	/^ECHO_N = -n$/;"	m
+ECHO_N	doc/Makefile	/^ECHO_N = -n$/;"	m
+ECHO_N	ggsn/Makefile	/^ECHO_N = -n$/;"	m
+ECHO_N	gtp/Makefile	/^ECHO_N = -n$/;"	m
+ECHO_N	sgsnemu/Makefile	/^ECHO_N = -n$/;"	m
+ECHO_T	Makefile	/^ECHO_T = $/;"	m
+ECHO_T	doc/Makefile	/^ECHO_T = $/;"	m
+ECHO_T	ggsn/Makefile	/^ECHO_T = $/;"	m
+ECHO_T	gtp/Makefile	/^ECHO_T = $/;"	m
+ECHO_T	sgsnemu/Makefile	/^ECHO_T = $/;"	m
+EGREP	Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+EGREP	doc/Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+EGREP	ggsn/Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+EGREP	gtp/Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+EGREP	sgsnemu/Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+ELIDE_CODE	ggsn/getopt.c	56;"	d	file:
+ELIDE_CODE	ggsn/getopt1.c	49;"	d	file:
+ELIDE_CODE	sgsnemu/getopt.c	56;"	d	file:
+ELIDE_CODE	sgsnemu/getopt1.c	49;"	d	file:
+ERRMSG_SIZE	gtp/gtp.h	31;"	d
+ETAGS	Makefile	/^ETAGS = etags$/;"	m
+ETAGS	ggsn/Makefile	/^ETAGS = etags$/;"	m
+ETAGS	gtp/Makefile	/^ETAGS = etags$/;"	m
+ETAGS	sgsnemu/Makefile	/^ETAGS = etags$/;"	m
+EXEC_LDADD	Makefile	/^EXEC_LDADD = $/;"	m
+EXEC_LDADD	doc/Makefile	/^EXEC_LDADD = $/;"	m
+EXEC_LDADD	ggsn/Makefile	/^EXEC_LDADD = $/;"	m
+EXEC_LDADD	gtp/Makefile	/^EXEC_LDADD = $/;"	m
+EXEC_LDADD	sgsnemu/Makefile	/^EXEC_LDADD = $/;"	m
+EXEC_LDFLAGS	Makefile	/^EXEC_LDFLAGS = $/;"	m
+EXEC_LDFLAGS	doc/Makefile	/^EXEC_LDFLAGS = $/;"	m
+EXEC_LDFLAGS	ggsn/Makefile	/^EXEC_LDFLAGS = $/;"	m
+EXEC_LDFLAGS	gtp/Makefile	/^EXEC_LDFLAGS = $/;"	m
+EXEC_LDFLAGS	sgsnemu/Makefile	/^EXEC_LDFLAGS = $/;"	m
+EXEEXT	Makefile	/^EXEEXT = $/;"	m
+EXEEXT	doc/Makefile	/^EXEEXT = $/;"	m
+EXEEXT	ggsn/Makefile	/^EXEEXT = $/;"	m
+EXEEXT	gtp/Makefile	/^EXEEXT = $/;"	m
+EXEEXT	sgsnemu/Makefile	/^EXEEXT = $/;"	m
+EXTRA_DIST	doc/Makefile	/^EXTRA_DIST = $(man_MANS)$/;"	m
+FGREP	Makefile	/^FGREP = \/bin\/grep -F$/;"	m
+FGREP	doc/Makefile	/^FGREP = \/bin\/grep -F$/;"	m
+FGREP	ggsn/Makefile	/^FGREP = \/bin\/grep -F$/;"	m
+FGREP	gtp/Makefile	/^FGREP = \/bin\/grep -F$/;"	m
+FGREP	sgsnemu/Makefile	/^FGREP = \/bin\/grep -F$/;"	m
+GETOPT_INTERFACE_VERSION	ggsn/getopt.c	52;"	d	file:
+GETOPT_INTERFACE_VERSION	ggsn/getopt1.c	45;"	d	file:
+GETOPT_INTERFACE_VERSION	sgsnemu/getopt.c	52;"	d	file:
+GETOPT_INTERFACE_VERSION	sgsnemu/getopt1.c	45;"	d	file:
+GREP	Makefile	/^GREP = \/bin\/grep$/;"	m
+GREP	doc/Makefile	/^GREP = \/bin\/grep$/;"	m
+GREP	ggsn/Makefile	/^GREP = \/bin\/grep$/;"	m
+GREP	gtp/Makefile	/^GREP = \/bin\/grep$/;"	m
+GREP	sgsnemu/Makefile	/^GREP = \/bin\/grep$/;"	m
+GTP0_HEADER_SIZE	gtp/gtp.h	26;"	d
+GTP0_PORT	gtp/gtp.h	20;"	d
+GTP1C_PORT	gtp/gtp.h	21;"	d
+GTP1U_PORT	gtp/gtp.h	22;"	d
+GTP1_HEADER_SIZE_LONG	gtp/gtp.h	28;"	d
+GTP1_HEADER_SIZE_SHORT	gtp/gtp.h	27;"	d
+GTPCAUSE_006	gtp/gtp.h	99;"	d
+GTPCAUSE_049	gtp/gtp.h	100;"	d
+GTPCAUSE_064	gtp/gtp.h	101;"	d
+GTPCAUSE_129	gtp/gtp.h	103;"	d
+GTPCAUSE_177	gtp/gtp.h	104;"	d
+GTPCAUSE_198	gtp/gtp.h	111;"	d
+GTPCAUSE_221	gtp/gtp.h	134;"	d
+GTPCAUSE_241	gtp/gtp.h	135;"	d
+GTPCAUSE_ACC_REQ	gtp/gtp.h	102;"	d
+GTPCAUSE_ADDR_OCCUPIED	gtp/gtp.h	124;"	d
+GTPCAUSE_AUTH_FAIL	gtp/gtp.h	121;"	d
+GTPCAUSE_CONN_SUSP	gtp/gtp.h	120;"	d
+GTPCAUSE_CONTEXT_NOT_FOUND	gtp/gtp.h	123;"	d
+GTPCAUSE_IMSI_NOT_KNOWN	gtp/gtp.h	107;"	d
+GTPCAUSE_INVALID_MESSAGE	gtp/gtp.h	106;"	d
+GTPCAUSE_MAN_IE_INCORRECT	gtp/gtp.h	114;"	d
+GTPCAUSE_MAN_IE_MISSING	gtp/gtp.h	115;"	d
+GTPCAUSE_MISSING_APN	gtp/gtp.h	132;"	d
+GTPCAUSE_MS_DETACHED	gtp/gtp.h	108;"	d
+GTPCAUSE_MS_NOT_RESP	gtp/gtp.h	109;"	d
+GTPCAUSE_MS_NOT_RESP_X	gtp/gtp.h	98;"	d
+GTPCAUSE_MS_REFUSES	gtp/gtp.h	110;"	d
+GTPCAUSE_MS_REFUSES_X	gtp/gtp.h	97;"	d
+GTPCAUSE_NON_EXIST	gtp/gtp.h	105;"	d
+GTPCAUSE_NOT_SUPPORTED	gtp/gtp.h	113;"	d
+GTPCAUSE_NO_ID_NEEDED	gtp/gtp.h	96;"	d
+GTPCAUSE_NO_MEMORY	gtp/gtp.h	125;"	d
+GTPCAUSE_NO_RESOURCES	gtp/gtp.h	112;"	d
+GTPCAUSE_OPT_IE_INCORRECT	gtp/gtp.h	116;"	d
+GTPCAUSE_PTIMSI_MISMATCH	gtp/gtp.h	119;"	d
+GTPCAUSE_RELOC_FAIL	gtp/gtp.h	126;"	d
+GTPCAUSE_REQ_IMEI	gtp/gtp.h	94;"	d
+GTPCAUSE_REQ_IMSI	gtp/gtp.h	93;"	d
+GTPCAUSE_REQ_IMSI_IMEI	gtp/gtp.h	95;"	d
+GTPCAUSE_ROAMING_REST	gtp/gtp.h	118;"	d
+GTPCAUSE_SEM_ERR_FILTER	gtp/gtp.h	130;"	d
+GTPCAUSE_SEM_ERR_TFT	gtp/gtp.h	128;"	d
+GTPCAUSE_SYN_ERR_FILTER	gtp/gtp.h	131;"	d
+GTPCAUSE_SYN_ERR_TFT	gtp/gtp.h	129;"	d
+GTPCAUSE_SYS_FAIL	gtp/gtp.h	117;"	d
+GTPCAUSE_UNKNOWN_MAN_EXTHEADER	gtp/gtp.h	127;"	d
+GTPCAUSE_UNKNOWN_PDP	gtp/gtp.h	133;"	d
+GTPCAUSE_USER_AUTH_FAIL	gtp/gtp.h	122;"	d
+GTPIE_APN	gtp/gtpie.h	94;"	d
+GTPIE_AUTH_QUINTUP	gtp/gtpie.h	99;"	d
+GTPIE_AUTH_TRIPLET	gtp/gtpie.h	65;"	d
+GTPIE_CAUSE	gtp/gtpie.h	57;"	d
+GTPIE_CHARGING_ADDR	gtp/gtpie.h	108;"	d
+GTPIE_CHARGING_C	gtp/gtpie.h	84;"	d
+GTPIE_CHARGING_ID	gtp/gtpie.h	90;"	d
+GTPIE_DEBUG	gtp/gtpie.h	51;"	d
+GTPIE_EUA	gtp/gtpie.h	91;"	d
+GTPIE_EXT_HEADER_T	gtp/gtpie.h	104;"	d
+GTPIE_FL_C	gtp/gtpie.h	75;"	d
+GTPIE_FL_DI	gtp/gtpie.h	72;"	d
+GTPIE_GSN_ADDR	gtp/gtpie.h	96;"	d
+GTPIE_IMSI	gtp/gtpie.h	58;"	d
+GTPIE_MAP_CAUSE	gtp/gtpie.h	67;"	d
+GTPIE_MAX	gtp/gtpie.h	47;"	d
+GTPIE_MAX_TLV	gtp/gtpie.h	49;"	d
+GTPIE_MAX_TV	gtp/gtpie.h	48;"	d
+GTPIE_MM_CONTEXT	gtp/gtpie.h	92;"	d
+GTPIE_MSISDN	gtp/gtpie.h	97;"	d
+GTPIE_MS_NOT_REACH	gtp/gtpie.h	87;"	d
+GTPIE_MS_VALIDATED	gtp/gtpie.h	69;"	d
+GTPIE_NSAPI	gtp/gtpie.h	78;"	d
+GTPIE_OMC_ID	gtp/gtpie.h	106;"	d
+GTPIE_PCO	gtp/gtpie.h	95;"	d
+GTPIE_PDP_CONTEXT	gtp/gtpie.h	93;"	d
+GTPIE_PFI	gtp/gtpie.h	83;"	d
+GTPIE_PRIVATE	gtp/gtpie.h	110;"	d
+GTPIE_P_TMSI	gtp/gtpie.h	61;"	d
+GTPIE_P_TMSI_S	gtp/gtpie.h	68;"	d
+GTPIE_QOS_PROFILE	gtp/gtpie.h	98;"	d
+GTPIE_QOS_PROFILE0	gtp/gtpie.h	62;"	d
+GTPIE_RAB_CONTEXT	gtp/gtpie.h	80;"	d
+GTPIE_RAB_SETUP	gtp/gtpie.h	103;"	d
+GTPIE_RAI	gtp/gtpie.h	59;"	d
+GTPIE_RANAP_CAUSE	gtp/gtpie.h	79;"	d
+GTPIE_RECOVERY	gtp/gtpie.h	70;"	d
+GTPIE_REORDER	gtp/gtpie.h	64;"	d
+GTPIE_RP	gtp/gtpie.h	82;"	d
+GTPIE_RP_SMS	gtp/gtpie.h	81;"	d
+GTPIE_SELECTION_MODE	gtp/gtpie.h	71;"	d
+GTPIE_SIZE	gtp/gtpie.h	46;"	d
+GTPIE_TARGET_INF	gtp/gtpie.h	101;"	d
+GTPIE_TEARDOWN	gtp/gtpie.h	77;"	d
+GTPIE_TEI_C	gtp/gtpie.h	74;"	d
+GTPIE_TEI_DI	gtp/gtpie.h	73;"	d
+GTPIE_TEI_DII	gtp/gtpie.h	76;"	d
+GTPIE_TFT	gtp/gtpie.h	100;"	d
+GTPIE_TLLI	gtp/gtpie.h	60;"	d
+GTPIE_TRACE_REF	gtp/gtpie.h	85;"	d
+GTPIE_TRACE_TYPE	gtp/gtpie.h	86;"	d
+GTPIE_TRIGGER_ID	gtp/gtpie.h	105;"	d
+GTPIE_UTRAN_TRANS	gtp/gtpie.h	102;"	d
+GTP_ALIVE_REQ	gtp/gtp.h	46;"	d
+GTP_ALIVE_RSP	gtp/gtp.h	47;"	d
+GTP_CREATE_PDP_REQ	gtp/gtp.h	51;"	d
+GTP_CREATE_PDP_RSP	gtp/gtp.h	52;"	d
+GTP_DATA_TRAN_REQ	gtp/gtp.h	85;"	d
+GTP_DATA_TRAN_RSP	gtp/gtp.h	86;"	d
+GTP_DEBUG	gtp/gtp.h	15;"	d
+GTP_DELETE_PDP_REQ	gtp/gtp.h	55;"	d
+GTP_DELETE_PDP_RSP	gtp/gtp.h	56;"	d
+GTP_ECHO_REQ	gtp/gtp.h	43;"	d
+GTP_ECHO_RSP	gtp/gtp.h	44;"	d
+GTP_ERROR	gtp/gtp.h	58;"	d
+GTP_EXT_PDCP_PDU	gtp/gtp.h	37;"	d
+GTP_FAILURE_REQ	gtp/gtp.h	66;"	d
+GTP_FAILURE_RSP	gtp/gtp.h	67;"	d
+GTP_FWD_RELOC_ACK	gtp/gtp.h	82;"	d
+GTP_FWD_RELOC_COMPL	gtp/gtp.h	78;"	d
+GTP_FWD_RELOC_REQ	gtp/gtp.h	76;"	d
+GTP_FWD_RELOC_RSP	gtp/gtp.h	77;"	d
+GTP_FWD_SRNS	gtp/gtp.h	81;"	d
+GTP_FWD_SRNS_ACK	gtp/gtp.h	83;"	d
+GTP_GPDU	gtp/gtp.h	88;"	d
+GTP_IDEN_REQ	gtp/gtp.h	71;"	d
+GTP_IDEN_RSP	gtp/gtp.h	72;"	d
+GTP_MAX	gtp/gtp.h	25;"	d
+GTP_MODE_GGSN	gtp/gtp.h	17;"	d
+GTP_MODE_SGSN	gtp/gtp.h	18;"	d
+GTP_MS_PRESENT_REQ	gtp/gtp.h	68;"	d
+GTP_MS_PRESENT_RSP	gtp/gtp.h	69;"	d
+GTP_NOT_SUPPORTED	gtp/gtp.h	45;"	d
+GTP_PDU_NOT_REJ_REQ	gtp/gtp.h	61;"	d
+GTP_PDU_NOT_REJ_RSP	gtp/gtp.h	62;"	d
+GTP_PDU_NOT_REQ	gtp/gtp.h	59;"	d
+GTP_PDU_NOT_RSP	gtp/gtp.h	60;"	d
+GTP_REDIR_REQ	gtp/gtp.h	48;"	d
+GTP_REDIR_RSP	gtp/gtp.h	49;"	d
+GTP_RELOC_CANCEL_REQ	gtp/gtp.h	79;"	d
+GTP_RELOC_CANCEL_RSP	gtp/gtp.h	80;"	d
+GTP_SGSN_CONTEXT_ACK	gtp/gtp.h	75;"	d
+GTP_SGSN_CONTEXT_REQ	gtp/gtp.h	73;"	d
+GTP_SGSN_CONTEXT_RSP	gtp/gtp.h	74;"	d
+GTP_SND_ROUTE_REQ	gtp/gtp.h	64;"	d
+GTP_SND_ROUTE_RSP	gtp/gtp.h	65;"	d
+GTP_SUPP_EXT_HEADER	gtp/gtp.h	63;"	d
+GTP_UPDATE_PDP_REQ	gtp/gtp.h	53;"	d
+GTP_UPDATE_PDP_RSP	gtp/gtp.h	54;"	d
+GZIP_ENV	Makefile	/^GZIP_ENV = --best$/;"	m
+HAVE_ARPA_INET_H	config.h	5;"	d
+HAVE_DLFCN_H	config.h	8;"	d
+HAVE_FCNTL_H	config.h	11;"	d
+HAVE_GETHOSTBYNAME	config.h	14;"	d
+HAVE_GETOPT_H	config.h	17;"	d
+HAVE_GETOPT_LONG	config.h	20;"	d
+HAVE_IFREQ_IFRU_NETMASK	config.h	26;"	d
+HAVE_INET_ATON	config.h	32;"	d
+HAVE_INET_NTOA	config.h	35;"	d
+HAVE_INTTYPES_H	config.h	38;"	d
+HAVE_LINUX_IF_TUN_H	config.h	44;"	d
+HAVE_LINUX_NETLINK_H	config.h	47;"	d
+HAVE_LINUX_RTNETLINK_H	config.h	50;"	d
+HAVE_MEMORY_H	config.h	53;"	d
+HAVE_MEMSET	config.h	56;"	d
+HAVE_NETDB_H	config.h	59;"	d
+HAVE_NETINET_IN_H	config.h	62;"	d
+HAVE_NET_IF_H	config.h	65;"	d
+HAVE_SELECT	config.h	74;"	d
+HAVE_SOCKET	config.h	77;"	d
+HAVE_STDINT_H	config.h	80;"	d
+HAVE_STDLIB_H	config.h	83;"	d
+HAVE_STRDUP	config.h	86;"	d
+HAVE_STRERROR	config.h	89;"	d
+HAVE_STRINGS_H	config.h	92;"	d
+HAVE_STRING_H	config.h	95;"	d
+HAVE_STRTOL	config.h	98;"	d
+HAVE_SYSLOG_H	config.h	101;"	d
+HAVE_SYS_IOCTL_H	config.h	104;"	d
+HAVE_SYS_SOCKET_H	config.h	107;"	d
+HAVE_SYS_STAT_H	config.h	110;"	d
+HAVE_SYS_TIME_H	config.h	113;"	d
+HAVE_SYS_TYPES_H	config.h	116;"	d
+HAVE_SYS_WAIT_H	config.h	119;"	d
+HAVE_UNISTD_H	config.h	122;"	d
+HEADERS	gtp/Makefile	/^HEADERS = $(include_HEADERS)$/;"	m
+INSTALL	Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL	doc/Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL	ggsn/Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL	gtp/Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL	sgsnemu/Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL_DATA	Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_DATA	doc/Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_DATA	ggsn/Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_DATA	gtp/Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_DATA	sgsnemu/Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_HEADER	Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_HEADER	doc/Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_HEADER	ggsn/Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_HEADER	gtp/Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_HEADER	sgsnemu/Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_PROGRAM	doc/Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_PROGRAM	ggsn/Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_PROGRAM	gtp/Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_PROGRAM	sgsnemu/Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	doc/Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	ggsn/Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	gtp/Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	sgsnemu/Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_STRIP_PROGRAM	Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+INSTALL_STRIP_PROGRAM	doc/Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+INSTALL_STRIP_PROGRAM	ggsn/Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+INSTALL_STRIP_PROGRAM	gtp/Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+INSTALL_STRIP_PROGRAM	sgsnemu/Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+IPADDRLEN	sgsnemu/sgsnemu.c	54;"	d	file:
+IPPOOL_NOBROADCAST	ggsn/ippool.h	32;"	d
+IPPOOL_NOBROADCAST	sgsnemu/ippool.h	32;"	d
+IPPOOL_NOGATEWAY	ggsn/ippool.h	33;"	d
+IPPOOL_NOGATEWAY	sgsnemu/ippool.h	33;"	d
+IPPOOL_NOIP6	ggsn/ippool.h	29;"	d
+IPPOOL_NOIP6	sgsnemu/ippool.h	29;"	d
+IPPOOL_NONETWORK	ggsn/ippool.h	31;"	d
+IPPOOL_NONETWORK	sgsnemu/ippool.h	31;"	d
+IPPOOL_STATSIZE	ggsn/ippool.h	35;"	d
+IPPOOL_STATSIZE	sgsnemu/ippool.h	35;"	d
+LD	Makefile	/^LD = \/usr\/bin\/ld -m elf_x86_64$/;"	m
+LD	doc/Makefile	/^LD = \/usr\/bin\/ld -m elf_x86_64$/;"	m
+LD	ggsn/Makefile	/^LD = \/usr\/bin\/ld -m elf_x86_64$/;"	m
+LD	gtp/Makefile	/^LD = \/usr\/bin\/ld -m elf_x86_64$/;"	m
+LD	sgsnemu/Makefile	/^LD = \/usr\/bin\/ld -m elf_x86_64$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS = $/;"	m
+LDFLAGS	doc/Makefile	/^LDFLAGS = $/;"	m
+LDFLAGS	ggsn/Makefile	/^LDFLAGS = $/;"	m
+LDFLAGS	gtp/Makefile	/^LDFLAGS = $/;"	m
+LDFLAGS	sgsnemu/Makefile	/^LDFLAGS = $/;"	m
+LIBOBJS	Makefile	/^LIBOBJS = $/;"	m
+LIBOBJS	doc/Makefile	/^LIBOBJS = $/;"	m
+LIBOBJS	ggsn/Makefile	/^LIBOBJS = $/;"	m
+LIBOBJS	gtp/Makefile	/^LIBOBJS = $/;"	m
+LIBOBJS	sgsnemu/Makefile	/^LIBOBJS = $/;"	m
+LIBS	Makefile	/^LIBS = $/;"	m
+LIBS	doc/Makefile	/^LIBS = $/;"	m
+LIBS	ggsn/Makefile	/^LIBS = $/;"	m
+LIBS	gtp/Makefile	/^LIBS = $/;"	m
+LIBS	sgsnemu/Makefile	/^LIBS = $/;"	m
+LIBTOOL	Makefile	/^LIBTOOL = $(SHELL) $(top_builddir)\/libtool$/;"	m
+LIBTOOL	doc/Makefile	/^LIBTOOL = $(SHELL) $(top_builddir)\/libtool$/;"	m
+LIBTOOL	ggsn/Makefile	/^LIBTOOL = $(SHELL) $(top_builddir)\/libtool$/;"	m
+LIBTOOL	gtp/Makefile	/^LIBTOOL = $(SHELL) $(top_builddir)\/libtool$/;"	m
+LIBTOOL	sgsnemu/Makefile	/^LIBTOOL = $(SHELL) $(top_builddir)\/libtool$/;"	m
+LINK	ggsn/Makefile	/^LINK = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \\$/;"	m
+LINK	gtp/Makefile	/^LINK = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \\$/;"	m
+LINK	sgsnemu/Makefile	/^LINK = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \\$/;"	m
+LIPO	Makefile	/^LIPO = $/;"	m
+LIPO	doc/Makefile	/^LIPO = $/;"	m
+LIPO	ggsn/Makefile	/^LIPO = $/;"	m
+LIPO	gtp/Makefile	/^LIPO = $/;"	m
+LIPO	sgsnemu/Makefile	/^LIPO = $/;"	m
+LN_S	Makefile	/^LN_S = ln -s$/;"	m
+LN_S	doc/Makefile	/^LN_S = ln -s$/;"	m
+LN_S	ggsn/Makefile	/^LN_S = ln -s$/;"	m
+LN_S	gtp/Makefile	/^LN_S = ln -s$/;"	m
+LN_S	sgsnemu/Makefile	/^LN_S = ln -s$/;"	m
+LOOKUPA	gtp/lookupa.h	17;"	d
+LTCOMPILE	ggsn/Makefile	/^LTCOMPILE = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \\$/;"	m
+LTCOMPILE	gtp/Makefile	/^LTCOMPILE = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \\$/;"	m
+LTCOMPILE	sgsnemu/Makefile	/^LTCOMPILE = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \\$/;"	m
+LTLIBOBJS	Makefile	/^LTLIBOBJS = $/;"	m
+LTLIBOBJS	doc/Makefile	/^LTLIBOBJS = $/;"	m
+LTLIBOBJS	ggsn/Makefile	/^LTLIBOBJS = $/;"	m
+LTLIBOBJS	gtp/Makefile	/^LTLIBOBJS = $/;"	m
+LTLIBOBJS	sgsnemu/Makefile	/^LTLIBOBJS = $/;"	m
+LTLIBRARIES	gtp/Makefile	/^LTLIBRARIES = $(lib_LTLIBRARIES)$/;"	m
+LT_OBJDIR	config.h	126;"	d
+MAKEINFO	Makefile	/^MAKEINFO = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run makeinfo$/;"	m
+MAKEINFO	doc/Makefile	/^MAKEINFO = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run makeinfo$/;"	m
+MAKEINFO	ggsn/Makefile	/^MAKEINFO = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run makeinfo$/;"	m
+MAKEINFO	gtp/Makefile	/^MAKEINFO = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run makeinfo$/;"	m
+MAKEINFO	sgsnemu/Makefile	/^MAKEINFO = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/missing --run makeinfo$/;"	m
+MANS	doc/Makefile	/^MANS = $(man_MANS)$/;"	m
+MAXCONTEXTS	sgsnemu/sgsnemu.c	55;"	d	file:
+MKDIR_P	Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+MKDIR_P	doc/Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+MKDIR_P	ggsn/Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+MKDIR_P	gtp/Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+MKDIR_P	sgsnemu/Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+NAMESIZE	gtp/gtp.h	34;"	d
+NM	Makefile	/^NM = \/usr\/bin\/nm -B$/;"	m
+NM	doc/Makefile	/^NM = \/usr\/bin\/nm -B$/;"	m
+NM	ggsn/Makefile	/^NM = \/usr\/bin\/nm -B$/;"	m
+NM	gtp/Makefile	/^NM = \/usr\/bin\/nm -B$/;"	m
+NM	sgsnemu/Makefile	/^NM = \/usr\/bin\/nm -B$/;"	m
+NMEDIT	Makefile	/^NMEDIT = $/;"	m
+NMEDIT	doc/Makefile	/^NMEDIT = $/;"	m
+NMEDIT	ggsn/Makefile	/^NMEDIT = $/;"	m
+NMEDIT	gtp/Makefile	/^NMEDIT = $/;"	m
+NMEDIT	sgsnemu/Makefile	/^NMEDIT = $/;"	m
+NONOPTION_P	ggsn/getopt.c	536;"	d	file:
+NONOPTION_P	sgsnemu/getopt.c	536;"	d	file:
+NORMAL_INSTALL	Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_INSTALL	doc/Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_INSTALL	ggsn/Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_INSTALL	gtp/Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_INSTALL	sgsnemu/Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_UNINSTALL	Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+NORMAL_UNINSTALL	doc/Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+NORMAL_UNINSTALL	ggsn/Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+NORMAL_UNINSTALL	gtp/Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+NORMAL_UNINSTALL	sgsnemu/Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+NROFF	doc/Makefile	/^NROFF = nroff$/;"	m
+NULL	ggsn/getopt1.c	63;"	d	file:
+NULL	sgsnemu/getopt1.c	63;"	d	file:
+OBJDUMP	Makefile	/^OBJDUMP = objdump$/;"	m
+OBJDUMP	doc/Makefile	/^OBJDUMP = objdump$/;"	m
+OBJDUMP	ggsn/Makefile	/^OBJDUMP = objdump$/;"	m
+OBJDUMP	gtp/Makefile	/^OBJDUMP = objdump$/;"	m
+OBJDUMP	sgsnemu/Makefile	/^OBJDUMP = objdump$/;"	m
+OBJEXT	Makefile	/^OBJEXT = o$/;"	m
+OBJEXT	doc/Makefile	/^OBJEXT = o$/;"	m
+OBJEXT	ggsn/Makefile	/^OBJEXT = o$/;"	m
+OBJEXT	gtp/Makefile	/^OBJEXT = o$/;"	m
+OBJEXT	sgsnemu/Makefile	/^OBJEXT = o$/;"	m
+OTOOL	Makefile	/^OTOOL = $/;"	m
+OTOOL	doc/Makefile	/^OTOOL = $/;"	m
+OTOOL	ggsn/Makefile	/^OTOOL = $/;"	m
+OTOOL	gtp/Makefile	/^OTOOL = $/;"	m
+OTOOL	sgsnemu/Makefile	/^OTOOL = $/;"	m
+OTOOL64	Makefile	/^OTOOL64 = $/;"	m
+OTOOL64	doc/Makefile	/^OTOOL64 = $/;"	m
+OTOOL64	ggsn/Makefile	/^OTOOL64 = $/;"	m
+OTOOL64	gtp/Makefile	/^OTOOL64 = $/;"	m
+OTOOL64	sgsnemu/Makefile	/^OTOOL64 = $/;"	m
+PACKAGE	Makefile	/^PACKAGE = openggsn$/;"	m
+PACKAGE	config.h	129;"	d
+PACKAGE	doc/Makefile	/^PACKAGE = openggsn$/;"	m
+PACKAGE	ggsn/Makefile	/^PACKAGE = openggsn$/;"	m
+PACKAGE	gtp/Makefile	/^PACKAGE = openggsn$/;"	m
+PACKAGE	sgsnemu/Makefile	/^PACKAGE = openggsn$/;"	m
+PACKAGE_BUGREPORT	Makefile	/^PACKAGE_BUGREPORT = laforge@gnumonks.org$/;"	m
+PACKAGE_BUGREPORT	config.h	132;"	d
+PACKAGE_BUGREPORT	doc/Makefile	/^PACKAGE_BUGREPORT = laforge@gnumonks.org$/;"	m
+PACKAGE_BUGREPORT	ggsn/Makefile	/^PACKAGE_BUGREPORT = laforge@gnumonks.org$/;"	m
+PACKAGE_BUGREPORT	gtp/Makefile	/^PACKAGE_BUGREPORT = laforge@gnumonks.org$/;"	m
+PACKAGE_BUGREPORT	sgsnemu/Makefile	/^PACKAGE_BUGREPORT = laforge@gnumonks.org$/;"	m
+PACKAGE_NAME	Makefile	/^PACKAGE_NAME = openggsn$/;"	m
+PACKAGE_NAME	config.h	135;"	d
+PACKAGE_NAME	doc/Makefile	/^PACKAGE_NAME = openggsn$/;"	m
+PACKAGE_NAME	ggsn/Makefile	/^PACKAGE_NAME = openggsn$/;"	m
+PACKAGE_NAME	gtp/Makefile	/^PACKAGE_NAME = openggsn$/;"	m
+PACKAGE_NAME	sgsnemu/Makefile	/^PACKAGE_NAME = openggsn$/;"	m
+PACKAGE_STRING	Makefile	/^PACKAGE_STRING = openggsn 0.91$/;"	m
+PACKAGE_STRING	config.h	138;"	d
+PACKAGE_STRING	doc/Makefile	/^PACKAGE_STRING = openggsn 0.91$/;"	m
+PACKAGE_STRING	ggsn/Makefile	/^PACKAGE_STRING = openggsn 0.91$/;"	m
+PACKAGE_STRING	gtp/Makefile	/^PACKAGE_STRING = openggsn 0.91$/;"	m
+PACKAGE_STRING	sgsnemu/Makefile	/^PACKAGE_STRING = openggsn 0.91$/;"	m
+PACKAGE_TARNAME	Makefile	/^PACKAGE_TARNAME = openggsn$/;"	m
+PACKAGE_TARNAME	config.h	141;"	d
+PACKAGE_TARNAME	doc/Makefile	/^PACKAGE_TARNAME = openggsn$/;"	m
+PACKAGE_TARNAME	ggsn/Makefile	/^PACKAGE_TARNAME = openggsn$/;"	m
+PACKAGE_TARNAME	gtp/Makefile	/^PACKAGE_TARNAME = openggsn$/;"	m
+PACKAGE_TARNAME	sgsnemu/Makefile	/^PACKAGE_TARNAME = openggsn$/;"	m
+PACKAGE_URL	Makefile	/^PACKAGE_URL = $/;"	m
+PACKAGE_URL	config.h	144;"	d
+PACKAGE_URL	doc/Makefile	/^PACKAGE_URL = $/;"	m
+PACKAGE_URL	ggsn/Makefile	/^PACKAGE_URL = $/;"	m
+PACKAGE_URL	gtp/Makefile	/^PACKAGE_URL = $/;"	m
+PACKAGE_URL	sgsnemu/Makefile	/^PACKAGE_URL = $/;"	m
+PACKAGE_VERSION	Makefile	/^PACKAGE_VERSION = 0.91$/;"	m
+PACKAGE_VERSION	config.h	147;"	d
+PACKAGE_VERSION	doc/Makefile	/^PACKAGE_VERSION = 0.91$/;"	m
+PACKAGE_VERSION	ggsn/Makefile	/^PACKAGE_VERSION = 0.91$/;"	m
+PACKAGE_VERSION	gtp/Makefile	/^PACKAGE_VERSION = 0.91$/;"	m
+PACKAGE_VERSION	sgsnemu/Makefile	/^PACKAGE_VERSION = 0.91$/;"	m
+PACKET_MAX	ggsn/tun.h	15;"	d
+PACKET_MAX	gtp/gtp.h	23;"	d
+PACKET_MAX	sgsnemu/tun.h	15;"	d
+PATH_SEPARATOR	Makefile	/^PATH_SEPARATOR = :$/;"	m
+PATH_SEPARATOR	doc/Makefile	/^PATH_SEPARATOR = :$/;"	m
+PATH_SEPARATOR	ggsn/Makefile	/^PATH_SEPARATOR = :$/;"	m
+PATH_SEPARATOR	gtp/Makefile	/^PATH_SEPARATOR = :$/;"	m
+PATH_SEPARATOR	sgsnemu/Makefile	/^PATH_SEPARATOR = :$/;"	m
+PDP_DEBUG	gtp/pdp.h	18;"	d
+PDP_MAX	gtp/pdp.h	15;"	d
+PDP_MAXNSAPI	gtp/pdp.h	16;"	d
+PERMUTE	ggsn/getopt.c	/^  REQUIRE_ORDER, PERMUTE, RETURN_IN_ORDER$/;"	e	enum:__anon3	file:
+PERMUTE	sgsnemu/getopt.c	/^  REQUIRE_ORDER, PERMUTE, RETURN_IN_ORDER$/;"	e	enum:__anon2	file:
+POST_INSTALL	Makefile	/^POST_INSTALL = :$/;"	m
+POST_INSTALL	doc/Makefile	/^POST_INSTALL = :$/;"	m
+POST_INSTALL	ggsn/Makefile	/^POST_INSTALL = :$/;"	m
+POST_INSTALL	gtp/Makefile	/^POST_INSTALL = :$/;"	m
+POST_INSTALL	sgsnemu/Makefile	/^POST_INSTALL = :$/;"	m
+POST_UNINSTALL	Makefile	/^POST_UNINSTALL = :$/;"	m
+POST_UNINSTALL	doc/Makefile	/^POST_UNINSTALL = :$/;"	m
+POST_UNINSTALL	ggsn/Makefile	/^POST_UNINSTALL = :$/;"	m
+POST_UNINSTALL	gtp/Makefile	/^POST_UNINSTALL = :$/;"	m
+POST_UNINSTALL	sgsnemu/Makefile	/^POST_UNINSTALL = :$/;"	m
+PRE_INSTALL	Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_INSTALL	doc/Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_INSTALL	ggsn/Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_INSTALL	gtp/Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_INSTALL	sgsnemu/Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_UNINSTALL	Makefile	/^PRE_UNINSTALL = :$/;"	m
+PRE_UNINSTALL	doc/Makefile	/^PRE_UNINSTALL = :$/;"	m
+PRE_UNINSTALL	ggsn/Makefile	/^PRE_UNINSTALL = :$/;"	m
+PRE_UNINSTALL	gtp/Makefile	/^PRE_UNINSTALL = :$/;"	m
+PRE_UNINSTALL	sgsnemu/Makefile	/^PRE_UNINSTALL = :$/;"	m
+PROGRAMS	ggsn/Makefile	/^PROGRAMS = $(bin_PROGRAMS)$/;"	m
+PROGRAMS	sgsnemu/Makefile	/^PROGRAMS = $(bin_PROGRAMS)$/;"	m
+QUEUE_DEBUG	gtp/queue.h	20;"	d
+QUEUE_HASH_SIZE	gtp/queue.h	23;"	d
+QUEUE_SIZE	gtp/queue.h	22;"	d
+RANLIB	Makefile	/^RANLIB = ranlib$/;"	m
+RANLIB	doc/Makefile	/^RANLIB = ranlib$/;"	m
+RANLIB	ggsn/Makefile	/^RANLIB = ranlib$/;"	m
+RANLIB	gtp/Makefile	/^RANLIB = ranlib$/;"	m
+RANLIB	sgsnemu/Makefile	/^RANLIB = ranlib$/;"	m
+RECURSIVE_CLEAN_TARGETS	Makefile	/^RECURSIVE_CLEAN_TARGETS = mostlyclean-recursive clean-recursive	\\$/;"	m
+RECURSIVE_TARGETS	Makefile	/^RECURSIVE_TARGETS = all-recursive check-recursive dvi-recursive \\$/;"	m
+REQUIRE_ORDER	ggsn/getopt.c	/^  REQUIRE_ORDER, PERMUTE, RETURN_IN_ORDER$/;"	e	enum:__anon3	file:
+REQUIRE_ORDER	sgsnemu/getopt.c	/^  REQUIRE_ORDER, PERMUTE, RETURN_IN_ORDER$/;"	e	enum:__anon2	file:
+RESTART_FILE	gtp/gtp.h	33;"	d
+RETURN_IN_ORDER	ggsn/getopt.c	/^  REQUIRE_ORDER, PERMUTE, RETURN_IN_ORDER$/;"	e	enum:__anon3	file:
+RETURN_IN_ORDER	sgsnemu/getopt.c	/^  REQUIRE_ORDER, PERMUTE, RETURN_IN_ORDER$/;"	e	enum:__anon2	file:
+SED	Makefile	/^SED = \/bin\/sed$/;"	m
+SED	doc/Makefile	/^SED = \/bin\/sed$/;"	m
+SED	ggsn/Makefile	/^SED = \/bin\/sed$/;"	m
+SED	gtp/Makefile	/^SED = \/bin\/sed$/;"	m
+SED	sgsnemu/Makefile	/^SED = \/bin\/sed$/;"	m
+SET_MAKE	Makefile	/^SET_MAKE = $/;"	m
+SET_MAKE	doc/Makefile	/^SET_MAKE = $/;"	m
+SET_MAKE	ggsn/Makefile	/^SET_MAKE = $/;"	m
+SET_MAKE	gtp/Makefile	/^SET_MAKE = $/;"	m
+SET_MAKE	sgsnemu/Makefile	/^SET_MAKE = $/;"	m
+SHELL	Makefile	/^SHELL = \/bin\/bash$/;"	m
+SHELL	doc/Makefile	/^SHELL = \/bin\/bash$/;"	m
+SHELL	ggsn/Makefile	/^SHELL = \/bin\/bash$/;"	m
+SHELL	gtp/Makefile	/^SHELL = \/bin\/bash$/;"	m
+SHELL	sgsnemu/Makefile	/^SHELL = \/bin\/bash$/;"	m
+SOURCES	Makefile	/^SOURCES =$/;"	m
+SOURCES	doc/Makefile	/^SOURCES =$/;"	m
+SOURCES	ggsn/Makefile	/^SOURCES = $(ggsn_SOURCES)$/;"	m
+SOURCES	gtp/Makefile	/^SOURCES = $(libgtp_la_SOURCES)$/;"	m
+SOURCES	sgsnemu/Makefile	/^SOURCES = $(sgsnemu_SOURCES)$/;"	m
+STDC_HEADERS	config.h	150;"	d
+STRIP	Makefile	/^STRIP = strip$/;"	m
+STRIP	doc/Makefile	/^STRIP = strip$/;"	m
+STRIP	ggsn/Makefile	/^STRIP = strip$/;"	m
+STRIP	gtp/Makefile	/^STRIP = strip$/;"	m
+STRIP	sgsnemu/Makefile	/^STRIP = strip$/;"	m
+SUBDIRS	Makefile	/^SUBDIRS = gtp ggsn sgsnemu doc$/;"	m
+SWAP_FLAGS	ggsn/getopt.c	271;"	d	file:
+SWAP_FLAGS	ggsn/getopt.c	279;"	d	file:
+SWAP_FLAGS	ggsn/getopt.c	282;"	d	file:
+SWAP_FLAGS	sgsnemu/getopt.c	271;"	d	file:
+SWAP_FLAGS	sgsnemu/getopt.c	279;"	d	file:
+SWAP_FLAGS	sgsnemu/getopt.c	282;"	d	file:
+SYSERR_MSGSIZE	ggsn/syserr.h	15;"	d
+SYSERR_MSGSIZE	sgsnemu/syserr.h	15;"	d
+SYSLOG_PRINTSIZE	gtp/gtp.h	30;"	d
+TIME_WITH_SYS_TIME	config.h	153;"	d
+TUN_ADDRSIZE	ggsn/tun.h	17;"	d
+TUN_ADDRSIZE	sgsnemu/tun.h	17;"	d
+TUN_NLBUFSIZE	ggsn/tun.h	18;"	d
+TUN_NLBUFSIZE	sgsnemu/tun.h	18;"	d
+TUN_SCRIPTSIZE	ggsn/tun.h	16;"	d
+TUN_SCRIPTSIZE	sgsnemu/tun.h	16;"	d
+VERSION	Makefile	/^VERSION = 0.91$/;"	m
+VERSION	config.h	156;"	d
+VERSION	doc/Makefile	/^VERSION = 0.91$/;"	m
+VERSION	ggsn/Makefile	/^VERSION = 0.91$/;"	m
+VERSION	gtp/Makefile	/^VERSION = 0.91$/;"	m
+VERSION	sgsnemu/Makefile	/^VERSION = 0.91$/;"	m
+_	ggsn/getopt.c	84;"	d	file:
+_	ggsn/getopt.c	87;"	d	file:
+_	sgsnemu/getopt.c	84;"	d	file:
+_	sgsnemu/getopt.c	87;"	d	file:
+_GETOPT_H	ggsn/gnugetopt.h	23;"	d
+_GETOPT_H	sgsnemu/gnugetopt.h	23;"	d
+_GNU_SOURCE	ggsn/ggsn.c	17;"	d	file:
+_GNU_SOURCE	gtp/gtp.c	22;"	d	file:
+_GNU_SOURCE	sgsnemu/sgsnemu.c	19;"	d	file:
+_GTPIE_H	gtp/gtpie.h	13;"	d
+_GTP_H	gtp/gtp.h	13;"	d
+_IPPOOL_H	ggsn/ippool.h	13;"	d
+_IPPOOL_H	sgsnemu/ippool.h	13;"	d
+_LOOKUP_H	ggsn/lookup.h	22;"	d
+_LOOKUP_H	sgsnemu/lookup.h	22;"	d
+_NO_PROTO	ggsn/getopt.c	27;"	d	file:
+_NO_PROTO	sgsnemu/getopt.c	27;"	d	file:
+_PDP_H	gtp/pdp.h	13;"	d
+_QUEUE_H	gtp/queue.h	18;"	d
+_SYSERR_H	ggsn/syserr.h	13;"	d
+_SYSERR_H	sgsnemu/syserr.h	13;"	d
+_TUN_H	ggsn/tun.h	13;"	d
+_TUN_H	sgsnemu/tun.h	13;"	d
+__getopt_initialized	ggsn/getopt.c	/^int __getopt_initialized;$/;"	v
+__getopt_initialized	sgsnemu/getopt.c	/^int __getopt_initialized;$/;"	v
+__need_getopt	ggsn/gnugetopt.h	178;"	d
+__need_getopt	sgsnemu/gnugetopt.h	178;"	d
+_getopt_initialize	ggsn/getopt.c	/^_getopt_initialize (argc, argv, optstring)$/;"	f	file:
+_getopt_initialize	sgsnemu/getopt.c	/^_getopt_initialize (argc, argv, optstring)$/;"	f	file:
+_getopt_internal	ggsn/getopt.c	/^_getopt_internal (argc, argv, optstring, longopts, longind, long_only)$/;"	f
+_getopt_internal	sgsnemu/getopt.c	/^_getopt_internal (argc, argv, optstring, longopts, longind, long_only)$/;"	f
+abs_builddir	Makefile	/^abs_builddir = \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91$/;"	m
+abs_builddir	doc/Makefile	/^abs_builddir = \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/doc$/;"	m
+abs_builddir	ggsn/Makefile	/^abs_builddir = \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/ggsn$/;"	m
+abs_builddir	gtp/Makefile	/^abs_builddir = \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/gtp$/;"	m
+abs_builddir	sgsnemu/Makefile	/^abs_builddir = \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/sgsnemu$/;"	m
+abs_srcdir	Makefile	/^abs_srcdir = \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91$/;"	m
+abs_srcdir	doc/Makefile	/^abs_srcdir = \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/doc$/;"	m
+abs_srcdir	ggsn/Makefile	/^abs_srcdir = \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/ggsn$/;"	m
+abs_srcdir	gtp/Makefile	/^abs_srcdir = \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/gtp$/;"	m
+abs_srcdir	sgsnemu/Makefile	/^abs_srcdir = \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/sgsnemu$/;"	m
+abs_top_builddir	Makefile	/^abs_top_builddir = \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91$/;"	m
+abs_top_builddir	doc/Makefile	/^abs_top_builddir = \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91$/;"	m
+abs_top_builddir	ggsn/Makefile	/^abs_top_builddir = \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91$/;"	m
+abs_top_builddir	gtp/Makefile	/^abs_top_builddir = \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91$/;"	m
+abs_top_builddir	sgsnemu/Makefile	/^abs_top_builddir = \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91$/;"	m
+abs_top_srcdir	Makefile	/^abs_top_srcdir = \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91$/;"	m
+abs_top_srcdir	doc/Makefile	/^abs_top_srcdir = \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91$/;"	m
+abs_top_srcdir	ggsn/Makefile	/^abs_top_srcdir = \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91$/;"	m
+abs_top_srcdir	gtp/Makefile	/^abs_top_srcdir = \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91$/;"	m
+abs_top_srcdir	sgsnemu/Makefile	/^abs_top_srcdir = \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91$/;"	m
+ac_ct_CC	Makefile	/^ac_ct_CC = gcc$/;"	m
+ac_ct_CC	doc/Makefile	/^ac_ct_CC = gcc$/;"	m
+ac_ct_CC	ggsn/Makefile	/^ac_ct_CC = gcc$/;"	m
+ac_ct_CC	gtp/Makefile	/^ac_ct_CC = gcc$/;"	m
+ac_ct_CC	sgsnemu/Makefile	/^ac_ct_CC = gcc$/;"	m
+ac_ct_CXX	Makefile	/^ac_ct_CXX = g++$/;"	m
+ac_ct_CXX	doc/Makefile	/^ac_ct_CXX = g++$/;"	m
+ac_ct_CXX	ggsn/Makefile	/^ac_ct_CXX = g++$/;"	m
+ac_ct_CXX	gtp/Makefile	/^ac_ct_CXX = g++$/;"	m
+ac_ct_CXX	sgsnemu/Makefile	/^ac_ct_CXX = g++$/;"	m
+ac_ct_DUMPBIN	Makefile	/^ac_ct_DUMPBIN = $/;"	m
+ac_ct_DUMPBIN	doc/Makefile	/^ac_ct_DUMPBIN = $/;"	m
+ac_ct_DUMPBIN	ggsn/Makefile	/^ac_ct_DUMPBIN = $/;"	m
+ac_ct_DUMPBIN	gtp/Makefile	/^ac_ct_DUMPBIN = $/;"	m
+ac_ct_DUMPBIN	sgsnemu/Makefile	/^ac_ct_DUMPBIN = $/;"	m
+ac_fn_c_check_func	configure	/^ac_fn_c_check_func ()$/;"	f
+ac_fn_c_check_header_compile	configure	/^ac_fn_c_check_header_compile ()$/;"	f
+ac_fn_c_check_header_mongrel	configure	/^ac_fn_c_check_header_mongrel ()$/;"	f
+ac_fn_c_check_type	configure	/^ac_fn_c_check_type ()$/;"	f
+ac_fn_c_try_compile	configure	/^ac_fn_c_try_compile ()$/;"	f
+ac_fn_c_try_cpp	configure	/^ac_fn_c_try_cpp ()$/;"	f
+ac_fn_c_try_link	configure	/^ac_fn_c_try_link ()$/;"	f
+ac_fn_c_try_run	configure	/^ac_fn_c_try_run ()$/;"	f
+ac_fn_cxx_try_compile	configure	/^ac_fn_cxx_try_compile ()$/;"	f
+ac_fn_cxx_try_cpp	configure	/^ac_fn_cxx_try_cpp ()$/;"	f
+ac_fn_cxx_try_link	configure	/^ac_fn_cxx_try_link ()$/;"	f
+addr	ggsn/ippool.h	/^  struct in6_addr addr;          \/* IP address of this member *\/$/;"	m	struct:ippoolm_t	typeref:struct:ippoolm_t::in6_addr
+addr	ggsn/tun.h	/^  struct in_addr addr;$/;"	m	struct:tun_t	typeref:struct:tun_t::in_addr
+addr	sgsnemu/ippool.h	/^  struct in6_addr addr;          \/* IP address of this member *\/$/;"	m	struct:ippoolm_t	typeref:struct:ippoolm_t::in6_addr
+addr	sgsnemu/sgsnemu.c	/^  struct in_addr addr;$/;"	m	struct:iphash_t	typeref:struct:iphash_t::in_addr	file:
+addr	sgsnemu/tun.h	/^  struct in_addr addr;$/;"	m	struct:tun_t	typeref:struct:tun_t::in_addr
+addrs	ggsn/tun.h	/^  int addrs;             \/* Number of allocated IP addresses *\/$/;"	m	struct:tun_t
+addrs	sgsnemu/tun.h	/^  int addrs;             \/* Number of allocated IP addresses *\/$/;"	m	struct:tun_t
+allowdyn	ggsn/ippool.h	/^  int allowdyn;                  \/* Allow dynamic IP address allocation *\/$/;"	m	struct:ippool_t
+allowdyn	sgsnemu/ippool.h	/^  int allowdyn;                  \/* Allow dynamic IP address allocation *\/$/;"	m	struct:ippool_t
+allowstat	ggsn/ippool.h	/^  int allowstat;                 \/* Allow static IP address allocation *\/$/;"	m	struct:ippool_t
+allowstat	sgsnemu/ippool.h	/^  int allowstat;                 \/* Allow static IP address allocation *\/$/;"	m	struct:ippool_t
+am__CONFIG_DISTCLEAN_FILES	Makefile	/^am__CONFIG_DISTCLEAN_FILES = config.status config.cache config.log \\$/;"	m
+am__aclocal_m4_deps	Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/acinclude.m4 \\$/;"	m
+am__aclocal_m4_deps	doc/Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/acinclude.m4 \\$/;"	m
+am__aclocal_m4_deps	ggsn/Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/acinclude.m4 \\$/;"	m
+am__aclocal_m4_deps	gtp/Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/acinclude.m4 \\$/;"	m
+am__aclocal_m4_deps	sgsnemu/Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/acinclude.m4 \\$/;"	m
+am__base_list	doc/Makefile	/^am__base_list = \\$/;"	m
+am__base_list	gtp/Makefile	/^am__base_list = \\$/;"	m
+am__cd	Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__cd	doc/Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__cd	ggsn/Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__cd	gtp/Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__cd	sgsnemu/Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__configure_deps	Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__configure_deps	doc/Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__configure_deps	ggsn/Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__configure_deps	gtp/Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__configure_deps	sgsnemu/Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__depfiles_maybe	ggsn/Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__depfiles_maybe	gtp/Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__depfiles_maybe	sgsnemu/Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__include	Makefile	/^am__include = include$/;"	m
+am__include	doc/Makefile	/^am__include = include$/;"	m
+am__include	ggsn/Makefile	/^am__include = include$/;"	m
+am__include	gtp/Makefile	/^am__include = include$/;"	m
+am__include	sgsnemu/Makefile	/^am__include = include$/;"	m
+am__install_max	doc/Makefile	/^am__install_max = 40$/;"	m
+am__install_max	gtp/Makefile	/^am__install_max = 40$/;"	m
+am__installdirs	doc/Makefile	/^am__installdirs = "$(DESTDIR)$(man8dir)"$/;"	m
+am__installdirs	ggsn/Makefile	/^am__installdirs = "$(DESTDIR)$(bindir)"$/;"	m
+am__installdirs	gtp/Makefile	/^am__installdirs = "$(DESTDIR)$(libdir)" "$(DESTDIR)$(includedir)"$/;"	m
+am__installdirs	sgsnemu/Makefile	/^am__installdirs = "$(DESTDIR)$(bindir)"$/;"	m
+am__leading_dot	Makefile	/^am__leading_dot = .$/;"	m
+am__leading_dot	doc/Makefile	/^am__leading_dot = .$/;"	m
+am__leading_dot	ggsn/Makefile	/^am__leading_dot = .$/;"	m
+am__leading_dot	gtp/Makefile	/^am__leading_dot = .$/;"	m
+am__leading_dot	sgsnemu/Makefile	/^am__leading_dot = .$/;"	m
+am__mv	ggsn/Makefile	/^am__mv = mv -f$/;"	m
+am__mv	gtp/Makefile	/^am__mv = mv -f$/;"	m
+am__mv	sgsnemu/Makefile	/^am__mv = mv -f$/;"	m
+am__nobase_list	doc/Makefile	/^am__nobase_list = $(am__nobase_strip_setup); \\$/;"	m
+am__nobase_list	gtp/Makefile	/^am__nobase_list = $(am__nobase_strip_setup); \\$/;"	m
+am__nobase_strip	doc/Makefile	/^am__nobase_strip = \\$/;"	m
+am__nobase_strip	gtp/Makefile	/^am__nobase_strip = \\$/;"	m
+am__nobase_strip_setup	doc/Makefile	/^am__nobase_strip_setup = \\$/;"	m
+am__nobase_strip_setup	gtp/Makefile	/^am__nobase_strip_setup = \\$/;"	m
+am__quote	Makefile	/^am__quote = $/;"	m
+am__quote	doc/Makefile	/^am__quote = $/;"	m
+am__quote	ggsn/Makefile	/^am__quote = $/;"	m
+am__quote	gtp/Makefile	/^am__quote = $/;"	m
+am__quote	sgsnemu/Makefile	/^am__quote = $/;"	m
+am__relativize	Makefile	/^am__relativize = \\$/;"	m
+am__remove_distdir	Makefile	/^am__remove_distdir = \\$/;"	m
+am__strip_dir	doc/Makefile	/^am__strip_dir = f=`echo $$p | sed -e 's|^.*\/||'`;$/;"	m
+am__strip_dir	gtp/Makefile	/^am__strip_dir = f=`echo $$p | sed -e 's|^.*\/||'`;$/;"	m
+am__tar	Makefile	/^am__tar = ${AMTAR} chof - "$$tardir"$/;"	m
+am__tar	doc/Makefile	/^am__tar = ${AMTAR} chof - "$$tardir"$/;"	m
+am__tar	ggsn/Makefile	/^am__tar = ${AMTAR} chof - "$$tardir"$/;"	m
+am__tar	gtp/Makefile	/^am__tar = ${AMTAR} chof - "$$tardir"$/;"	m
+am__tar	sgsnemu/Makefile	/^am__tar = ${AMTAR} chof - "$$tardir"$/;"	m
+am__untar	Makefile	/^am__untar = ${AMTAR} xf -$/;"	m
+am__untar	doc/Makefile	/^am__untar = ${AMTAR} xf -$/;"	m
+am__untar	ggsn/Makefile	/^am__untar = ${AMTAR} xf -$/;"	m
+am__untar	gtp/Makefile	/^am__untar = ${AMTAR} xf -$/;"	m
+am__untar	sgsnemu/Makefile	/^am__untar = ${AMTAR} xf -$/;"	m
+am__vpath_adj	doc/Makefile	/^am__vpath_adj = case $$p in \\$/;"	m
+am__vpath_adj	gtp/Makefile	/^am__vpath_adj = case $$p in \\$/;"	m
+am__vpath_adj_setup	doc/Makefile	/^am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;$/;"	m
+am__vpath_adj_setup	gtp/Makefile	/^am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;$/;"	m
+am_ggsn_OBJECTS	ggsn/Makefile	/^am_ggsn_OBJECTS = ggsn.$(OBJEXT) tun.$(OBJEXT) cmdline.$(OBJEXT) \\$/;"	m
+am_libgtp_la_OBJECTS	gtp/Makefile	/^am_libgtp_la_OBJECTS = gtp.lo gtpie.lo pdp.lo lookupa.lo queue.lo$/;"	m
+am_sgsnemu_OBJECTS	sgsnemu/Makefile	/^am_sgsnemu_OBJECTS = sgsnemu.$(OBJEXT) tun.$(OBJEXT) cmdline.$(OBJEXT) \\$/;"	m
+apn	ggsn/ggsn.c	/^struct ul255_t apn;$/;"	v	typeref:struct:ul255_t
+apn	sgsnemu/sgsnemu.c	/^  struct ul255_t apn;$/;"	m	struct:__anon1	typeref:struct:__anon1::ul255_t	file:
+apn_arg	ggsn/cmdline.h	/^  char * apn_arg;	\/* Access point name (default='internet').  *\/$/;"	m	struct:gengetopt_args_info
+apn_arg	sgsnemu/cmdline.h	/^  char * apn_arg;	\/* Access point name (default='internet').  *\/$/;"	m	struct:gengetopt_args_info
+apn_given	ggsn/cmdline.h	/^  int apn_given ;	\/* Whether apn was given.  *\/$/;"	m	struct:gengetopt_args_info
+apn_given	sgsnemu/cmdline.h	/^  int apn_given ;	\/* Whether apn was given.  *\/$/;"	m	struct:gengetopt_args_info
+apn_help	ggsn/cmdline.h	/^  const char *apn_help; \/* Access point name help description.  *\/$/;"	m	struct:gengetopt_args_info
+apn_help	sgsnemu/cmdline.h	/^  const char *apn_help; \/* Access point name help description.  *\/$/;"	m	struct:gengetopt_args_info
+apn_orig	ggsn/cmdline.h	/^  char * apn_orig;	\/* Access point name original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+apn_orig	sgsnemu/cmdline.h	/^  char * apn_orig;	\/* Access point name original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+apn_req	gtp/pdp.h	/^  struct ul255_t apn_req;\/* The APN requested. *\/$/;"	m	struct:pdp_t	typeref:struct:pdp_t::ul255_t
+apn_sub	gtp/pdp.h	/^  struct ul255_t apn_sub;\/* The APN received from the HLR. *\/$/;"	m	struct:pdp_t	typeref:struct:pdp_t::ul255_t
+apn_use	gtp/pdp.h	/^  struct ul255_t apn_use;\/* The APN Network Identifier currently used. *\/$/;"	m	struct:pdp_t	typeref:struct:pdp_t::ul255_t
+as_fn_append	config.status	/^  as_fn_append ()$/;"	f
+as_fn_append	configure	/^  as_fn_append ()$/;"	f
+as_fn_arith	config.status	/^  as_fn_arith ()$/;"	f
+as_fn_arith	configure	/^  as_fn_arith ()$/;"	f
+as_fn_error	config.status	/^as_fn_error ()$/;"	f
+as_fn_error	configure	/^as_fn_error ()$/;"	f
+as_fn_exit	config.status	/^as_fn_exit ()$/;"	f
+as_fn_exit	configure	/^as_fn_exit ()$/;"	f
+as_fn_failure	configure	/^as_fn_failure () { as_fn_return 1; }$/;"	f
+as_fn_mkdir_p	config.status	/^as_fn_mkdir_p ()$/;"	f
+as_fn_mkdir_p	configure	/^as_fn_mkdir_p ()$/;"	f
+as_fn_ret_failure	configure	/^as_fn_ret_failure () { return 1; }$/;"	f
+as_fn_ret_success	configure	/^as_fn_ret_success () { return 0; }$/;"	f
+as_fn_set_status	config.status	/^as_fn_set_status ()$/;"	f
+as_fn_set_status	configure	/^as_fn_set_status ()$/;"	f
+as_fn_success	configure	/^as_fn_success () { as_fn_return 0; }$/;"	f
+as_fn_unset	config.status	/^as_fn_unset ()$/;"	f
+as_fn_unset	configure	/^as_fn_unset ()$/;"	f
+asap	gtp/pdp.h	/^  void *asap;           \/* Application specific service access point *\/$/;"	m	struct:pdp_t
+bin_PROGRAMS	ggsn/Makefile	/^bin_PROGRAMS = ggsn$(EXEEXT)$/;"	m
+bin_PROGRAMS	sgsnemu/Makefile	/^bin_PROGRAMS = sgsnemu$(EXEEXT)$/;"	m
+bindir	Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+bindir	doc/Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+bindir	ggsn/Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+bindir	gtp/Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+bindir	sgsnemu/Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+build	Makefile	/^build = x86_64-unknown-linux-gnu$/;"	m
+build	doc/Makefile	/^build = x86_64-unknown-linux-gnu$/;"	m
+build	ggsn/Makefile	/^build = x86_64-unknown-linux-gnu$/;"	m
+build	gtp/Makefile	/^build = x86_64-unknown-linux-gnu$/;"	m
+build	sgsnemu/Makefile	/^build = x86_64-unknown-linux-gnu$/;"	m
+build_alias	Makefile	/^build_alias = $/;"	m
+build_alias	doc/Makefile	/^build_alias = $/;"	m
+build_alias	ggsn/Makefile	/^build_alias = $/;"	m
+build_alias	gtp/Makefile	/^build_alias = $/;"	m
+build_alias	sgsnemu/Makefile	/^build_alias = $/;"	m
+build_cpu	Makefile	/^build_cpu = x86_64$/;"	m
+build_cpu	doc/Makefile	/^build_cpu = x86_64$/;"	m
+build_cpu	ggsn/Makefile	/^build_cpu = x86_64$/;"	m
+build_cpu	gtp/Makefile	/^build_cpu = x86_64$/;"	m
+build_cpu	sgsnemu/Makefile	/^build_cpu = x86_64$/;"	m
+build_os	Makefile	/^build_os = linux-gnu$/;"	m
+build_os	doc/Makefile	/^build_os = linux-gnu$/;"	m
+build_os	ggsn/Makefile	/^build_os = linux-gnu$/;"	m
+build_os	gtp/Makefile	/^build_os = linux-gnu$/;"	m
+build_os	sgsnemu/Makefile	/^build_os = linux-gnu$/;"	m
+build_triplet	Makefile	/^build_triplet = x86_64-unknown-linux-gnu$/;"	m
+build_triplet	doc/Makefile	/^build_triplet = x86_64-unknown-linux-gnu$/;"	m
+build_triplet	ggsn/Makefile	/^build_triplet = x86_64-unknown-linux-gnu$/;"	m
+build_triplet	gtp/Makefile	/^build_triplet = x86_64-unknown-linux-gnu$/;"	m
+build_triplet	sgsnemu/Makefile	/^build_triplet = x86_64-unknown-linux-gnu$/;"	m
+build_vendor	Makefile	/^build_vendor = unknown$/;"	m
+build_vendor	doc/Makefile	/^build_vendor = unknown$/;"	m
+build_vendor	ggsn/Makefile	/^build_vendor = unknown$/;"	m
+build_vendor	gtp/Makefile	/^build_vendor = unknown$/;"	m
+build_vendor	sgsnemu/Makefile	/^build_vendor = unknown$/;"	m
+builddir	Makefile	/^builddir = .$/;"	m
+builddir	doc/Makefile	/^builddir = .$/;"	m
+builddir	ggsn/Makefile	/^builddir = .$/;"	m
+builddir	gtp/Makefile	/^builddir = .$/;"	m
+builddir	sgsnemu/Makefile	/^builddir = .$/;"	m
+cb_conf	gtp/gtp.h	/^  int (*cb_conf) (int type, int cause, struct pdp_t *pdp, void* cbp);$/;"	m	struct:gsn_t
+cb_create_context_ind	gtp/gtp.h	/^  int (*cb_create_context_ind) (struct pdp_t*);$/;"	m	struct:gsn_t
+cb_data_ind	gtp/gtp.h	/^  int (*cb_data_ind) (struct pdp_t* pdp, void* pack, unsigned len);$/;"	m	struct:gsn_t
+cb_delete_context	gtp/gtp.h	/^  int (*cb_delete_context) (struct pdp_t*);$/;"	m	struct:gsn_t
+cb_extheader_ind	gtp/gtp.h	/^  int (*cb_extheader_ind) (struct sockaddr_in *peer);$/;"	m	struct:gsn_t
+cb_ind	ggsn/tun.h	/^  int (*cb_ind) (struct tun_t *tun, void *pack, unsigned len);$/;"	m	struct:tun_t
+cb_ind	sgsnemu/tun.h	/^  int (*cb_ind) (struct tun_t *tun, void *pack, unsigned len);$/;"	m	struct:tun_t
+cb_tun_ind	ggsn/ggsn.c	/^int cb_tun_ind(struct tun_t *tun, void *pack, unsigned len) {$/;"	f
+cb_tun_ind	sgsnemu/sgsnemu.c	/^int cb_tun_ind(struct tun_t *tun, void *pack, unsigned len) {$/;"	f
+cb_unsup_ind	gtp/gtp.h	/^  int (*cb_unsup_ind) (struct sockaddr_in *peer);$/;"	m	struct:gsn_t
+cbp	gtp/queue.h	/^  void *cbp;              \/* Application specific pointer *\/$/;"	m	struct:qmsg_t
+cch	sgsnemu/sgsnemu.c	/^  uint16_t cch;$/;"	m	struct:__anon1	file:
+cch_pdp	gtp/pdp.h	/^  uint16_t    cch_pdp;  \/* The charging characteristics for this PDP context, e.g. normal, prepaid, flat-rate, and\/or hot billing. *\/$/;"	m	struct:pdp_t
+cch_sub	gtp/pdp.h	/^  uint8_t     cch_sub;  \/* The charging characteristics for the MS, e.g. normal, prepaid, flat-rate, and\/or hot billing subscription. (not transmitted) *\/$/;"	m	struct:pdp_t
+char2ul_t	gtp/gtp.c	/^int char2ul_t(char* src, struct ul_t dst) {$/;"	f
+charging_arg	sgsnemu/cmdline.h	/^  int charging_arg;	\/* Charging characteristics (default='0x0800').  *\/$/;"	m	struct:gengetopt_args_info
+charging_given	sgsnemu/cmdline.h	/^  int charging_given ;	\/* Whether charging was given.  *\/$/;"	m	struct:gengetopt_args_info
+charging_help	sgsnemu/cmdline.h	/^  const char *charging_help; \/* Charging characteristics help description.  *\/$/;"	m	struct:gengetopt_args_info
+charging_orig	sgsnemu/cmdline.h	/^  char * charging_orig;	\/* Charging characteristics original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+check	ggsn/tun.h	/^  unsigned int check:16;$/;"	m	struct:tun_packet_t
+check	sgsnemu/tun.h	/^  unsigned int check:16;$/;"	m	struct:tun_packet_t
+checksum	gtp/lookupa.c	/^void  checksum( k, len, state)$/;"	f
+checksum	sgsnemu/sgsnemu.c	/^  uint16_t checksum;           \/* Header checksum *\/$/;"	m	struct:ip_ping	file:
+cid	gtp/pdp.h	/^  uint32_t    cid;      \/* Charging identifier, identifies charging records generated by SGSN and GGSN. *\/$/;"	m	struct:pdp_t
+clear_args	ggsn/cmdline.c	/^void clear_args (struct gengetopt_args_info *args_info)$/;"	f	file:
+clear_args	sgsnemu/cmdline.c	/^void clear_args (struct gengetopt_args_info *args_info)$/;"	f	file:
+clear_given	ggsn/cmdline.c	/^void clear_given (struct gengetopt_args_info *args_info)$/;"	f	file:
+clear_given	sgsnemu/cmdline.c	/^void clear_given (struct gengetopt_args_info *args_info)$/;"	f	file:
+cmd_line_list	ggsn/cmdline.c	/^static struct line_list *cmd_line_list = 0;$/;"	v	typeref:struct:line_list	file:
+cmd_line_list	sgsnemu/cmdline.c	/^static struct line_list *cmd_line_list = 0;$/;"	v	typeref:struct:line_list	file:
+cmd_line_list_tmp	ggsn/cmdline.c	/^static struct line_list *cmd_line_list_tmp = 0;$/;"	v	typeref:struct:line_list	file:
+cmd_line_list_tmp	sgsnemu/cmdline.c	/^static struct line_list *cmd_line_list_tmp = 0;$/;"	v	typeref:struct:line_list	file:
+cmdline_parser	ggsn/cmdline.c	/^cmdline_parser (int argc, char * const *argv, struct gengetopt_args_info *args_info)$/;"	f
+cmdline_parser	sgsnemu/cmdline.c	/^cmdline_parser (int argc, char * const *argv, struct gengetopt_args_info *args_info)$/;"	f
+cmdline_parser2	ggsn/cmdline.c	/^cmdline_parser2 (int argc, char * const *argv, struct gengetopt_args_info *args_info, int override, int initialize, int check_required)$/;"	f
+cmdline_parser2	sgsnemu/cmdline.c	/^cmdline_parser2 (int argc, char * const *argv, struct gengetopt_args_info *args_info, int override, int initialize, int check_required)$/;"	f
+cmdline_parser_configfile	ggsn/cmdline.c	/^cmdline_parser_configfile (char * const filename, struct gengetopt_args_info *args_info, int override, int initialize, int check_required)$/;"	f
+cmdline_parser_configfile	sgsnemu/cmdline.c	/^cmdline_parser_configfile (char * const filename, struct gengetopt_args_info *args_info, int override, int initialize, int check_required)$/;"	f
+cmdline_parser_file_save	ggsn/cmdline.c	/^cmdline_parser_file_save(const char *filename, struct gengetopt_args_info *args_info)$/;"	f
+cmdline_parser_file_save	sgsnemu/cmdline.c	/^cmdline_parser_file_save(const char *filename, struct gengetopt_args_info *args_info)$/;"	f
+cmdline_parser_free	ggsn/cmdline.c	/^cmdline_parser_free (struct gengetopt_args_info *args_info)$/;"	f
+cmdline_parser_free	sgsnemu/cmdline.c	/^cmdline_parser_free (struct gengetopt_args_info *args_info)$/;"	f
+cmdline_parser_init	ggsn/cmdline.c	/^cmdline_parser_init (struct gengetopt_args_info *args_info)$/;"	f
+cmdline_parser_init	sgsnemu/cmdline.c	/^cmdline_parser_init (struct gengetopt_args_info *args_info)$/;"	f
+cmdline_parser_internal	ggsn/cmdline.c	/^cmdline_parser_internal (int argc, char * const *argv, struct gengetopt_args_info *args_info, int override, int initialize, int check_required, const char *additional_error)$/;"	f
+cmdline_parser_internal	sgsnemu/cmdline.c	/^cmdline_parser_internal (int argc, char * const *argv, struct gengetopt_args_info *args_info, int override, int initialize, int check_required, const char *additional_error)$/;"	f
+cmdline_parser_print_help	ggsn/cmdline.c	/^cmdline_parser_print_help (void)$/;"	f
+cmdline_parser_print_help	sgsnemu/cmdline.c	/^cmdline_parser_print_help (void)$/;"	f
+cmdline_parser_print_version	ggsn/cmdline.c	/^cmdline_parser_print_version (void)$/;"	f
+cmdline_parser_print_version	sgsnemu/cmdline.c	/^cmdline_parser_print_version (void)$/;"	f
+cmdline_parser_release	ggsn/cmdline.c	/^cmdline_parser_release (struct gengetopt_args_info *args_info)$/;"	f	file:
+cmdline_parser_release	sgsnemu/cmdline.c	/^cmdline_parser_release (struct gengetopt_args_info *args_info)$/;"	f	file:
+cmdline_parser_required	ggsn/cmdline.c	/^cmdline_parser_required (struct gengetopt_args_info *args_info, const char *prog_name)$/;"	f
+cmdline_parser_required	sgsnemu/cmdline.c	/^cmdline_parser_required (struct gengetopt_args_info *args_info, const char *prog_name)$/;"	f
+code	sgsnemu/sgsnemu.c	/^  uint8_t code;                \/* Code *\/$/;"	m	struct:ip_ping	file:
+conf	sgsnemu/sgsnemu.c	/^int conf(int type, int cause, struct pdp_t* pdp, void *cbp) {$/;"	f
+conf_arg	ggsn/cmdline.h	/^  char * conf_arg;	\/* Read configuration file (default='\/etc\/ggsn.conf').  *\/$/;"	m	struct:gengetopt_args_info
+conf_arg	sgsnemu/cmdline.h	/^  char * conf_arg;	\/* Read configuration file.  *\/$/;"	m	struct:gengetopt_args_info
+conf_given	ggsn/cmdline.h	/^  int conf_given ;	\/* Whether conf was given.  *\/$/;"	m	struct:gengetopt_args_info
+conf_given	sgsnemu/cmdline.h	/^  int conf_given ;	\/* Whether conf was given.  *\/$/;"	m	struct:gengetopt_args_info
+conf_help	ggsn/cmdline.h	/^  const char *conf_help; \/* Read configuration file help description.  *\/$/;"	m	struct:gengetopt_args_info
+conf_help	sgsnemu/cmdline.h	/^  const char *conf_help; \/* Read configuration file help description.  *\/$/;"	m	struct:gengetopt_args_info
+conf_orig	ggsn/cmdline.h	/^  char * conf_orig;	\/* Read configuration file original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+conf_orig	sgsnemu/cmdline.h	/^  char * conf_orig;	\/* Read configuration file original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+const	ggsn/getopt.c	38;"	d	file:
+const	ggsn/getopt1.c	31;"	d	file:
+const	sgsnemu/getopt.c	38;"	d	file:
+const	sgsnemu/getopt1.c	31;"	d	file:
+contexts	sgsnemu/sgsnemu.c	/^  int contexts;                   \/* Number of contexts to create *\/$/;"	m	struct:__anon1	file:
+contexts_arg	sgsnemu/cmdline.h	/^  int contexts_arg;	\/* Number of contexts (default='1').  *\/$/;"	m	struct:gengetopt_args_info
+contexts_given	sgsnemu/cmdline.h	/^  int contexts_given ;	\/* Whether contexts was given.  *\/$/;"	m	struct:gengetopt_args_info
+contexts_help	sgsnemu/cmdline.h	/^  const char *contexts_help; \/* Number of contexts help description.  *\/$/;"	m	struct:gengetopt_args_info
+contexts_orig	sgsnemu/cmdline.h	/^  char * contexts_orig;	\/* Number of contexts original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+create_context_ind	ggsn/ggsn.c	/^int create_context_ind(struct pdp_t *pdp) {$/;"	f
+create_pdp_conf	sgsnemu/sgsnemu.c	/^int create_pdp_conf(struct pdp_t *pdp, void *cbp, int cause) {$/;"	f
+create_ping	sgsnemu/sgsnemu.c	/^int create_ping(void *gsn, struct pdp_t *pdp,$/;"	f
+createif	sgsnemu/sgsnemu.c	/^  int createif;                   \/* Create local network interface *\/$/;"	m	struct:__anon1	file:
+createif_flag	sgsnemu/cmdline.h	/^  int createif_flag;	\/* Create local network interface (default=off).  *\/$/;"	m	struct:gengetopt_args_info
+createif_given	sgsnemu/cmdline.h	/^  int createif_given ;	\/* Whether createif was given.  *\/$/;"	m	struct:gengetopt_args_info
+createif_help	sgsnemu/cmdline.h	/^  const char *createif_help; \/* Create local network interface help description.  *\/$/;"	m	struct:gengetopt_args_info
+daemon	ggsn/ggsn.c	/^int daemon(int nochdir, int noclose) {$/;"	f
+data	sgsnemu/sgsnemu.c	/^  uint8_t data[CREATEPING_MAX]; \/* Data *\/$/;"	m	struct:ip_ping	file:
+datadir	Makefile	/^datadir = ${datarootdir}$/;"	m
+datadir	doc/Makefile	/^datadir = ${datarootdir}$/;"	m
+datadir	ggsn/Makefile	/^datadir = ${datarootdir}$/;"	m
+datadir	gtp/Makefile	/^datadir = ${datarootdir}$/;"	m
+datadir	sgsnemu/Makefile	/^datadir = ${datarootdir}$/;"	m
+datarootdir	Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+datarootdir	doc/Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+datarootdir	ggsn/Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+datarootdir	gtp/Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+datarootdir	sgsnemu/Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+debug	ggsn/ggsn.c	/^int debug;                      \/* Print debug output      *\/$/;"	v
+debug	sgsnemu/sgsnemu.c	/^  int debug;                      \/* Print debug messages *\/$/;"	m	struct:__anon1	file:
+debug_flag	ggsn/cmdline.h	/^  int debug_flag;	\/* Run in debug mode (default=off).  *\/$/;"	m	struct:gengetopt_args_info
+debug_flag	sgsnemu/cmdline.h	/^  int debug_flag;	\/* Run in debug mode (default=off).  *\/$/;"	m	struct:gengetopt_args_info
+debug_given	ggsn/cmdline.h	/^  int debug_given ;	\/* Whether debug was given.  *\/$/;"	m	struct:gengetopt_args_info
+debug_given	sgsnemu/cmdline.h	/^  int debug_given ;	\/* Whether debug was given.  *\/$/;"	m	struct:gengetopt_args_info
+debug_help	ggsn/cmdline.h	/^  const char *debug_help; \/* Run in debug mode help description.  *\/$/;"	m	struct:gengetopt_args_info
+debug_help	sgsnemu/cmdline.h	/^  const char *debug_help; \/* Run in debug mode help description.  *\/$/;"	m	struct:gengetopt_args_info
+defaultroute	sgsnemu/sgsnemu.c	/^  int defaultroute;               \/* Set up default route *\/$/;"	m	struct:__anon1	file:
+defaultroute_flag	sgsnemu/cmdline.h	/^  int defaultroute_flag;	\/* Create default route (default=off).  *\/$/;"	m	struct:gengetopt_args_info
+defaultroute_given	sgsnemu/cmdline.h	/^  int defaultroute_given ;	\/* Whether defaultroute was given.  *\/$/;"	m	struct:gengetopt_args_info
+defaultroute_help	sgsnemu/cmdline.h	/^  const char *defaultroute_help; \/* Create default route help description.  *\/$/;"	m	struct:gengetopt_args_info
+delete_context	ggsn/ggsn.c	/^int delete_context(struct pdp_t *pdp) {$/;"	f
+delete_context	sgsnemu/sgsnemu.c	/^int delete_context(struct pdp_t *pdp) {$/;"	f
+delete_pdp_conf	sgsnemu/sgsnemu.c	/^int delete_pdp_conf(struct pdp_t *pdp, int cause) {$/;"	f
+depcomp	ggsn/Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/depcomp$/;"	m
+depcomp	gtp/Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/depcomp$/;"	m
+depcomp	sgsnemu/Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/depcomp$/;"	m
+destaddr	ggsn/ggsn.c	/^struct in_addr netaddr, destaddr, net, mask;  \/* Network interface       *\/$/;"	v	typeref:struct:
+destaddr	sgsnemu/sgsnemu.c	/^  struct in_addr netaddr, destaddr, net, mask;   \/* Network interface  *\/$/;"	m	struct:__anon1	typeref:struct:__anon1::	file:
+devname	ggsn/tun.h	/^  char devname[IFNAMSIZ];\/* Name of the tun device *\/$/;"	m	struct:tun_t
+devname	sgsnemu/tun.h	/^  char devname[IFNAMSIZ];\/* Name of the tun device *\/$/;"	m	struct:tun_t
+distcleancheck_listfiles	Makefile	/^distcleancheck_listfiles = find . -type f -print$/;"	m
+distdir	Makefile	/^distdir = $(PACKAGE)-$(VERSION)$/;"	m
+distuninstallcheck_listfiles	Makefile	/^distuninstallcheck_listfiles = find . -type f -print$/;"	m
+dns	sgsnemu/sgsnemu.c	/^  struct in_addr dns;$/;"	m	struct:__anon1	typeref:struct:__anon1::in_addr	file:
+dns1	ggsn/ggsn.c	/^struct in_addr dns1, dns2;      \/* PCO DNS address         *\/$/;"	v	typeref:struct:in_addr
+dns2	ggsn/ggsn.c	/^struct in_addr dns1, dns2;      \/* PCO DNS address         *\/$/;"	v	typeref:struct:
+dns_arg	sgsnemu/cmdline.h	/^  char * dns_arg;	\/* DNS Server to use.  *\/$/;"	m	struct:gengetopt_args_info
+dns_given	sgsnemu/cmdline.h	/^  int dns_given ;	\/* Whether dns was given.  *\/$/;"	m	struct:gengetopt_args_info
+dns_help	sgsnemu/cmdline.h	/^  const char *dns_help; \/* DNS Server to use help description.  *\/$/;"	m	struct:gengetopt_args_info
+dns_orig	sgsnemu/cmdline.h	/^  char * dns_orig;	\/* DNS Server to use original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+docdir	Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+docdir	doc/Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+docdir	ggsn/Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+docdir	gtp/Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+docdir	sgsnemu/Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+dscp	ggsn/tun.h	/^  unsigned int dscp:6;$/;"	m	struct:tun_packet_t
+dscp	sgsnemu/tun.h	/^  unsigned int dscp:6;$/;"	m	struct:tun_packet_t
+dst	ggsn/tun.h	/^  unsigned int dst:32;$/;"	m	struct:tun_packet_t
+dst	sgsnemu/sgsnemu.c	/^  uint32_t dst;                \/* Destination *\/$/;"	m	struct:ip_ping	file:
+dst	sgsnemu/tun.h	/^  unsigned int dst:32;$/;"	m	struct:tun_packet_t
+dstaddr	ggsn/tun.h	/^  struct in_addr dstaddr;$/;"	m	struct:tun_t	typeref:struct:tun_t::in_addr
+dstaddr	sgsnemu/tun.h	/^  struct in_addr dstaddr;$/;"	m	struct:tun_t	typeref:struct:tun_t::in_addr
+dublicate	gtp/gtp.h	/^  uint64_t dublicate;   \/* Number of dublicate or unsolicited replies *\/$/;"	m	struct:gsn_t
+dvidir	Makefile	/^dvidir = ${docdir}$/;"	m
+dvidir	doc/Makefile	/^dvidir = ${docdir}$/;"	m
+dvidir	ggsn/Makefile	/^dvidir = ${docdir}$/;"	m
+dvidir	gtp/Makefile	/^dvidir = ${docdir}$/;"	m
+dvidir	sgsnemu/Makefile	/^dvidir = ${docdir}$/;"	m
+dynip_arg	ggsn/cmdline.h	/^  char * dynip_arg;	\/* Dynamic IP address pool.  *\/$/;"	m	struct:gengetopt_args_info
+dynip_given	ggsn/cmdline.h	/^  int dynip_given ;	\/* Whether dynip was given.  *\/$/;"	m	struct:gengetopt_args_info
+dynip_help	ggsn/cmdline.h	/^  const char *dynip_help; \/* Dynamic IP address pool help description.  *\/$/;"	m	struct:gengetopt_args_info
+dynip_orig	ggsn/cmdline.h	/^  char * dynip_orig;	\/* Dynamic IP address pool original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+echo_conf	sgsnemu/sgsnemu.c	/^int echo_conf(int recovery) {$/;"	f
+echoversion	sgsnemu/sgsnemu.c	/^int echoversion = 1;            \/* First try this version *\/$/;"	v
+ecn	ggsn/tun.h	/^  unsigned int ecn:2;$/;"	m	struct:tun_packet_t
+ecn	sgsnemu/tun.h	/^  unsigned int ecn:2;$/;"	m	struct:tun_packet_t
+empty	gtp/gtp.h	/^  uint64_t empty;       \/* Number of empty packets *\/$/;"	m	struct:gsn_t
+encaps_ping	sgsnemu/sgsnemu.c	/^int encaps_ping(struct pdp_t *pdp, void *pack, unsigned len) {$/;"	f
+encaps_printf	ggsn/ggsn.c	/^int encaps_printf(void *p, void *packet, unsigned len)$/;"	f
+encaps_printf	sgsnemu/sgsnemu.c	/^int encaps_printf(struct pdp_t *pdp, void *pack, unsigned len) {$/;"	f
+encaps_tun	ggsn/ggsn.c	/^int encaps_tun(struct pdp_t *pdp, void *pack, unsigned len) {$/;"	f
+encaps_tun	sgsnemu/sgsnemu.c	/^int encaps_tun(struct pdp_t *pdp, void *pack, unsigned len) {$/;"	f
+end	ggsn/ggsn.c	/^int end = 0;$/;"	v
+err_address	gtp/gtp.h	/^  uint64_t err_address;     \/* GSN address conversion failed *\/$/;"	m	struct:gsn_t
+err_cause	gtp/gtp.h	/^  uint64_t err_cause;       \/* Unexpected cause value received *\/$/;"	m	struct:gsn_t
+err_memcpy	gtp/gtp.h	/^  uint64_t err_memcpy;      \/* Number of memcpy *\/$/;"	m	struct:gsn_t
+err_outofpdp	gtp/gtp.h	/^  uint64_t err_outofpdp;    \/* Out of storage for PDP contexts *\/$/;"	m	struct:gsn_t
+err_queuefull	gtp/gtp.h	/^  uint64_t err_queuefull;   \/* Number of times queue was full *\/$/;"	m	struct:gsn_t
+err_readfrom	gtp/gtp.h	/^  uint64_t err_readfrom;    \/* Number of readfrom errors *\/$/;"	m	struct:gsn_t
+err_sendto	gtp/gtp.h	/^  uint64_t err_sendto;      \/* Number of sendto errors *\/$/;"	m	struct:gsn_t
+err_seq	gtp/gtp.h	/^  uint64_t err_seq;         \/* Number of seq out of range *\/$/;"	m	struct:gsn_t
+err_socket	gtp/gtp.h	/^  uint64_t err_socket;      \/* Number of socket errors *\/$/;"	m	struct:gsn_t
+err_unknownpdp	gtp/gtp.h	/^  uint64_t err_unknownpdp;  \/* GSN address conversion failed *\/$/;"	m	struct:gsn_t
+err_unknowntid	gtp/gtp.h	/^  uint64_t err_unknowntid;  \/* Application supplied unknown imsi+nsapi *\/$/;"	m	struct:gsn_t
+eua	gtp/pdp.h	/^  struct ul66_t eua;    \/* End user address. PDP type and address combined *\/$/;"	m	struct:pdp_t	typeref:struct:pdp_t::ul66_t
+eua2ipv4	gtp/gtp.c	/^int eua2ipv4(struct in_addr *dst, struct ul66_t *eua) {$/;"	f
+exchange	ggsn/getopt.c	/^exchange (argv)$/;"	f	file:
+exchange	sgsnemu/getopt.c	/^exchange (argv)$/;"	f	file:
+exec_prefix	Makefile	/^exec_prefix = ${prefix}$/;"	m
+exec_prefix	doc/Makefile	/^exec_prefix = ${prefix}$/;"	m
+exec_prefix	ggsn/Makefile	/^exec_prefix = ${prefix}$/;"	m
+exec_prefix	gtp/Makefile	/^exec_prefix = ${prefix}$/;"	m
+exec_prefix	sgsnemu/Makefile	/^exec_prefix = ${prefix}$/;"	m
+ext	gtp/gtpie.h	/^  struct gtpie_ext ext;$/;"	m	union:gtpie_member	typeref:struct:gtpie_member::gtpie_ext
+fd	ggsn/tun.h	/^  int fd;                \/* File descriptor to tun interface *\/$/;"	m	struct:tun_t
+fd	gtp/pdp.h	/^  int fd;               \/* File descriptor request was received on *\/$/;"	m	struct:pdp_t
+fd	gtp/queue.h	/^  int fd;                 \/* Socket packet was sent to \/ received from *\/$/;"	m	struct:qmsg_t
+fd	sgsnemu/tun.h	/^  int fd;                \/* File descriptor to tun interface *\/$/;"	m	struct:tun_t
+fd0	gtp/gtp.h	/^  int         fd0;      \/* GTP0 file descriptor *\/$/;"	m	struct:gsn_t
+fd1c	gtp/gtp.h	/^  int         fd1c;     \/* GTP1 control plane file descriptor *\/$/;"	m	struct:gsn_t
+fd1u	gtp/gtp.h	/^  int         fd1u;     \/* GTP0 user plane file descriptor *\/$/;"	m	struct:gsn_t
+fg_flag	ggsn/cmdline.h	/^  int fg_flag;	\/* Run in foreground (default=off).  *\/$/;"	m	struct:gengetopt_args_info
+fg_given	ggsn/cmdline.h	/^  int fg_given ;	\/* Whether fg was given.  *\/$/;"	m	struct:gengetopt_args_info
+fg_help	ggsn/cmdline.h	/^  const char *fg_help; \/* Run in foreground help description.  *\/$/;"	m	struct:gengetopt_args_info
+first	gtp/queue.h	/^  int first;              \/* First packet in queue (oldest timeout) *\/$/;"	m	struct:queue_t
+first_nonopt	ggsn/getopt.c	/^static int first_nonopt;$/;"	v	file:
+first_nonopt	sgsnemu/getopt.c	/^static int first_nonopt;$/;"	v	file:
+firstdyn	ggsn/ippool.h	/^  struct ippoolm_t *firstdyn;    \/* Pointer to first free dynamic member *\/$/;"	m	struct:ippool_t	typeref:struct:ippool_t::ippoolm_t
+firstdyn	sgsnemu/ippool.h	/^  struct ippoolm_t *firstdyn;    \/* Pointer to first free dynamic member *\/$/;"	m	struct:ippool_t	typeref:struct:ippool_t::ippoolm_t
+firstping	sgsnemu/sgsnemu.c	/^struct timeval firstping;$/;"	v	typeref:struct:timeval
+firststat	ggsn/ippool.h	/^  struct ippoolm_t *firststat;   \/* Pointer to first free static member *\/$/;"	m	struct:ippool_t	typeref:struct:ippool_t::ippoolm_t
+firststat	sgsnemu/ippool.h	/^  struct ippoolm_t *firststat;   \/* Pointer to first free static member *\/$/;"	m	struct:ippool_t	typeref:struct:ippool_t::ippoolm_t
+flag	ggsn/gnugetopt.h	/^  int *flag;$/;"	m	struct:option
+flag	sgsnemu/gnugetopt.h	/^  int *flag;$/;"	m	struct:option
+flags	ggsn/tun.h	/^  unsigned int flags:3;$/;"	m	struct:tun_packet_t
+flags	gtp/gtp.h	/^  uint8_t  flags;         \/* 01 bitfield, with typical values *\/$/;"	m	struct:gtp1_header_long
+flags	gtp/gtp.h	/^  uint8_t  flags;         \/* 01 bitfield, with typical values *\/$/;"	m	struct:gtp1_header_short
+flags	gtp/gtp.h	/^  uint8_t  flags;      \/* 01 bitfield, with typical values *\/$/;"	m	struct:gtp0_header
+flags	gtp/gtp.h	/^  uint8_t flags;$/;"	m	union:gtp_packet
+flags	sgsnemu/tun.h	/^  unsigned int flags:3;$/;"	m	struct:tun_packet_t
+fllc	gtp/pdp.h	/^  uint16_t    fllc;     \/* (Local Flow Label Control, gtp0) *\/$/;"	m	struct:pdp_t
+fllu	gtp/pdp.h	/^  uint16_t    fllu;     \/* (Local Flow Label Data I, gtp0) *\/$/;"	m	struct:pdp_t
+flow	gtp/gtp.h	/^  uint16_t flow;	        \/* 07 Flow Label ( = 0 for signalling) *\/$/;"	m	struct:gtp0_header
+flow_id	gtp/pdp.h	/^  uint16_t    flow_id;  \/*  Packet flow identifier. *\/$/;"	m	struct:pdp_t
+flrc	gtp/pdp.h	/^  uint16_t    flrc;     \/* (Remote gn\/gp Flow Label Control, gtp0) *\/$/;"	m	struct:pdp_t
+flru	gtp/pdp.h	/^  uint16_t    flru;     \/* (Remote gn\/gp Flow Label Data I, gtp0) *\/$/;"	m	struct:pdp_t
+fragid	sgsnemu/sgsnemu.c	/^  uint16_t fragid;             \/* Identifier *\/$/;"	m	struct:ip_ping	file:
+fragment	ggsn/tun.h	/^  unsigned int fragment:13;$/;"	m	struct:tun_packet_t
+fragment	sgsnemu/tun.h	/^  unsigned int fragment:13;$/;"	m	struct:tun_packet_t
+free_cmd_list	ggsn/cmdline.c	/^free_cmd_list(void)$/;"	f	file:
+free_cmd_list	sgsnemu/cmdline.c	/^free_cmd_list(void)$/;"	f	file:
+func_append	config.status	/^func_append ()$/;"	f
+func_append	configure	/^func_append ()$/;"	f
+func_append	libtool	/^func_append ()$/;"	f
+func_arith	config.status	/^func_arith ()$/;"	f
+func_arith	configure	/^func_arith ()$/;"	f
+func_arith	libtool	/^func_arith ()$/;"	f
+func_basename	config.status	/^func_basename ()$/;"	f
+func_basename	configure	/^func_basename ()$/;"	f
+func_basename	libtool	/^func_basename ()$/;"	f
+func_check_version_match	libtool	/^func_check_version_match ()$/;"	f
+func_check_version_match	ltmain.sh	/^func_check_version_match ()$/;"	f
+func_config	libtool	/^func_config ()$/;"	f
+func_config	ltmain.sh	/^func_config ()$/;"	f
+func_dirname	config.status	/^func_dirname ()$/;"	f
+func_dirname	configure	/^func_dirname ()$/;"	f
+func_dirname	libtool	/^func_dirname ()$/;"	f
+func_dirname_and_basename	config.status	/^func_dirname_and_basename ()$/;"	f
+func_dirname_and_basename	configure	/^func_dirname_and_basename ()$/;"	f
+func_dirname_and_basename	libtool	/^func_dirname_and_basename ()$/;"	f
+func_dirname_and_basename	ltmain.sh	/^func_dirname_and_basename ()$/;"	f
+func_echo	libtool	/^func_echo ()$/;"	f
+func_echo	ltmain.sh	/^func_echo ()$/;"	f
+func_emit_cwrapperexe_src	libtool	/^func_emit_cwrapperexe_src ()$/;"	f
+func_emit_cwrapperexe_src	ltmain.sh	/^func_emit_cwrapperexe_src ()$/;"	f
+func_emit_wrapper	libtool	/^func_emit_wrapper ()$/;"	f
+func_emit_wrapper	ltmain.sh	/^func_emit_wrapper ()$/;"	f
+func_emit_wrapper_part1	libtool	/^func_emit_wrapper_part1 ()$/;"	f
+func_emit_wrapper_part1	ltmain.sh	/^func_emit_wrapper_part1 ()$/;"	f
+func_emit_wrapper_part2	libtool	/^func_emit_wrapper_part2 ()$/;"	f
+func_emit_wrapper_part2	ltmain.sh	/^func_emit_wrapper_part2 ()$/;"	f
+func_enable_tag	libtool	/^func_enable_tag ()$/;"	f
+func_enable_tag	ltmain.sh	/^func_enable_tag ()$/;"	f
+func_error	libtool	/^func_error ()$/;"	f
+func_error	ltmain.sh	/^func_error ()$/;"	f
+func_execute_cmds	libtool	/^func_execute_cmds ()$/;"	f
+func_execute_cmds	ltmain.sh	/^func_execute_cmds ()$/;"	f
+func_extract_an_archive	libtool	/^func_extract_an_archive ()$/;"	f
+func_extract_an_archive	ltmain.sh	/^func_extract_an_archive ()$/;"	f
+func_extract_archives	libtool	/^func_extract_archives ()$/;"	f
+func_extract_archives	ltmain.sh	/^func_extract_archives ()$/;"	f
+func_fatal_configuration	libtool	/^func_fatal_configuration ()$/;"	f
+func_fatal_configuration	ltmain.sh	/^func_fatal_configuration ()$/;"	f
+func_fatal_error	libtool	/^func_fatal_error ()$/;"	f
+func_fatal_error	ltmain.sh	/^func_fatal_error ()$/;"	f
+func_fatal_help	libtool	/^func_fatal_help ()$/;"	f
+func_fatal_help	ltmain.sh	/^func_fatal_help ()$/;"	f
+func_features	libtool	/^func_features ()$/;"	f
+func_features	ltmain.sh	/^func_features ()$/;"	f
+func_generate_dlsyms	libtool	/^func_generate_dlsyms ()$/;"	f
+func_generate_dlsyms	ltmain.sh	/^func_generate_dlsyms ()$/;"	f
+func_grep	libtool	/^func_grep ()$/;"	f
+func_grep	ltmain.sh	/^func_grep ()$/;"	f
+func_help	libtool	/^func_help ()$/;"	f
+func_help	ltmain.sh	/^func_help ()$/;"	f
+func_infer_tag	libtool	/^func_infer_tag ()$/;"	f
+func_infer_tag	ltmain.sh	/^func_infer_tag ()$/;"	f
+func_lalib_p	libtool	/^func_lalib_p ()$/;"	f
+func_lalib_p	ltmain.sh	/^func_lalib_p ()$/;"	f
+func_lalib_unsafe_p	libtool	/^func_lalib_unsafe_p ()$/;"	f
+func_lalib_unsafe_p	ltmain.sh	/^func_lalib_unsafe_p ()$/;"	f
+func_len	config.status	/^func_len ()$/;"	f
+func_len	configure	/^func_len ()$/;"	f
+func_len	libtool	/^func_len ()$/;"	f
+func_lo2o	config.status	/^func_lo2o ()$/;"	f
+func_lo2o	configure	/^func_lo2o ()$/;"	f
+func_lo2o	libtool	/^func_lo2o ()$/;"	f
+func_ltwrapper_executable_p	libtool	/^func_ltwrapper_executable_p ()$/;"	f
+func_ltwrapper_executable_p	ltmain.sh	/^func_ltwrapper_executable_p ()$/;"	f
+func_ltwrapper_p	libtool	/^func_ltwrapper_p ()$/;"	f
+func_ltwrapper_p	ltmain.sh	/^func_ltwrapper_p ()$/;"	f
+func_ltwrapper_script_p	libtool	/^func_ltwrapper_script_p ()$/;"	f
+func_ltwrapper_script_p	ltmain.sh	/^func_ltwrapper_script_p ()$/;"	f
+func_ltwrapper_scriptname	libtool	/^func_ltwrapper_scriptname ()$/;"	f
+func_ltwrapper_scriptname	ltmain.sh	/^func_ltwrapper_scriptname ()$/;"	f
+func_missing_arg	libtool	/^func_missing_arg ()$/;"	f
+func_missing_arg	ltmain.sh	/^func_missing_arg ()$/;"	f
+func_mkdir_p	libtool	/^func_mkdir_p ()$/;"	f
+func_mkdir_p	ltmain.sh	/^func_mkdir_p ()$/;"	f
+func_mktempdir	libtool	/^func_mktempdir ()$/;"	f
+func_mktempdir	ltmain.sh	/^func_mktempdir ()$/;"	f
+func_mode_compile	libtool	/^func_mode_compile ()$/;"	f
+func_mode_compile	ltmain.sh	/^func_mode_compile ()$/;"	f
+func_mode_execute	libtool	/^func_mode_execute ()$/;"	f
+func_mode_execute	ltmain.sh	/^func_mode_execute ()$/;"	f
+func_mode_finish	libtool	/^func_mode_finish ()$/;"	f
+func_mode_finish	ltmain.sh	/^func_mode_finish ()$/;"	f
+func_mode_help	libtool	/^func_mode_help ()$/;"	f
+func_mode_help	ltmain.sh	/^func_mode_help ()$/;"	f
+func_mode_install	libtool	/^func_mode_install ()$/;"	f
+func_mode_install	ltmain.sh	/^func_mode_install ()$/;"	f
+func_mode_link	libtool	/^func_mode_link ()$/;"	f
+func_mode_link	ltmain.sh	/^func_mode_link ()$/;"	f
+func_mode_uninstall	libtool	/^func_mode_uninstall ()$/;"	f
+func_mode_uninstall	ltmain.sh	/^func_mode_uninstall ()$/;"	f
+func_opt_split	config.status	/^func_opt_split ()$/;"	f
+func_opt_split	configure	/^func_opt_split ()$/;"	f
+func_opt_split	libtool	/^func_opt_split ()$/;"	f
+func_quote_for_eval	libtool	/^func_quote_for_eval ()$/;"	f
+func_quote_for_eval	ltmain.sh	/^func_quote_for_eval ()$/;"	f
+func_quote_for_expand	libtool	/^func_quote_for_expand ()$/;"	f
+func_quote_for_expand	ltmain.sh	/^func_quote_for_expand ()$/;"	f
+func_show_eval	libtool	/^func_show_eval ()$/;"	f
+func_show_eval	ltmain.sh	/^func_show_eval ()$/;"	f
+func_show_eval_locale	libtool	/^func_show_eval_locale ()$/;"	f
+func_show_eval_locale	ltmain.sh	/^func_show_eval_locale ()$/;"	f
+func_source	libtool	/^func_source ()$/;"	f
+func_source	ltmain.sh	/^func_source ()$/;"	f
+func_stripname	config.status	/^func_stripname ()$/;"	f
+func_stripname	configure	/^func_stripname ()$/;"	f
+func_stripname	libtool	/^func_stripname ()$/;"	f
+func_to_host_path	libtool	/^func_to_host_path ()$/;"	f
+func_to_host_path	ltmain.sh	/^func_to_host_path ()$/;"	f
+func_to_host_pathlist	libtool	/^func_to_host_pathlist ()$/;"	f
+func_to_host_pathlist	ltmain.sh	/^func_to_host_pathlist ()$/;"	f
+func_usage	libtool	/^func_usage ()$/;"	f
+func_usage	ltmain.sh	/^func_usage ()$/;"	f
+func_verbose	libtool	/^func_verbose ()$/;"	f
+func_verbose	ltmain.sh	/^func_verbose ()$/;"	f
+func_version	libtool	/^func_version ()$/;"	f
+func_version	ltmain.sh	/^func_version ()$/;"	f
+func_warning	libtool	/^func_warning ()$/;"	f
+func_warning	ltmain.sh	/^func_warning ()$/;"	f
+func_win32_libid	libtool	/^func_win32_libid ()$/;"	f
+func_win32_libid	ltmain.sh	/^func_win32_libid ()$/;"	f
+func_write_libtool_object	libtool	/^func_write_libtool_object ()$/;"	f
+func_write_libtool_object	ltmain.sh	/^func_write_libtool_object ()$/;"	f
+func_xform	config.status	/^func_xform ()$/;"	f
+func_xform	configure	/^func_xform ()$/;"	f
+func_xform	libtool	/^func_xform ()$/;"	f
+gengetopt_args_info	ggsn/cmdline.h	/^struct gengetopt_args_info$/;"	s
+gengetopt_args_info	sgsnemu/cmdline.h	/^struct gengetopt_args_info$/;"	s
+gengetopt_args_info_help	ggsn/cmdline.c	/^const char *gengetopt_args_info_help[] = {$/;"	v
+gengetopt_args_info_help	sgsnemu/cmdline.c	/^const char *gengetopt_args_info_help[] = {$/;"	v
+gengetopt_args_info_purpose	ggsn/cmdline.c	/^const char *gengetopt_args_info_purpose = "";$/;"	v
+gengetopt_args_info_purpose	sgsnemu/cmdline.c	/^const char *gengetopt_args_info_purpose = "";$/;"	v
+gengetopt_args_info_usage	ggsn/cmdline.c	/^const char *gengetopt_args_info_usage = "Usage: " CMDLINE_PARSER_PACKAGE " [OPTIONS]...";$/;"	v
+gengetopt_args_info_usage	sgsnemu/cmdline.c	/^const char *gengetopt_args_info_usage = "Usage: " CMDLINE_PARSER_PACKAGE " [OPTIONS]...";$/;"	v
+gengetopt_strdup	ggsn/cmdline.c	/^gengetopt_strdup (const char *s)$/;"	f
+gengetopt_strdup	sgsnemu/cmdline.c	/^gengetopt_strdup (const char *s)$/;"	f
+get_default_gtp	gtp/gtp.c	/^static unsigned int get_default_gtp(int version, uint8_t type, void *packet) {$/;"	f	file:
+get_hlen	gtp/gtp.c	/^static uint16_t get_hlen(void *pack) {$/;"	f	file:
+get_seq	gtp/gtp.c	/^static uint16_t get_seq(void *pack) {$/;"	f	file:
+get_tei	gtp/gtp.c	/^static uint32_t get_tei(void *pack) {$/;"	f	file:
+get_tid	gtp/gtp.c	/^static uint64_t get_tid(void *pack) {$/;"	f	file:
+getopt	ggsn/getopt.c	/^getopt (argc, argv, optstring)$/;"	f
+getopt	sgsnemu/getopt.c	/^getopt (argc, argv, optstring)$/;"	f
+getopt_long	ggsn/getopt1.c	/^getopt_long (argc, argv, options, long_options, opt_index)$/;"	f
+getopt_long	sgsnemu/getopt1.c	/^getopt_long (argc, argv, options, long_options, opt_index)$/;"	f
+getopt_long_only	ggsn/getopt1.c	/^getopt_long_only (argc, argv, options, long_options, opt_index)$/;"	f
+getopt_long_only	sgsnemu/getopt1.c	/^getopt_long_only (argc, argv, options, long_options, opt_index)$/;"	f
+ggsn_DEPENDENCIES	ggsn/Makefile	/^ggsn_DEPENDENCIES = $/;"	m
+ggsn_LDADD	ggsn/Makefile	/^ggsn_LDADD =   -lgtp -L..\/gtp$/;"	m
+ggsn_OBJECTS	ggsn/Makefile	/^ggsn_OBJECTS = $(am_ggsn_OBJECTS)$/;"	m
+ggsn_SOURCES	ggsn/Makefile	/^ggsn_SOURCES = ggsn.c tun.c tun.h cmdline.c cmdline.h ippool.h ippool.c syserr.h syserr.c lookup.c lookup.h$/;"	m
+gsn	ggsn/ggsn.c	/^struct gsn_t *gsn;              \/* GSN instance            *\/$/;"	v	typeref:struct:gsn_t
+gsn	sgsnemu/sgsnemu.c	/^struct gsn_t *gsn = NULL;       \/* GSN instance *\/$/;"	v	typeref:struct:gsn_t
+gsn_t	gtp/gtp.h	/^struct gsn_t {$/;"	s
+gsna2in_addr	gtp/gtp.c	/^int gsna2in_addr(struct in_addr *dst, struct ul16_t *gsna) {$/;"	f
+gsnc	gtp/gtp.h	/^  struct in_addr gsnc;  \/* IP address of this gsn for signalling *\/$/;"	m	struct:gsn_t	typeref:struct:gsn_t::in_addr
+gsnlc	gtp/pdp.h	/^  struct ul16_t gsnlc;  \/* The IP address of the local GSN. (Control plane) *\/$/;"	m	struct:pdp_t	typeref:struct:pdp_t::ul16_t
+gsnlu	gtp/pdp.h	/^  struct ul16_t gsnlu;  \/* The IP address of the local GSN. (User plane) *\/$/;"	m	struct:pdp_t	typeref:struct:pdp_t::ul16_t
+gsnrc	gtp/pdp.h	/^  struct ul16_t gsnrc;  \/* The IP address of the remote GSN. (Control plane) *\/$/;"	m	struct:pdp_t	typeref:struct:pdp_t::ul16_t
+gsnru	gtp/pdp.h	/^  struct ul16_t gsnru;  \/* The IP address of the remote GSN. (User plane) *\/$/;"	m	struct:pdp_t	typeref:struct:pdp_t::ul16_t
+gsnu	gtp/gtp.h	/^  struct in_addr gsnu;  \/* IP address of this gsn for user traffic *\/$/;"	m	struct:gsn_t	typeref:struct:gsn_t::in_addr
+gtp0	gtp/gtp.h	/^  struct gtp0_packet        gtp0;$/;"	m	union:gtp_packet	typeref:struct:gtp_packet::gtp0_packet
+gtp0_header	gtp/gtp.h	/^struct gtp0_header {    \/*    Descriptions from 3GPP 09.60 *\/$/;"	s
+gtp0_packet	gtp/gtp.h	/^struct gtp0_packet {$/;"	s
+gtp1_header_long	gtp/gtp.h	/^struct gtp1_header_long {  \/*    Descriptions from 3GPP 29060 *\/$/;"	s
+gtp1_header_short	gtp/gtp.h	/^struct gtp1_header_short { \/*    Descriptions from 3GPP 29060 *\/$/;"	s
+gtp1_packet_long	gtp/gtp.h	/^struct gtp1_packet_long {$/;"	s
+gtp1_packet_short	gtp/gtp.h	/^struct gtp1_packet_short {$/;"	s
+gtp1l	gtp/gtp.h	/^  struct gtp1_packet_long   gtp1l;$/;"	m	union:gtp_packet	typeref:struct:gtp_packet::gtp1_packet_long
+gtp1s	gtp/gtp.h	/^  struct gtp1_packet_short  gtp1s;$/;"	m	union:gtp_packet	typeref:struct:gtp_packet::gtp1_packet_short
+gtp_conf	gtp/gtp.c	/^int gtp_conf(struct gsn_t *gsn, int version, struct sockaddr_in *peer,$/;"	f
+gtp_create_context_req	gtp/gtp.c	/^extern int gtp_create_context_req(struct gsn_t *gsn, struct pdp_t *pdp, $/;"	f
+gtp_create_context_resp	gtp/gtp.c	/^int gtp_create_context_resp(struct gsn_t *gsn, struct pdp_t *pdp, int cause) {$/;"	f
+gtp_create_pdp_conf	gtp/gtp.c	/^int gtp_create_pdp_conf(struct gsn_t *gsn, int version,$/;"	f
+gtp_create_pdp_ind	gtp/gtp.c	/^int gtp_create_pdp_ind(struct gsn_t *gsn, int version,$/;"	f
+gtp_create_pdp_resp	gtp/gtp.c	/^int gtp_create_pdp_resp(struct gsn_t *gsn, int version, struct pdp_t *pdp, $/;"	f
+gtp_data_req	gtp/gtp.c	/^int gtp_data_req(struct gsn_t *gsn, struct pdp_t* pdp, $/;"	f
+gtp_decaps0	gtp/gtp.c	/^int gtp_decaps0(struct gsn_t *gsn)$/;"	f
+gtp_decaps1c	gtp/gtp.c	/^int gtp_decaps1c(struct gsn_t *gsn)$/;"	f
+gtp_decaps1u	gtp/gtp.c	/^int gtp_decaps1u(struct gsn_t *gsn)$/;"	f
+gtp_delete_context_req	gtp/gtp.c	/^int gtp_delete_context_req(struct gsn_t *gsn, struct pdp_t *pdp, void *cbp,$/;"	f
+gtp_delete_pdp_conf	gtp/gtp.c	/^int gtp_delete_pdp_conf(struct gsn_t *gsn, int version,$/;"	f
+gtp_delete_pdp_ind	gtp/gtp.c	/^int gtp_delete_pdp_ind(struct gsn_t *gsn, int version,$/;"	f
+gtp_delete_pdp_resp	gtp/gtp.c	/^int gtp_delete_pdp_resp(struct gsn_t *gsn, int version,$/;"	f
+gtp_dublicate	gtp/gtp.c	/^int gtp_dublicate(struct gsn_t *gsn, int version,  $/;"	f
+gtp_echo_conf	gtp/gtp.c	/^int gtp_echo_conf(struct gsn_t *gsn, int version, struct sockaddr_in *peer,$/;"	f
+gtp_echo_ind	gtp/gtp.c	/^int gtp_echo_ind(struct gsn_t *gsn, int version, struct sockaddr_in *peer, $/;"	f
+gtp_echo_req	gtp/gtp.c	/^int gtp_echo_req(struct gsn_t *gsn, int version, void *cbp,$/;"	f
+gtp_echo_resp	gtp/gtp.c	/^int gtp_echo_resp(struct gsn_t *gsn, int version,$/;"	f
+gtp_err	gtp/gtp.c	/^void gtp_err(int priority, char *filename, int linenum, char *fmt, ...) {$/;"	f
+gtp_error_ind_conf	gtp/gtp.c	/^int gtp_error_ind_conf(struct gsn_t *gsn, int version,$/;"	f
+gtp_error_ind_resp	gtp/gtp.c	/^int gtp_error_ind_resp(struct gsn_t *gsn, int version,$/;"	f
+gtp_errpack	gtp/gtp.c	/^void gtp_errpack(int pri, char *fn, int ln, struct sockaddr_in *peer,$/;"	f
+gtp_extheader_ind	gtp/gtp.c	/^int gtp_extheader_ind(struct gsn_t *gsn, struct sockaddr_in *peer, $/;"	f
+gtp_extheader_req	gtp/gtp.c	/^int gtp_extheader_req(struct gsn_t *gsn, int version, struct sockaddr_in *peer,$/;"	f
+gtp_fd	gtp/gtp.c	/^extern int gtp_fd(struct gsn_t *gsn) {$/;"	f
+gtp_free	gtp/gtp.c	/^int gtp_free(struct gsn_t *gsn) {$/;"	f
+gtp_freepdp	gtp/gtp.c	/^int gtp_freepdp(struct gsn_t* gsn, struct pdp_t *pdp) {$/;"	f
+gtp_gpdu_ind	gtp/gtp.c	/^int gtp_gpdu_ind(struct gsn_t *gsn, int version,$/;"	f
+gtp_new	gtp/gtp.c	/^int gtp_new(struct gsn_t **gsn, char *statedir, struct in_addr *listen,$/;"	f
+gtp_newpdp	gtp/gtp.c	/^int gtp_newpdp(struct gsn_t* gsn, struct pdp_t **pdp, $/;"	f
+gtp_notification	gtp/gtp.c	/^int gtp_notification(struct gsn_t *gsn, int version,$/;"	f
+gtp_packet	gtp/gtp.h	/^union gtp_packet {$/;"	u
+gtp_req	gtp/gtp.c	/^int gtp_req(struct gsn_t *gsn, int version, struct pdp_t *pdp,$/;"	f
+gtp_resp	gtp/gtp.c	/^int gtp_resp(int version, struct gsn_t *gsn, struct pdp_t *pdp, $/;"	f
+gtp_retrans	gtp/gtp.c	/^int gtp_retrans(struct gsn_t *gsn) {$/;"	f
+gtp_retranstimeout	gtp/gtp.c	/^int gtp_retranstimeout(struct gsn_t *gsn, struct timeval *timeout) {$/;"	f
+gtp_set_cb_conf	gtp/gtp.c	/^int gtp_set_cb_conf(struct gsn_t *gsn,$/;"	f
+gtp_set_cb_create_context_ind	gtp/gtp.c	/^int gtp_set_cb_create_context_ind(struct gsn_t *gsn,$/;"	f
+gtp_set_cb_data_ind	gtp/gtp.c	/^extern int gtp_set_cb_data_ind(struct gsn_t *gsn,$/;"	f
+gtp_set_cb_delete_context	gtp/gtp.c	/^int gtp_set_cb_delete_context(struct gsn_t *gsn,$/;"	f
+gtp_set_cb_extheader_ind	gtp/gtp.c	/^int gtp_set_cb_extheader_ind(struct gsn_t *gsn,$/;"	f
+gtp_set_cb_unsup_ind	gtp/gtp.c	/^int gtp_set_cb_unsup_ind(struct gsn_t *gsn,$/;"	f
+gtp_unsup_ind	gtp/gtp.c	/^int gtp_unsup_ind(struct gsn_t *gsn, struct sockaddr_in *peer, $/;"	f
+gtp_unsup_req	gtp/gtp.c	/^int gtp_unsup_req(struct gsn_t *gsn, int version, struct sockaddr_in *peer,$/;"	f
+gtp_update_context	gtp/gtp.c	/^int gtp_update_context(struct gsn_t *gsn, struct pdp_t *pdp, void *cbp,$/;"	f
+gtp_update_pdp_conf	gtp/gtp.c	/^int gtp_update_pdp_conf(struct gsn_t *gsn, int version,$/;"	f
+gtp_update_pdp_ind	gtp/gtp.c	/^int gtp_update_pdp_ind(struct gsn_t *gsn, int version,$/;"	f
+gtp_update_pdp_resp	gtp/gtp.c	/^int gtp_update_pdp_resp(struct gsn_t *gsn, int version, $/;"	f
+gtp_version	gtp/gtp.c	/^const char* gtp_version()$/;"	f
+gtpie_decaps	gtp/gtpie.c	/^int gtpie_decaps(union gtpie_member* ie[], int version, void *pack, unsigned len) {$/;"	f
+gtpie_encaps	gtp/gtpie.c	/^int gtpie_encaps(union gtpie_member *ie[], void *pack, unsigned *len) {$/;"	f
+gtpie_encaps2	gtp/gtpie.c	/^int gtpie_encaps2(union gtpie_member ie[], unsigned int size,$/;"	f
+gtpie_exist	gtp/gtpie.c	/^int gtpie_exist(union gtpie_member* ie[], int type, int instance) {$/;"	f
+gtpie_ext	gtp/gtpie.h	/^struct gtpie_ext {              \/* Extension header *\/$/;"	s
+gtpie_getie	gtp/gtpie.c	/^int gtpie_getie(union gtpie_member* ie[], int type, int instance) {$/;"	f
+gtpie_gettlv	gtp/gtpie.c	/^int gtpie_gettlv(union gtpie_member* ie[], int type, int instance,$/;"	f
+gtpie_gettv0	gtp/gtpie.c	/^int gtpie_gettv0(union gtpie_member* ie[], int type, int instance,$/;"	f
+gtpie_gettv1	gtp/gtpie.c	/^int gtpie_gettv1(union gtpie_member* ie[], int type, int instance, $/;"	f
+gtpie_gettv2	gtp/gtpie.c	/^int gtpie_gettv2(union gtpie_member* ie[], int type, int instance, $/;"	f
+gtpie_gettv4	gtp/gtpie.c	/^int gtpie_gettv4(union gtpie_member* ie[], int type, int instance, $/;"	f
+gtpie_gettv8	gtp/gtpie.c	/^int gtpie_gettv8(union gtpie_member* ie[], int type, int instance, $/;"	f
+gtpie_member	gtp/gtpie.h	/^union gtpie_member {$/;"	u
+gtpie_tlv	gtp/gtpie.c	/^int gtpie_tlv(void *p, unsigned int *length, unsigned int size, uint8_t t, int l, void *v) {$/;"	f
+gtpie_tlv	gtp/gtpie.h	/^struct gtpie_tlv {              \/* Type length value pair *\/$/;"	s
+gtpie_tv0	gtp/gtpie.c	/^int gtpie_tv0(void *p, unsigned int *length, unsigned int size, uint8_t t, int l, uint8_t *v) {$/;"	f
+gtpie_tv0	gtp/gtpie.h	/^struct gtpie_tv0 {              \/* 1 byte type value pair *\/$/;"	s
+gtpie_tv1	gtp/gtpie.c	/^int gtpie_tv1(void *p, unsigned int *length, unsigned int size, uint8_t t, uint8_t v) {$/;"	f
+gtpie_tv1	gtp/gtpie.h	/^struct gtpie_tv1 {              \/* 1 byte type value pair *\/$/;"	s
+gtpie_tv2	gtp/gtpie.c	/^int gtpie_tv2(void *p, unsigned int *length, unsigned int size, uint8_t t, uint16_t v) {$/;"	f
+gtpie_tv2	gtp/gtpie.h	/^struct gtpie_tv2 {              \/* 2 byte type value pair *\/$/;"	s
+gtpie_tv4	gtp/gtpie.c	/^int gtpie_tv4(void *p, unsigned int *length, unsigned int size, uint8_t t, uint32_t v) {$/;"	f
+gtpie_tv4	gtp/gtpie.h	/^struct gtpie_tv4 {              \/* 4 byte type value pair *\/$/;"	s
+gtpie_tv8	gtp/gtpie.c	/^int gtpie_tv8(void *p, unsigned int *length, unsigned int size, uint8_t t, uint64_t v) {$/;"	f
+gtpie_tv8	gtp/gtpie.h	/^struct gtpie_tv8 {              \/* 8 byte type value pair *\/$/;"	s
+gtpsnrx	gtp/pdp.h	/^  uint16_t    gtpsnrx;  \/* GTP-U sequence number of the next uplink N-PDU to be received (09.60 section 8.1.1.1) *\/$/;"	m	struct:pdp_t
+gtpsntx	gtp/pdp.h	/^  uint16_t    gtpsntx;  \/* GTP-U sequence number of the next downlink N-PDU to be sent (09.60 section 8.1.1.1) *\/$/;"	m	struct:pdp_t
+gtpversion	sgsnemu/sgsnemu.c	/^  int gtpversion;$/;"	m	struct:__anon1	file:
+gtpversion_arg	sgsnemu/cmdline.h	/^  int gtpversion_arg;	\/* GTP version to use (default='1').  *\/$/;"	m	struct:gengetopt_args_info
+gtpversion_given	sgsnemu/cmdline.h	/^  int gtpversion_given ;	\/* Whether gtpversion was given.  *\/$/;"	m	struct:gengetopt_args_info
+gtpversion_help	sgsnemu/cmdline.h	/^  const char *gtpversion_help; \/* GTP version to use help description.  *\/$/;"	m	struct:gengetopt_args_info
+gtpversion_orig	sgsnemu/cmdline.h	/^  char * gtpversion_orig;	\/* GTP version to use original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+h	gtp/gtp.h	/^  struct gtp0_header h;$/;"	m	struct:gtp0_packet	typeref:struct:gtp0_packet::gtp0_header
+h	gtp/gtp.h	/^  struct gtp1_header_long h;$/;"	m	struct:gtp1_packet_long	typeref:struct:gtp1_packet_long::gtp1_header_long
+h	gtp/gtp.h	/^  struct gtp1_header_short h;$/;"	m	struct:gtp1_packet_short	typeref:struct:gtp1_packet_short::gtp1_header_short
+has_arg	ggsn/gnugetopt.h	/^  int has_arg;$/;"	m	struct:option
+has_arg	sgsnemu/gnugetopt.h	/^  int has_arg;$/;"	m	struct:option
+hash	ggsn/ippool.h	/^  struct ippoolm_t **hash;       \/* Hashsize array of pointer to member *\/$/;"	m	struct:ippool_t	typeref:struct:ippool_t::ippoolm_t
+hash	sgsnemu/ippool.h	/^  struct ippoolm_t **hash;       \/* Hashsize array of pointer to member *\/$/;"	m	struct:ippool_t	typeref:struct:ippool_t::ippoolm_t
+hashlog	ggsn/ippool.h	/^  int hashlog;                   \/* Log2 size of hash table *\/$/;"	m	struct:ippool_t
+hashlog	sgsnemu/ippool.h	/^  int hashlog;                   \/* Log2 size of hash table *\/$/;"	m	struct:ippool_t
+hashmask	ggsn/ippool.h	/^  int hashmask;                  \/* Bitmask for calculating hash *\/$/;"	m	struct:ippool_t
+hashmask	gtp/lookupa.h	24;"	d
+hashmask	sgsnemu/ippool.h	/^  int hashmask;                  \/* Bitmask for calculating hash *\/$/;"	m	struct:ippool_t
+hashseq	gtp/queue.h	/^  void *hashseq[QUEUE_HASH_SIZE];    \/* Hash array *\/$/;"	m	struct:queue_t
+hashsize	ggsn/ippool.h	/^  unsigned int hashsize;                  \/* Size of hash table *\/$/;"	m	struct:ippool_t
+hashsize	gtp/lookupa.h	23;"	d
+hashsize	sgsnemu/ippool.h	/^  unsigned int hashsize;                  \/* Size of hash table *\/$/;"	m	struct:ippool_t
+hashtid	gtp/pdp.c	/^struct pdp_t* hashtid[PDP_MAX];\/* Hash table for IMSI + NSAPI *\/$/;"	v	typeref:struct:pdp_t
+help_given	ggsn/cmdline.h	/^  int help_given ;	\/* Whether help was given.  *\/$/;"	m	struct:gengetopt_args_info
+help_given	sgsnemu/cmdline.h	/^  int help_given ;	\/* Whether help was given.  *\/$/;"	m	struct:gengetopt_args_info
+help_help	ggsn/cmdline.h	/^  const char *help_help; \/* Print help and exit help description.  *\/$/;"	m	struct:gengetopt_args_info
+help_help	sgsnemu/cmdline.h	/^  const char *help_help; \/* Print help and exit help description.  *\/$/;"	m	struct:gengetopt_args_info
+hisaddr0	gtp/pdp.h	/^  struct in_addr hisaddr0;       \/* Server address *\/$/;"	m	struct:pdp_t	typeref:struct:pdp_t::in_addr
+hisaddr1	gtp/pdp.h	/^  struct in_addr hisaddr1;       \/* Server address *\/$/;"	m	struct:pdp_t	typeref:struct:pdp_t::in_addr
+host	Makefile	/^host = x86_64-unknown-linux-gnu$/;"	m
+host	doc/Makefile	/^host = x86_64-unknown-linux-gnu$/;"	m
+host	ggsn/Makefile	/^host = x86_64-unknown-linux-gnu$/;"	m
+host	gtp/Makefile	/^host = x86_64-unknown-linux-gnu$/;"	m
+host	sgsnemu/Makefile	/^host = x86_64-unknown-linux-gnu$/;"	m
+host_alias	Makefile	/^host_alias = $/;"	m
+host_alias	doc/Makefile	/^host_alias = $/;"	m
+host_alias	ggsn/Makefile	/^host_alias = $/;"	m
+host_alias	gtp/Makefile	/^host_alias = $/;"	m
+host_alias	sgsnemu/Makefile	/^host_alias = $/;"	m
+host_cpu	Makefile	/^host_cpu = x86_64$/;"	m
+host_cpu	doc/Makefile	/^host_cpu = x86_64$/;"	m
+host_cpu	ggsn/Makefile	/^host_cpu = x86_64$/;"	m
+host_cpu	gtp/Makefile	/^host_cpu = x86_64$/;"	m
+host_cpu	sgsnemu/Makefile	/^host_cpu = x86_64$/;"	m
+host_os	Makefile	/^host_os = linux-gnu$/;"	m
+host_os	doc/Makefile	/^host_os = linux-gnu$/;"	m
+host_os	ggsn/Makefile	/^host_os = linux-gnu$/;"	m
+host_os	gtp/Makefile	/^host_os = linux-gnu$/;"	m
+host_os	sgsnemu/Makefile	/^host_os = linux-gnu$/;"	m
+host_triplet	Makefile	/^host_triplet = x86_64-unknown-linux-gnu$/;"	m
+host_triplet	doc/Makefile	/^host_triplet = x86_64-unknown-linux-gnu$/;"	m
+host_triplet	ggsn/Makefile	/^host_triplet = x86_64-unknown-linux-gnu$/;"	m
+host_triplet	gtp/Makefile	/^host_triplet = x86_64-unknown-linux-gnu$/;"	m
+host_triplet	sgsnemu/Makefile	/^host_triplet = x86_64-unknown-linux-gnu$/;"	m
+host_vendor	Makefile	/^host_vendor = unknown$/;"	m
+host_vendor	doc/Makefile	/^host_vendor = unknown$/;"	m
+host_vendor	ggsn/Makefile	/^host_vendor = unknown$/;"	m
+host_vendor	gtp/Makefile	/^host_vendor = unknown$/;"	m
+host_vendor	sgsnemu/Makefile	/^host_vendor = unknown$/;"	m
+htmldir	Makefile	/^htmldir = ${docdir}$/;"	m
+htmldir	doc/Makefile	/^htmldir = ${docdir}$/;"	m
+htmldir	ggsn/Makefile	/^htmldir = ${docdir}$/;"	m
+htmldir	gtp/Makefile	/^htmldir = ${docdir}$/;"	m
+htmldir	sgsnemu/Makefile	/^htmldir = ${docdir}$/;"	m
+hton16	gtp/gtpie.h	18;"	d
+hton32	gtp/gtpie.h	20;"	d
+hton64	gtp/gtpie.h	/^hton64(uint64_t q)$/;"	f
+hton64	gtp/gtpie.h	38;"	d
+hton8	gtp/gtpie.h	16;"	d
+id	ggsn/tun.h	/^  unsigned int id:16;$/;"	m	struct:tun_packet_t
+id	sgsnemu/tun.h	/^  unsigned int id:16;$/;"	m	struct:tun_packet_t
+ident	sgsnemu/sgsnemu.c	/^  uint16_t ident;              \/* Identifier *\/$/;"	m	struct:ip_ping	file:
+ihl	ggsn/tun.h	/^  unsigned int ihl:4;$/;"	m	struct:tun_packet_t
+ihl	sgsnemu/tun.h	/^  unsigned int ihl:4;$/;"	m	struct:tun_packet_t
+imsi	gtp/pdp.h	/^  uint64_t    imsi;     \/* International Mobile Subscriber Identity.*\/$/;"	m	struct:pdp_t
+imsi	sgsnemu/sgsnemu.c	/^  uint64_t imsi;$/;"	m	struct:__anon1	file:
+imsi_add	sgsnemu/sgsnemu.c	/^int imsi_add(uint64_t src, uint64_t *dst, int add) {$/;"	f
+imsi_arg	sgsnemu/cmdline.h	/^  char * imsi_arg;	\/* IMSI (default='240010123456789').  *\/$/;"	m	struct:gengetopt_args_info
+imsi_given	sgsnemu/cmdline.h	/^  int imsi_given ;	\/* Whether imsi was given.  *\/$/;"	m	struct:gengetopt_args_info
+imsi_help	sgsnemu/cmdline.h	/^  const char *imsi_help; \/* IMSI help description.  *\/$/;"	m	struct:gengetopt_args_info
+imsi_orig	sgsnemu/cmdline.h	/^  char * imsi_orig;	\/* IMSI original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+in_addr2gsna	gtp/gtp.c	/^int in_addr2gsna(struct ul16_t *gsna, struct in_addr *src) {$/;"	f
+include_HEADERS	gtp/Makefile	/^include_HEADERS = gtp.h pdp.h$/;"	m
+includedir	Makefile	/^includedir = ${prefix}\/include$/;"	m
+includedir	doc/Makefile	/^includedir = ${prefix}\/include$/;"	m
+includedir	ggsn/Makefile	/^includedir = ${prefix}\/include$/;"	m
+includedir	gtp/Makefile	/^includedir = ${prefix}\/include$/;"	m
+includedir	sgsnemu/Makefile	/^includedir = ${prefix}\/include$/;"	m
+incorrect	gtp/gtp.h	/^  uint64_t incorrect;   \/* Number of incorrect information field messages *\/$/;"	m	struct:gsn_t
+infodir	Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+infodir	doc/Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+infodir	ggsn/Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+infodir	gtp/Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+infodir	sgsnemu/Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+init_args_info	ggsn/cmdline.c	/^void init_args_info(struct gengetopt_args_info *args_info)$/;"	f	file:
+init_args_info	sgsnemu/cmdline.c	/^void init_args_info(struct gengetopt_args_info *args_info)$/;"	f	file:
+install_sh	Makefile	/^install_sh = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/install-sh$/;"	m
+install_sh	doc/Makefile	/^install_sh = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/install-sh$/;"	m
+install_sh	ggsn/Makefile	/^install_sh = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/install-sh$/;"	m
+install_sh	gtp/Makefile	/^install_sh = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/install-sh$/;"	m
+install_sh	sgsnemu/Makefile	/^install_sh = ${SHELL} \/home\/dell\/gitclone\/my_house_git\/openggsn-0.91\/install-sh$/;"	m
+install_sh_DATA	Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_DATA	doc/Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_DATA	ggsn/Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_DATA	gtp/Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_DATA	sgsnemu/Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_PROGRAM	Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_PROGRAM	doc/Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_PROGRAM	ggsn/Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_PROGRAM	gtp/Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_PROGRAM	sgsnemu/Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	doc/Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	ggsn/Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	gtp/Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	sgsnemu/Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+inuse	ggsn/ippool.h	/^  int inuse;                     \/* 0=available; 1= dynamic; 2 = static *\/$/;"	m	struct:ippoolm_t
+inuse	gtp/pdp.h	/^  uint8_t     inuse;    \/* 0=free. 1=used by somebody *\/$/;"	m	struct:pdp_t
+inuse	sgsnemu/ippool.h	/^  int inuse;                     \/* 0=available; 1= dynamic; 2 = static *\/$/;"	m	struct:ippoolm_t
+inuse	sgsnemu/sgsnemu.c	/^  uint8_t     inuse;    \/* 0=free. 1=used by somebody *\/$/;"	m	struct:iphash_t	file:
+invalid	gtp/gtp.h	/^  uint64_t invalid;     \/* Number of invalid message format messages *\/$/;"	m	struct:gsn_t
+ip_ping	sgsnemu/sgsnemu.c	/^struct ip_ping {$/;"	s	file:
+iparr	sgsnemu/sgsnemu.c	/^struct iphash_t iparr[MAXCONTEXTS];$/;"	v	typeref:struct:iphash_t
+ipcheck	sgsnemu/sgsnemu.c	/^  uint16_t ipcheck;            \/* Header checksum *\/$/;"	m	struct:ip_ping	file:
+ipdel	sgsnemu/sgsnemu.c	/^int ipdel(struct iphash_t *ipaddr) {$/;"	f
+ipdown	ggsn/ggsn.c	/^char *ipup, *ipdown;            \/* Filename of scripts     *\/$/;"	v
+ipdown	sgsnemu/sgsnemu.c	/^  char *ipup, *ipdown;            \/* Filename of scripts *\/$/;"	m	struct:__anon1	file:
+ipdown_arg	ggsn/cmdline.h	/^  char * ipdown_arg;	\/* Script to run after link-down.  *\/$/;"	m	struct:gengetopt_args_info
+ipdown_arg	sgsnemu/cmdline.h	/^  char * ipdown_arg;	\/* Script to run after link-down.  *\/$/;"	m	struct:gengetopt_args_info
+ipdown_given	ggsn/cmdline.h	/^  int ipdown_given ;	\/* Whether ipdown was given.  *\/$/;"	m	struct:gengetopt_args_info
+ipdown_given	sgsnemu/cmdline.h	/^  int ipdown_given ;	\/* Whether ipdown was given.  *\/$/;"	m	struct:gengetopt_args_info
+ipdown_help	ggsn/cmdline.h	/^  const char *ipdown_help; \/* Script to run after link-down help description.  *\/$/;"	m	struct:gengetopt_args_info
+ipdown_help	sgsnemu/cmdline.h	/^  const char *ipdown_help; \/* Script to run after link-down help description.  *\/$/;"	m	struct:gengetopt_args_info
+ipdown_orig	ggsn/cmdline.h	/^  char * ipdown_orig;	\/* Script to run after link-down original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+ipdown_orig	sgsnemu/cmdline.h	/^  char * ipdown_orig;	\/* Script to run after link-down original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+ipget	sgsnemu/sgsnemu.c	/^int ipget(struct iphash_t **ipaddr, struct in_addr *addr) {$/;"	f
+iphash	sgsnemu/sgsnemu.c	/^struct iphash_t *iphash[MAXCONTEXTS];$/;"	v	typeref:struct:iphash_t
+iphash_t	sgsnemu/sgsnemu.c	/^struct iphash_t {$/;"	s	file:
+ipif	gtp/pdp.h	/^  void *ipif;           \/* IP network interface *\/$/;"	m	struct:pdp_t
+ipnext	gtp/pdp.h	/^  struct pdp_t *ipnext;$/;"	m	struct:pdp_t	typeref:struct:pdp_t::pdp_t
+ipnext	sgsnemu/sgsnemu.c	/^  struct iphash_t *ipnext;$/;"	m	struct:iphash_t	typeref:struct:iphash_t::iphash_t	file:
+ippool	ggsn/ggsn.c	/^struct ippool_t *ippool;        \/* Pool of IP addresses    *\/$/;"	v	typeref:struct:ippool_t
+ippool_aton	ggsn/ippool.c	/^int ippool_aton(struct in_addr *addr, struct in_addr *mask,$/;"	f
+ippool_aton	sgsnemu/ippool.c	/^int ippool_aton(struct in_addr *addr, struct in_addr *mask,$/;"	f
+ippool_free	ggsn/ippool.c	/^int ippool_free(struct ippool_t *this) {$/;"	f
+ippool_free	sgsnemu/ippool.c	/^int ippool_free(struct ippool_t *this) {$/;"	f
+ippool_freeip	ggsn/ippool.c	/^int ippool_freeip(struct ippool_t *this, struct ippoolm_t *member) {$/;"	f
+ippool_freeip	sgsnemu/ippool.c	/^int ippool_freeip(struct ippool_t *this, struct ippoolm_t *member) {$/;"	f
+ippool_getip	ggsn/ippool.c	/^int ippool_getip(struct ippool_t *this, struct ippoolm_t **member,$/;"	f
+ippool_getip	sgsnemu/ippool.c	/^int ippool_getip(struct ippool_t *this, struct ippoolm_t **member,$/;"	f
+ippool_hash4	ggsn/ippool.c	/^unsigned long int ippool_hash4(struct in_addr *addr) {$/;"	f
+ippool_hash4	sgsnemu/ippool.c	/^unsigned long int ippool_hash4(struct in_addr *addr) {$/;"	f
+ippool_hash6	ggsn/ippool.c	/^unsigned long int ippool_hash6(struct in6_addr *addr) {$/;"	f
+ippool_hash6	sgsnemu/ippool.c	/^unsigned long int ippool_hash6(struct in6_addr *addr) {$/;"	f
+ippool_hashadd	ggsn/ippool.c	/^int ippool_hashadd(struct ippool_t *this, struct ippoolm_t *member) {$/;"	f
+ippool_hashadd	sgsnemu/ippool.c	/^int ippool_hashadd(struct ippool_t *this, struct ippoolm_t *member) {$/;"	f
+ippool_hashdel	ggsn/ippool.c	/^int ippool_hashdel(struct ippool_t *this, struct ippoolm_t *member) {$/;"	f
+ippool_hashdel	sgsnemu/ippool.c	/^int ippool_hashdel(struct ippool_t *this, struct ippoolm_t *member) {$/;"	f
+ippool_new	ggsn/ippool.c	/^int ippool_new(struct ippool_t **this, char *dyn,  char *stat, $/;"	f
+ippool_new	sgsnemu/ippool.c	/^int ippool_new(struct ippool_t **this, char *dyn,  char *stat, $/;"	f
+ippool_newip	ggsn/ippool.c	/^int ippool_newip(struct ippool_t *this, struct ippoolm_t **member,$/;"	f
+ippool_newip	sgsnemu/ippool.c	/^int ippool_newip(struct ippool_t *this, struct ippoolm_t **member,$/;"	f
+ippool_printaddr	ggsn/ippool.c	/^int ippool_printaddr(struct ippool_t *this) {$/;"	f
+ippool_printaddr	sgsnemu/ippool.c	/^int ippool_printaddr(struct ippool_t *this) {$/;"	f
+ippool_t	ggsn/ippool.h	/^struct ippool_t {$/;"	s
+ippool_t	sgsnemu/ippool.h	/^struct ippool_t {$/;"	s
+ippoolm_t	ggsn/ippool.h	/^struct ippoolm_t {$/;"	s
+ippoolm_t	sgsnemu/ippool.h	/^struct ippoolm_t {$/;"	s
+ipset	sgsnemu/sgsnemu.c	/^int ipset(struct iphash_t *ipaddr, struct in_addr *addr) {$/;"	f
+ipup	ggsn/ggsn.c	/^char *ipup, *ipdown;            \/* Filename of scripts     *\/$/;"	v
+ipup	sgsnemu/sgsnemu.c	/^  char *ipup, *ipdown;            \/* Filename of scripts *\/$/;"	m	struct:__anon1	file:
+ipup_arg	ggsn/cmdline.h	/^  char * ipup_arg;	\/* Script to run after link-up.  *\/$/;"	m	struct:gengetopt_args_info
+ipup_arg	sgsnemu/cmdline.h	/^  char * ipup_arg;	\/* Script to run after link-up.  *\/$/;"	m	struct:gengetopt_args_info
+ipup_given	ggsn/cmdline.h	/^  int ipup_given ;	\/* Whether ipup was given.  *\/$/;"	m	struct:gengetopt_args_info
+ipup_given	sgsnemu/cmdline.h	/^  int ipup_given ;	\/* Whether ipup was given.  *\/$/;"	m	struct:gengetopt_args_info
+ipup_help	ggsn/cmdline.h	/^  const char *ipup_help; \/* Script to run after link-up help description.  *\/$/;"	m	struct:gengetopt_args_info
+ipup_help	sgsnemu/cmdline.h	/^  const char *ipup_help; \/* Script to run after link-up help description.  *\/$/;"	m	struct:gengetopt_args_info
+ipup_orig	ggsn/cmdline.h	/^  char * ipup_orig;	\/* Script to run after link-up original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+ipup_orig	sgsnemu/cmdline.h	/^  char * ipup_orig;	\/* Script to run after link-up original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+ipv42eua	gtp/gtp.c	/^int ipv42eua(struct ul66_t *eua, struct in_addr *src) {$/;"	f
+ipver	sgsnemu/sgsnemu.c	/^  uint8_t ipver;               \/* Type and header length*\/$/;"	m	struct:ip_ping	file:
+l	gtp/gtpie.h	/^  uint16_t l;                  \/* Length *\/$/;"	m	struct:gtpie_tlv
+l	gtp/gtpie.h	/^  uint8_t l;                   \/* Length *\/$/;"	m	struct:gtpie_ext
+l	gtp/pdp.h	/^unsigned int l;$/;"	m	struct:sl_t
+l	gtp/pdp.h	/^unsigned int l;$/;"	m	struct:ul16_t
+l	gtp/pdp.h	/^unsigned int l;$/;"	m	struct:ul255_t
+l	gtp/pdp.h	/^unsigned int l;$/;"	m	struct:ul66_t
+l	gtp/pdp.h	/^unsigned int l;$/;"	m	struct:ul_t
+l	gtp/queue.h	/^  int l;                  \/* Length of the packet *\/$/;"	m	struct:qmsg_t
+last	gtp/queue.h	/^  int last;               \/* Last packet in queue (youngest timeout) *\/$/;"	m	struct:queue_t
+last_nonopt	ggsn/getopt.c	/^static int last_nonopt;$/;"	v	file:
+last_nonopt	sgsnemu/getopt.c	/^static int last_nonopt;$/;"	v	file:
+lastdyn	ggsn/ippool.h	/^  struct ippoolm_t *lastdyn;     \/* Pointer to last free dynamic member *\/$/;"	m	struct:ippool_t	typeref:struct:ippool_t::ippoolm_t
+lastdyn	sgsnemu/ippool.h	/^  struct ippoolm_t *lastdyn;     \/* Pointer to last free dynamic member *\/$/;"	m	struct:ippool_t	typeref:struct:ippool_t::ippoolm_t
+laststat	ggsn/ippool.h	/^  struct ippoolm_t *laststat;    \/* Pointer to last free static member *\/$/;"	m	struct:ippool_t	typeref:struct:ippool_t::ippoolm_t
+laststat	sgsnemu/ippool.h	/^  struct ippoolm_t *laststat;    \/* Pointer to last free static member *\/$/;"	m	struct:ippool_t	typeref:struct:ippool_t::ippoolm_t
+length	ggsn/tun.h	/^  unsigned int length:16;$/;"	m	struct:tun_packet_t
+length	gtp/gtp.h	/^  uint16_t length;	   \/* 03 Length (of IP packet or signalling) *\/$/;"	m	struct:gtp1_header_long
+length	gtp/gtp.h	/^  uint16_t length;	   \/* 03 Length (of IP packet or signalling) *\/$/;"	m	struct:gtp1_header_short
+length	gtp/gtp.h	/^  uint16_t length;	\/* 03 Length (of G-PDU excluding header) *\/$/;"	m	struct:gtp0_header
+length	gtp/gtpie.h	/^  uint16_t length;$/;"	m	struct:tlv2
+length	gtp/gtpie.h	/^  uint8_t  length;$/;"	m	struct:tlv1
+length	sgsnemu/sgsnemu.c	/^  uint16_t length;             \/* Total length *\/$/;"	m	struct:ip_ping	file:
+length	sgsnemu/tun.h	/^  unsigned int length:16;$/;"	m	struct:tun_packet_t
+lib_LTLIBRARIES	gtp/Makefile	/^lib_LTLIBRARIES = libgtp.la$/;"	m
+libdir	Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libdir	doc/Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libdir	ggsn/Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libdir	gtp/Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libdir	sgsnemu/Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libexecdir	Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+libexecdir	doc/Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+libexecdir	ggsn/Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+libexecdir	gtp/Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+libexecdir	sgsnemu/Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+libgtp_la_LIBADD	gtp/Makefile	/^libgtp_la_LIBADD =$/;"	m
+libgtp_la_OBJECTS	gtp/Makefile	/^libgtp_la_OBJECTS = $(am_libgtp_la_OBJECTS)$/;"	m
+libgtp_la_SOURCES	gtp/Makefile	/^libgtp_la_SOURCES = gtp.c gtp.h gtpie.c gtpie.h pdp.c pdp.h lookupa.c lookupa.h queue.c queue.h$/;"	m
+line_list	ggsn/cmdline.c	/^struct line_list$/;"	s	file:
+line_list	sgsnemu/cmdline.c	/^struct line_list$/;"	s	file:
+listen	sgsnemu/sgsnemu.c	/^  struct in_addr listen;$/;"	m	struct:__anon1	typeref:struct:__anon1::in_addr	file:
+listen_	ggsn/ggsn.c	/^struct in_addr listen_;$/;"	v	typeref:struct:in_addr
+listen_arg	ggsn/cmdline.h	/^  char * listen_arg;	\/* Local interface.  *\/$/;"	m	struct:gengetopt_args_info
+listen_arg	sgsnemu/cmdline.h	/^  char * listen_arg;	\/* Local interface.  *\/$/;"	m	struct:gengetopt_args_info
+listen_given	ggsn/cmdline.h	/^  int listen_given ;	\/* Whether listen was given.  *\/$/;"	m	struct:gengetopt_args_info
+listen_given	sgsnemu/cmdline.h	/^  int listen_given ;	\/* Whether listen was given.  *\/$/;"	m	struct:gengetopt_args_info
+listen_help	ggsn/cmdline.h	/^  const char *listen_help; \/* Local interface help description.  *\/$/;"	m	struct:gengetopt_args_info
+listen_help	sgsnemu/cmdline.h	/^  const char *listen_help; \/* Local interface help description.  *\/$/;"	m	struct:gengetopt_args_info
+listen_orig	ggsn/cmdline.h	/^  char * listen_orig;	\/* Local interface original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+listen_orig	sgsnemu/cmdline.h	/^  char * listen_orig;	\/* Local interface original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+listsize	ggsn/ippool.h	/^  unsigned int listsize;                  \/* Total number of addresses *\/$/;"	m	struct:ippool_t
+listsize	sgsnemu/ippool.h	/^  unsigned int listsize;                  \/* Total number of addresses *\/$/;"	m	struct:ippool_t
+localedir	Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localedir	doc/Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localedir	ggsn/Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localedir	gtp/Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localedir	sgsnemu/Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localstatedir	Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+localstatedir	doc/Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+localstatedir	ggsn/Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+localstatedir	gtp/Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+localstatedir	sgsnemu/Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+log_pid	ggsn/ggsn.c	/^void log_pid(char *pidfile) {$/;"	f
+log_pid	sgsnemu/sgsnemu.c	/^void log_pid(char *pidfile) {$/;"	f
+log_restart	gtp/gtp.c	/^static void log_restart(struct gsn_t *gsn) {$/;"	f	file:
+lookup	ggsn/lookup.c	/^unsigned long int lookup( k, length, level)$/;"	f
+lookup	gtp/lookupa.c	/^ub4 lookup( k, length, level)$/;"	f
+lookup	sgsnemu/lookup.c	/^unsigned long int lookup( k, length, level)$/;"	f
+lt_ECHO	Makefile	/^lt_ECHO = echo$/;"	m
+lt_ECHO	doc/Makefile	/^lt_ECHO = echo$/;"	m
+lt_ECHO	ggsn/Makefile	/^lt_ECHO = echo$/;"	m
+lt_ECHO	gtp/Makefile	/^lt_ECHO = echo$/;"	m
+lt_ECHO	sgsnemu/Makefile	/^lt_ECHO = echo$/;"	m
+main	config.guess	/^		main()$/;"	f
+main	config.guess	/^	main ()$/;"	f
+main	config.guess	/^main ()$/;"	f
+main	ggsn/getopt.c	/^main (argc, argv)$/;"	f
+main	ggsn/getopt1.c	/^main (argc, argv)$/;"	f
+main	ggsn/ggsn.c	/^int main(int argc, char **argv)$/;"	f
+main	sgsnemu/getopt.c	/^main (argc, argv)$/;"	f
+main	sgsnemu/getopt1.c	/^main (argc, argv)$/;"	f
+main	sgsnemu/sgsnemu.c	/^int main(int argc, char **argv)$/;"	f
+man8dir	doc/Makefile	/^man8dir = $(mandir)\/man8$/;"	m
+man_MANS	doc/Makefile	/^man_MANS = ggsn.8 sgsnemu.8$/;"	m
+man_aux	doc/Makefile	/^man_aux = $(man_MANS:.1=.x)$/;"	m
+mandir	Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+mandir	doc/Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+mandir	ggsn/Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+mandir	gtp/Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+mandir	sgsnemu/Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+mask	ggsn/ggsn.c	/^struct in_addr netaddr, destaddr, net, mask;  \/* Network interface       *\/$/;"	v	typeref:struct:
+mask	sgsnemu/sgsnemu.c	/^  struct in_addr netaddr, destaddr, net, mask;   \/* Network interface  *\/$/;"	m	struct:__anon1	typeref:struct:__anon1::	file:
+maxfd	ggsn/ggsn.c	/^int maxfd = 0;	                \/* For select()            *\/$/;"	v
+maxfd	sgsnemu/sgsnemu.c	/^int maxfd = 0;	                \/* For select() *\/$/;"	v
+member	ggsn/ippool.h	/^  struct ippoolm_t *member;      \/* Listsize array of members *\/$/;"	m	struct:ippool_t	typeref:struct:ippool_t::ippoolm_t
+member	sgsnemu/ippool.h	/^  struct ippoolm_t *member;      \/* Listsize array of members *\/$/;"	m	struct:ippool_t	typeref:struct:ippool_t::ippoolm_t
+missing	gtp/gtp.h	/^  uint64_t missing;     \/* Number of missing information field messages *\/$/;"	m	struct:gsn_t
+mix	ggsn/lookup.c	26;"	d	file:
+mix	gtp/lookupa.c	43;"	d	file:
+mix	sgsnemu/lookup.c	26;"	d	file:
+mixc	gtp/lookupa.c	138;"	d	file:
+mkdir_p	Makefile	/^mkdir_p = \/bin\/mkdir -p$/;"	m
+mkdir_p	doc/Makefile	/^mkdir_p = \/bin\/mkdir -p$/;"	m
+mkdir_p	ggsn/Makefile	/^mkdir_p = \/bin\/mkdir -p$/;"	m
+mkdir_p	gtp/Makefile	/^mkdir_p = \/bin\/mkdir -p$/;"	m
+mkdir_p	sgsnemu/Makefile	/^mkdir_p = \/bin\/mkdir -p$/;"	m
+mkinstalldirs	Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+mkinstalldirs	doc/Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+mkinstalldirs	ggsn/Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+mkinstalldirs	gtp/Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+mkinstalldirs	sgsnemu/Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+mnrg	gtp/pdp.h	/^  uint8_t     mnrg;     \/* Indicates whether the MS is marked as not reachable for PS at the HLR. (1 bit, not transmitted) *\/$/;"	m	struct:pdp_t
+mode	gtp/gtp.h	/^  int       mode;       \/* Mode of operation: GGSN or SGSN *\/$/;"	m	struct:gsn_t
+msisdn	gtp/pdp.h	/^  struct ul16_t msisdn; \/* The basic MSISDN of the MS. *\/$/;"	m	struct:pdp_t	typeref:struct:pdp_t::ul16_t
+msisdn	sgsnemu/sgsnemu.c	/^  struct ul16_t msisdn;$/;"	m	struct:__anon1	typeref:struct:__anon1::ul16_t	file:
+msisdn_add	sgsnemu/sgsnemu.c	/^int msisdn_add(struct ul16_t *src, struct ul16_t *dst, int add) {$/;"	f
+msisdn_arg	sgsnemu/cmdline.h	/^  char * msisdn_arg;	\/* Mobile Station ISDN number (default='46702123456').  *\/$/;"	m	struct:gengetopt_args_info
+msisdn_given	sgsnemu/cmdline.h	/^  int msisdn_given ;	\/* Whether msisdn was given.  *\/$/;"	m	struct:gengetopt_args_info
+msisdn_help	sgsnemu/cmdline.h	/^  const char *msisdn_help; \/* Mobile Station ISDN number help description.  *\/$/;"	m	struct:gengetopt_args_info
+msisdn_orig	sgsnemu/cmdline.h	/^  char * msisdn_orig;	\/* Mobile Station ISDN number original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+my_argv	ggsn/cmdline.c	/^char my_argv[CONFIG_FILE_LINE_BUFFER_SIZE+1];$/;"	v
+my_argv	sgsnemu/cmdline.c	/^char my_argv[CONFIG_FILE_LINE_BUFFER_SIZE+1];$/;"	v
+my_index	ggsn/getopt.c	/^my_index (str, chr)$/;"	f	file:
+my_index	ggsn/getopt.c	199;"	d	file:
+my_index	sgsnemu/getopt.c	/^my_index (str, chr)$/;"	f	file:
+my_index	sgsnemu/getopt.c	199;"	d	file:
+name	ggsn/gnugetopt.h	/^  const char *name;$/;"	m	struct:option
+name	sgsnemu/gnugetopt.h	/^  const char *name;$/;"	m	struct:option
+net	ggsn/ggsn.c	/^struct in_addr netaddr, destaddr, net, mask;  \/* Network interface       *\/$/;"	v	typeref:struct:
+net	sgsnemu/sgsnemu.c	/^  struct in_addr netaddr, destaddr, net, mask;   \/* Network interface  *\/$/;"	m	struct:__anon1	typeref:struct:__anon1::	file:
+net_arg	ggsn/cmdline.h	/^  char * net_arg;	\/* Network (default='192.168.0.0\/24').  *\/$/;"	m	struct:gengetopt_args_info
+net_arg	sgsnemu/cmdline.h	/^  char * net_arg;	\/* Network address for local interface.  *\/$/;"	m	struct:gengetopt_args_info
+net_given	ggsn/cmdline.h	/^  int net_given ;	\/* Whether net was given.  *\/$/;"	m	struct:gengetopt_args_info
+net_given	sgsnemu/cmdline.h	/^  int net_given ;	\/* Whether net was given.  *\/$/;"	m	struct:gengetopt_args_info
+net_help	ggsn/cmdline.h	/^  const char *net_help; \/* Network help description.  *\/$/;"	m	struct:gengetopt_args_info
+net_help	sgsnemu/cmdline.h	/^  const char *net_help; \/* Network address for local interface help description.  *\/$/;"	m	struct:gengetopt_args_info
+net_orig	ggsn/cmdline.h	/^  char * net_orig;	\/* Network original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+net_orig	sgsnemu/cmdline.h	/^  char * net_orig;	\/* Network address for local interface original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+netaddr	ggsn/ggsn.c	/^struct in_addr netaddr, destaddr, net, mask;  \/* Network interface       *\/$/;"	v	typeref:struct:in_addr
+netaddr	sgsnemu/sgsnemu.c	/^  struct in_addr netaddr, destaddr, net, mask;   \/* Network interface  *\/$/;"	m	struct:__anon1	typeref:struct:__anon1::in_addr	file:
+netmask	ggsn/tun.h	/^  struct in_addr netmask;$/;"	m	struct:tun_t	typeref:struct:tun_t::in_addr
+netmask	sgsnemu/tun.h	/^  struct in_addr netmask;$/;"	m	struct:tun_t	typeref:struct:tun_t::in_addr
+next	ggsn/cmdline.c	/^  struct line_list * next;$/;"	m	struct:line_list	typeref:struct:line_list::line_list	file:
+next	ggsn/ippool.h	/^  struct ippoolm_t *prev, *next; \/* Linked list of free dynamic or static *\/$/;"	m	struct:ippoolm_t	typeref:struct:ippoolm_t::
+next	gtp/gtp.h	/^  uint8_t  next;	   \/* 12 Next extension header type. Empty = 0 *\/$/;"	m	struct:gtp1_header_long
+next	gtp/queue.h	/^  int next;               \/* Next location in queue to use *\/$/;"	m	struct:queue_t
+next	gtp/queue.h	/^  int next;               \/* Pointer to the next in queue. -1: Last *\/$/;"	m	struct:qmsg_t
+next	sgsnemu/cmdline.c	/^  struct line_list * next;$/;"	m	struct:line_list	typeref:struct:line_list::line_list	file:
+next	sgsnemu/ippool.h	/^  struct ippoolm_t *prev, *next; \/* Linked list of free dynamic or static *\/$/;"	m	struct:ippoolm_t	typeref:struct:ippoolm_t::
+nextchar	ggsn/getopt.c	/^static char *nextchar;$/;"	v	file:
+nextchar	sgsnemu/getopt.c	/^static char *nextchar;$/;"	v	file:
+nexthash	ggsn/ippool.h	/^  struct ippoolm_t *nexthash;    \/* Linked list part of hash table *\/$/;"	m	struct:ippoolm_t	typeref:struct:ippoolm_t::ippoolm_t
+nexthash	sgsnemu/ippool.h	/^  struct ippoolm_t *nexthash;    \/* Linked list part of hash table *\/$/;"	m	struct:ippoolm_t	typeref:struct:ippoolm_t::ippoolm_t
+no_argument	ggsn/gnugetopt.h	110;"	d
+no_argument	sgsnemu/gnugetopt.h	110;"	d
+nodata	gtp/pdp.h	/^  uint8_t nodata;       \/* 0: User plane PDP context. 1: No user plane *\/$/;"	m	struct:pdp_t
+nonoption_flags_len	ggsn/getopt.c	/^static int nonoption_flags_len;$/;"	v	file:
+nonoption_flags_len	sgsnemu/getopt.c	/^static int nonoption_flags_len;$/;"	v	file:
+nonoption_flags_max_len	ggsn/getopt.c	/^static int nonoption_flags_max_len;$/;"	v	file:
+nonoption_flags_max_len	sgsnemu/getopt.c	/^static int nonoption_flags_max_len;$/;"	v	file:
+npdu	gtp/gtp.h	/^  uint8_t  npdu;	   \/* 11 N-PDU Number *\/$/;"	m	struct:gtp1_header_long
+nreceived	sgsnemu/sgsnemu.c	/^int nreceived = 0;$/;"	v
+nsapi	gtp/pdp.h	/^  uint8_t     nsapi;    \/* Network layer Service Access Point Identifier. (4 bit) *\/$/;"	m	struct:pdp_t
+nsapi	sgsnemu/sgsnemu.c	/^  uint8_t nsapi;$/;"	m	struct:__anon1	file:
+nsapi_arg	sgsnemu/cmdline.h	/^  int nsapi_arg;	\/* NSAPI (default='0').  *\/$/;"	m	struct:gengetopt_args_info
+nsapi_given	sgsnemu/cmdline.h	/^  int nsapi_given ;	\/* Whether nsapi was given.  *\/$/;"	m	struct:gengetopt_args_info
+nsapi_help	sgsnemu/cmdline.h	/^  const char *nsapi_help; \/* NSAPI help description.  *\/$/;"	m	struct:gengetopt_args_info
+nsapi_orig	sgsnemu/cmdline.h	/^  char * nsapi_orig;	\/* NSAPI original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+ntoh16	gtp/gtpie.h	19;"	d
+ntoh32	gtp/gtpie.h	21;"	d
+ntoh64	gtp/gtpie.h	34;"	d
+ntoh64	gtp/gtpie.h	39;"	d
+ntoh8	gtp/gtpie.h	17;"	d
+ntransmitted	sgsnemu/sgsnemu.c	/^int ntransmitted = 0;$/;"	v
+ntreceived	sgsnemu/sgsnemu.c	/^int ntreceived = 0;$/;"	v
+number	gtp/gtp.h	/^  uint8_t  number;	\/* 09 SNDCP N-PDU LCC Number ( 0 = 0xff) *\/$/;"	m	struct:gtp0_header
+offset	sgsnemu/sgsnemu.c	/^  uint16_t offset;             \/* Flags and fragment offset *\/$/;"	m	struct:ip_ping	file:
+oldincludedir	Makefile	/^oldincludedir = \/usr\/include$/;"	m
+oldincludedir	doc/Makefile	/^oldincludedir = \/usr\/include$/;"	m
+oldincludedir	ggsn/Makefile	/^oldincludedir = \/usr\/include$/;"	m
+oldincludedir	gtp/Makefile	/^oldincludedir = \/usr\/include$/;"	m
+oldincludedir	sgsnemu/Makefile	/^oldincludedir = \/usr\/include$/;"	m
+omcid	gtp/pdp.h	/^  struct ul_t omcid;    \/* Identifies the OMC that shall receive the trace record(s). *\/$/;"	m	struct:pdp_t	typeref:struct:pdp_t::ul_t
+optarg	ggsn/getopt.c	/^char *optarg;$/;"	v
+optarg	sgsnemu/getopt.c	/^char *optarg;$/;"	v
+opterr	ggsn/getopt.c	/^int opterr = 1;$/;"	v
+opterr	sgsnemu/getopt.c	/^int opterr = 1;$/;"	v
+optind	ggsn/getopt.c	/^int optind = 1;$/;"	v
+optind	sgsnemu/getopt.c	/^int optind = 1;$/;"	v
+option	ggsn/gnugetopt.h	/^struct option$/;"	s
+option	sgsnemu/gnugetopt.h	/^struct option$/;"	s
+optional_argument	ggsn/gnugetopt.h	112;"	d
+optional_argument	sgsnemu/gnugetopt.h	112;"	d
+options	sgsnemu/sgsnemu.c	/^} options;$/;"	v	typeref:struct:__anon1
+optopt	ggsn/getopt.c	/^int optopt = '?';$/;"	v
+optopt	sgsnemu/getopt.c	/^int optopt = '?';$/;"	v
+ordering	ggsn/getopt.c	/^} ordering;$/;"	v	typeref:enum:__anon3	file:
+ordering	sgsnemu/getopt.c	/^} ordering;$/;"	v	typeref:enum:__anon2	file:
+p	gtp/gtp.h	/^  uint8_t p[GTP_MAX];$/;"	m	struct:gtp0_packet
+p	gtp/gtp.h	/^  uint8_t p[GTP_MAX];$/;"	m	struct:gtp1_packet_long
+p	gtp/gtp.h	/^  uint8_t p[GTP_MAX];$/;"	m	struct:gtp1_packet_short
+p	gtp/gtpie.h	/^  uint8_t *p;                  \/* Value *\/$/;"	m	struct:gtpie_ext
+p	gtp/queue.h	/^  union gtp_packet p;     \/* The packet stored *\/$/;"	m	struct:qmsg_t	typeref:union:qmsg_t::gtp_packet
+pco	ggsn/ggsn.c	/^struct ul255_t pco;$/;"	v	typeref:struct:ul255_t
+pco	sgsnemu/sgsnemu.c	/^  struct ul255_t pco;$/;"	m	struct:__anon1	typeref:struct:__anon1::ul255_t	file:
+pco_neg	gtp/pdp.h	/^  struct ul255_t pco_neg;  \/* Negotiated packet control options. *\/$/;"	m	struct:pdp_t	typeref:struct:pdp_t::ul255_t
+pco_req	gtp/pdp.h	/^  struct ul255_t pco_req;  \/* Requested packet control options. *\/$/;"	m	struct:pdp_t	typeref:struct:pdp_t::ul255_t
+pcodns1_arg	ggsn/cmdline.h	/^  char * pcodns1_arg;	\/* PCO DNS Server 1 (default='0.0.0.0').  *\/$/;"	m	struct:gengetopt_args_info
+pcodns1_given	ggsn/cmdline.h	/^  int pcodns1_given ;	\/* Whether pcodns1 was given.  *\/$/;"	m	struct:gengetopt_args_info
+pcodns1_help	ggsn/cmdline.h	/^  const char *pcodns1_help; \/* PCO DNS Server 1 help description.  *\/$/;"	m	struct:gengetopt_args_info
+pcodns1_orig	ggsn/cmdline.h	/^  char * pcodns1_orig;	\/* PCO DNS Server 1 original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+pcodns2_arg	ggsn/cmdline.h	/^  char * pcodns2_arg;	\/* PCO DNS Server 2 (default='0.0.0.0').  *\/$/;"	m	struct:gengetopt_args_info
+pcodns2_given	ggsn/cmdline.h	/^  int pcodns2_given ;	\/* Whether pcodns2 was given.  *\/$/;"	m	struct:gengetopt_args_info
+pcodns2_help	ggsn/cmdline.h	/^  const char *pcodns2_help; \/* PCO DNS Server 2 help description.  *\/$/;"	m	struct:gengetopt_args_info
+pcodns2_orig	ggsn/cmdline.h	/^  char * pcodns2_orig;	\/* PCO DNS Server 2 original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+pdcpsndd	gtp/pdp.h	/^  uint8_t     pdcpsndd; \/* Sequence number of the next downlink in-sequence PDCP-PDU to be sent to the MS. *\/$/;"	m	struct:pdp_t
+pdcpsndu	gtp/pdp.h	/^  uint8_t     pdcpsndu; \/* Sequence number of the next uplink in-sequence PDCP-PDU expected from the MS. *\/$/;"	m	struct:pdp_t
+pdfdir	Makefile	/^pdfdir = ${docdir}$/;"	m
+pdfdir	doc/Makefile	/^pdfdir = ${docdir}$/;"	m
+pdfdir	ggsn/Makefile	/^pdfdir = ${docdir}$/;"	m
+pdfdir	gtp/Makefile	/^pdfdir = ${docdir}$/;"	m
+pdfdir	sgsnemu/Makefile	/^pdfdir = ${docdir}$/;"	m
+pdp	sgsnemu/sgsnemu.c	/^  struct pdp_t *pdp;$/;"	m	struct:iphash_t	typeref:struct:iphash_t::pdp_t	file:
+pdp_dyn	gtp/pdp.h	/^  uint8_t     pdp_dyn;  \/* Indicates whether PDP Address is static or dynamic. (1 bit, not transmitted) *\/$/;"	m	struct:pdp_t
+pdp_euaton	gtp/pdp.c	/^int pdp_euaton(struct ul66_t *eua, struct in_addr *dst) {$/;"	f
+pdp_freepdp	gtp/pdp.c	/^int pdp_freepdp(struct pdp_t *pdp){$/;"	f
+pdp_getgtp0	gtp/pdp.c	/^int pdp_getgtp0(struct pdp_t **pdp, uint16_t fl){$/;"	f
+pdp_getgtp1	gtp/pdp.c	/^int pdp_getgtp1(struct pdp_t **pdp, uint32_t tei){$/;"	f
+pdp_getimsi	gtp/pdp.c	/^int pdp_getimsi(struct pdp_t **pdp, uint64_t imsi, uint8_t nsapi) {$/;"	f
+pdp_getpdp	gtp/pdp.c	/^int pdp_getpdp(struct pdp_t **pdp){$/;"	f
+pdp_gettid	gtp/pdp.c	/^uint64_t pdp_gettid(uint64_t imsi, uint8_t nsapi) {$/;"	f
+pdp_id	gtp/pdp.h	/^  uint8_t     pdp_id;   \/* Index of the PDP context. (PDP context identifier) *\/$/;"	m	struct:pdp_t
+pdp_init	gtp/pdp.c	/^int pdp_init() {$/;"	f
+pdp_newpdp	gtp/pdp.c	/^int pdp_newpdp(struct pdp_t **pdp, uint64_t imsi, uint8_t nsapi, $/;"	f
+pdp_ntoeua	gtp/pdp.c	/^int pdp_ntoeua(struct in_addr *src, struct ul66_t *eua) {$/;"	f
+pdp_state	gtp/pdp.h	/^  uint8_t     pdp_state;\/* PDP State Packet data protocol state, INACTIVE or ACTIVE. (1 bit, not transmitted) *\/$/;"	m	struct:pdp_t
+pdp_t	gtp/pdp.h	/^struct pdp_t {$/;"	s
+pdp_tiddel	gtp/pdp.c	/^int pdp_tiddel(struct pdp_t *pdp) {$/;"	f
+pdp_tidget	gtp/pdp.c	/^int pdp_tidget(struct pdp_t **pdp, uint64_t tid) {$/;"	f
+pdp_tidhash	gtp/pdp.c	/^int pdp_tidhash(uint64_t tid) {$/;"	f
+pdp_tidset	gtp/pdp.c	/^int pdp_tidset(struct pdp_t *pdp, uint64_t tid) {$/;"	f
+pdpa	gtp/pdp.c	/^struct pdp_t pdpa[PDP_MAX];    \/* PDP storage *\/$/;"	v	typeref:struct:pdp_t
+peer	ggsn/ippool.h	/^  void *peer;                    \/* Pointer to peer protocol handler *\/$/;"	m	struct:ippoolm_t
+peer	gtp/pdp.h	/^  void *peer;           \/* Pointer to peer protocol *\/$/;"	m	struct:pdp_t
+peer	gtp/queue.h	/^  struct sockaddr_in peer;\/* Address packet was sent to \/ received from *\/$/;"	m	struct:qmsg_t	typeref:struct:qmsg_t::sockaddr_in
+peer	sgsnemu/ippool.h	/^  void *peer;                    \/* Pointer to peer protocol handler *\/$/;"	m	struct:ippoolm_t
+pidfile_arg	ggsn/cmdline.h	/^  char * pidfile_arg;	\/* Filename of process id file (default='\/var\/run\/ggsn.pid').  *\/$/;"	m	struct:gengetopt_args_info
+pidfile_arg	sgsnemu/cmdline.h	/^  char * pidfile_arg;	\/* Filename of process id file (default='.\/sgsnemu.pid').  *\/$/;"	m	struct:gengetopt_args_info
+pidfile_given	ggsn/cmdline.h	/^  int pidfile_given ;	\/* Whether pidfile was given.  *\/$/;"	m	struct:gengetopt_args_info
+pidfile_given	sgsnemu/cmdline.h	/^  int pidfile_given ;	\/* Whether pidfile was given.  *\/$/;"	m	struct:gengetopt_args_info
+pidfile_help	ggsn/cmdline.h	/^  const char *pidfile_help; \/* Filename of process id file help description.  *\/$/;"	m	struct:gengetopt_args_info
+pidfile_help	sgsnemu/cmdline.h	/^  const char *pidfile_help; \/* Filename of process id file help description.  *\/$/;"	m	struct:gengetopt_args_info
+pidfile_orig	ggsn/cmdline.h	/^  char * pidfile_orig;	\/* Filename of process id file original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+pidfile_orig	sgsnemu/cmdline.h	/^  char * pidfile_orig;	\/* Filename of process id file original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+ping_finish	sgsnemu/sgsnemu.c	/^int ping_finish()$/;"	f
+ping_timeout	sgsnemu/sgsnemu.c	/^int ping_timeout(struct timeval *tp) {$/;"	f
+pingcount	sgsnemu/sgsnemu.c	/^  int pingcount;$/;"	m	struct:__anon1	file:
+pingcount_arg	sgsnemu/cmdline.h	/^  int pingcount_arg;	\/* Number of ping req to send (default='0').  *\/$/;"	m	struct:gengetopt_args_info
+pingcount_given	sgsnemu/cmdline.h	/^  int pingcount_given ;	\/* Whether pingcount was given.  *\/$/;"	m	struct:gengetopt_args_info
+pingcount_help	sgsnemu/cmdline.h	/^  const char *pingcount_help; \/* Number of ping req to send help description.  *\/$/;"	m	struct:gengetopt_args_info
+pingcount_orig	sgsnemu/cmdline.h	/^  char * pingcount_orig;	\/* Number of ping req to send original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+pinghost	sgsnemu/sgsnemu.c	/^  struct in_addr pinghost;        \/* Remote ping host    *\/$/;"	m	struct:__anon1	typeref:struct:__anon1::in_addr	file:
+pinghost_arg	sgsnemu/cmdline.h	/^  char * pinghost_arg;	\/* Ping remote host.  *\/$/;"	m	struct:gengetopt_args_info
+pinghost_given	sgsnemu/cmdline.h	/^  int pinghost_given ;	\/* Whether pinghost was given.  *\/$/;"	m	struct:gengetopt_args_info
+pinghost_help	sgsnemu/cmdline.h	/^  const char *pinghost_help; \/* Ping remote host help description.  *\/$/;"	m	struct:gengetopt_args_info
+pinghost_orig	sgsnemu/cmdline.h	/^  char * pinghost_orig;	\/* Ping remote host original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+pingquiet	sgsnemu/sgsnemu.c	/^  int pingquiet;$/;"	m	struct:__anon1	file:
+pingquiet_flag	sgsnemu/cmdline.h	/^  int pingquiet_flag;	\/* Do not print ping packet info (default=off).  *\/$/;"	m	struct:gengetopt_args_info
+pingquiet_given	sgsnemu/cmdline.h	/^  int pingquiet_given ;	\/* Whether pingquiet was given.  *\/$/;"	m	struct:gengetopt_args_info
+pingquiet_help	sgsnemu/cmdline.h	/^  const char *pingquiet_help; \/* Do not print ping packet info help description.  *\/$/;"	m	struct:gengetopt_args_info
+pingrate	sgsnemu/sgsnemu.c	/^  int pingrate;$/;"	m	struct:__anon1	file:
+pingrate_arg	sgsnemu/cmdline.h	/^  int pingrate_arg;	\/* Number of ping req per second (default='1').  *\/$/;"	m	struct:gengetopt_args_info
+pingrate_given	sgsnemu/cmdline.h	/^  int pingrate_given ;	\/* Whether pingrate was given.  *\/$/;"	m	struct:gengetopt_args_info
+pingrate_help	sgsnemu/cmdline.h	/^  const char *pingrate_help; \/* Number of ping req per second help description.  *\/$/;"	m	struct:gengetopt_args_info
+pingrate_orig	sgsnemu/cmdline.h	/^  char * pingrate_orig;	\/* Number of ping req per second original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+pingseq	sgsnemu/sgsnemu.c	/^int pingseq = 0;              \/* Ping sequence counter *\/$/;"	v
+pingsize	sgsnemu/sgsnemu.c	/^  int pingsize;$/;"	m	struct:__anon1	file:
+pingsize_arg	sgsnemu/cmdline.h	/^  int pingsize_arg;	\/* Number of ping data bytes (default='56').  *\/$/;"	m	struct:gengetopt_args_info
+pingsize_given	sgsnemu/cmdline.h	/^  int pingsize_given ;	\/* Whether pingsize was given.  *\/$/;"	m	struct:gengetopt_args_info
+pingsize_help	sgsnemu/cmdline.h	/^  const char *pingsize_help; \/* Number of ping data bytes help description.  *\/$/;"	m	struct:gengetopt_args_info
+pingsize_orig	sgsnemu/cmdline.h	/^  char * pingsize_orig;	\/* Number of ping data bytes original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+pkgdatadir	Makefile	/^pkgdatadir = $(datadir)\/openggsn$/;"	m
+pkgdatadir	doc/Makefile	/^pkgdatadir = $(datadir)\/openggsn$/;"	m
+pkgdatadir	ggsn/Makefile	/^pkgdatadir = $(datadir)\/openggsn$/;"	m
+pkgdatadir	gtp/Makefile	/^pkgdatadir = $(datadir)\/openggsn$/;"	m
+pkgdatadir	sgsnemu/Makefile	/^pkgdatadir = $(datadir)\/openggsn$/;"	m
+pkgincludedir	Makefile	/^pkgincludedir = $(includedir)\/openggsn$/;"	m
+pkgincludedir	doc/Makefile	/^pkgincludedir = $(includedir)\/openggsn$/;"	m
+pkgincludedir	ggsn/Makefile	/^pkgincludedir = $(includedir)\/openggsn$/;"	m
+pkgincludedir	gtp/Makefile	/^pkgincludedir = $(includedir)\/openggsn$/;"	m
+pkgincludedir	sgsnemu/Makefile	/^pkgincludedir = $(includedir)\/openggsn$/;"	m
+pkglibdir	Makefile	/^pkglibdir = $(libdir)\/openggsn$/;"	m
+pkglibdir	doc/Makefile	/^pkglibdir = $(libdir)\/openggsn$/;"	m
+pkglibdir	ggsn/Makefile	/^pkglibdir = $(libdir)\/openggsn$/;"	m
+pkglibdir	gtp/Makefile	/^pkglibdir = $(libdir)\/openggsn$/;"	m
+pkglibdir	sgsnemu/Makefile	/^pkglibdir = $(libdir)\/openggsn$/;"	m
+pkglibexecdir	Makefile	/^pkglibexecdir = $(libexecdir)\/openggsn$/;"	m
+pkglibexecdir	doc/Makefile	/^pkglibexecdir = $(libexecdir)\/openggsn$/;"	m
+pkglibexecdir	ggsn/Makefile	/^pkglibexecdir = $(libexecdir)\/openggsn$/;"	m
+pkglibexecdir	gtp/Makefile	/^pkglibexecdir = $(libexecdir)\/openggsn$/;"	m
+pkglibexecdir	sgsnemu/Makefile	/^pkglibexecdir = $(libexecdir)\/openggsn$/;"	m
+posixly_correct	ggsn/getopt.c	/^static char *posixly_correct;$/;"	v	file:
+posixly_correct	sgsnemu/getopt.c	/^static char *posixly_correct;$/;"	v	file:
+prefix	Makefile	/^prefix = \/usr\/local$/;"	m
+prefix	doc/Makefile	/^prefix = \/usr\/local$/;"	m
+prefix	ggsn/Makefile	/^prefix = \/usr\/local$/;"	m
+prefix	gtp/Makefile	/^prefix = \/usr\/local$/;"	m
+prefix	sgsnemu/Makefile	/^prefix = \/usr\/local$/;"	m
+prev	ggsn/ippool.h	/^  struct ippoolm_t *prev, *next; \/* Linked list of free dynamic or static *\/$/;"	m	struct:ippoolm_t	typeref:struct:ippoolm_t::ippoolm_t
+prev	gtp/queue.h	/^  int prev;               \/* Pointer to the previous in queue. -1: First *\/$/;"	m	struct:qmsg_t
+prev	sgsnemu/ippool.h	/^  struct ippoolm_t *prev, *next; \/* Linked list of free dynamic or static *\/$/;"	m	struct:ippoolm_t	typeref:struct:ippoolm_t::ippoolm_t
+print_icmptype	sgsnemu/sgsnemu.c	/^char * print_icmptype(int t) {$/;"	f
+print_ipprot	sgsnemu/sgsnemu.c	/^char * print_ipprot(int t) {$/;"	f
+print_packet	gtp/gtp.c	/^int print_packet(void *packet, unsigned len)$/;"	f
+priv	gtp/pdp.h	/^  void *priv;$/;"	m	struct:pdp_t
+process_options	sgsnemu/sgsnemu.c	/^int process_options(int argc, char **argv) {$/;"	f
+program_transform_name	Makefile	/^program_transform_name = s,x,x,$/;"	m
+program_transform_name	doc/Makefile	/^program_transform_name = s,x,x,$/;"	m
+program_transform_name	ggsn/Makefile	/^program_transform_name = s,x,x,$/;"	m
+program_transform_name	gtp/Makefile	/^program_transform_name = s,x,x,$/;"	m
+program_transform_name	sgsnemu/Makefile	/^program_transform_name = s,x,x,$/;"	m
+protocol	ggsn/tun.h	/^  unsigned int protocol:8;$/;"	m	struct:tun_packet_t
+protocol	sgsnemu/sgsnemu.c	/^  uint8_t protocol;            \/* Protocol *\/$/;"	m	struct:ip_ping	file:
+protocol	sgsnemu/tun.h	/^  unsigned int protocol:8;$/;"	m	struct:tun_packet_t
+prototypes	configure	/^   function prototypes and stuff, but not '\\xHH' hex character constants.$/;"	f
+psdir	Makefile	/^psdir = ${docdir}$/;"	m
+psdir	doc/Makefile	/^psdir = ${docdir}$/;"	m
+psdir	ggsn/Makefile	/^psdir = ${docdir}$/;"	m
+psdir	gtp/Makefile	/^psdir = ${docdir}$/;"	m
+psdir	sgsnemu/Makefile	/^psdir = ${docdir}$/;"	m
+pwd_arg	sgsnemu/cmdline.h	/^  char * pwd_arg;	\/* Login password (default='hemmelig').  *\/$/;"	m	struct:gengetopt_args_info
+pwd_given	sgsnemu/cmdline.h	/^  int pwd_given ;	\/* Whether pwd was given.  *\/$/;"	m	struct:gengetopt_args_info
+pwd_help	sgsnemu/cmdline.h	/^  const char *pwd_help; \/* Login password help description.  *\/$/;"	m	struct:gengetopt_args_info
+pwd_orig	sgsnemu/cmdline.h	/^  char * pwd_orig;	\/* Login password original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+qmsg_t	gtp/queue.h	/^struct qmsg_t {           \/* Holder for queued packets *\/$/;"	s
+qmsga	gtp/queue.h	/^  struct qmsg_t qmsga[QUEUE_SIZE]; \/* Array holding signalling messages *\/$/;"	m	struct:queue_t	typeref:struct:queue_t::qmsg_t
+qos	ggsn/ggsn.c	/^struct ul255_t qos;$/;"	v	typeref:struct:ul255_t
+qos	sgsnemu/sgsnemu.c	/^  struct ul255_t qos;$/;"	m	struct:__anon1	typeref:struct:__anon1::ul255_t	file:
+qos_arg	ggsn/cmdline.h	/^  int qos_arg;	\/* Requested quality of service (default='0x0b921f').  *\/$/;"	m	struct:gengetopt_args_info
+qos_arg	sgsnemu/cmdline.h	/^  int qos_arg;	\/* Requested quality of service (default='0x0b921f').  *\/$/;"	m	struct:gengetopt_args_info
+qos_given	ggsn/cmdline.h	/^  int qos_given ;	\/* Whether qos was given.  *\/$/;"	m	struct:gengetopt_args_info
+qos_given	sgsnemu/cmdline.h	/^  int qos_given ;	\/* Whether qos was given.  *\/$/;"	m	struct:gengetopt_args_info
+qos_help	ggsn/cmdline.h	/^  const char *qos_help; \/* Requested quality of service help description.  *\/$/;"	m	struct:gengetopt_args_info
+qos_help	sgsnemu/cmdline.h	/^  const char *qos_help; \/* Requested quality of service help description.  *\/$/;"	m	struct:gengetopt_args_info
+qos_neg	gtp/pdp.h	/^  struct ul255_t qos_neg;  \/* The quality of service profile negotiated. *\/$/;"	m	struct:pdp_t	typeref:struct:pdp_t::ul255_t
+qos_neg0	gtp/pdp.h	/^  uint8_t qos_neg0[3];  \/* The quality of service profile negotiated. *\/$/;"	m	struct:pdp_t
+qos_orig	ggsn/cmdline.h	/^  char * qos_orig;	\/* Requested quality of service original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+qos_orig	sgsnemu/cmdline.h	/^  char * qos_orig;	\/* Requested quality of service original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+qos_req	gtp/pdp.h	/^  struct ul255_t qos_req;  \/* The quality of service profile requested. *\/$/;"	m	struct:pdp_t	typeref:struct:pdp_t::ul255_t
+qos_req0	gtp/pdp.h	/^  uint8_t qos_req0[3];  \/* The quality of service profile requested. *\/$/;"	m	struct:pdp_t
+qos_sub	gtp/pdp.h	/^  struct ul255_t qos_sub;  \/* The quality of service profile subscribed. *\/$/;"	m	struct:pdp_t	typeref:struct:pdp_t::ul255_t
+qos_sub0	gtp/pdp.h	/^  uint8_t qos_sub0[3];  \/* The quality of service profile subscribed. *\/$/;"	m	struct:pdp_t
+queue_back	gtp/queue.c	/^int queue_back(struct queue_t *queue, struct qmsg_t *qmsg) {$/;"	f
+queue_free	gtp/queue.c	/^int queue_free(struct queue_t *queue) {$/;"	f
+queue_freemsg	gtp/queue.c	/^int queue_freemsg(struct queue_t *queue, struct qmsg_t *qmsg) {$/;"	f
+queue_freemsg_seq	gtp/queue.c	/^int queue_freemsg_seq(struct queue_t *queue, struct sockaddr_in *peer, $/;"	f
+queue_getfirst	gtp/queue.c	/^int queue_getfirst(struct queue_t *queue, struct qmsg_t **qmsg) {$/;"	f
+queue_getseqx	gtp/queue.c	/^int queue_getseqx(struct queue_t *queue, struct qmsg_t **qmsg,$/;"	f
+queue_new	gtp/queue.c	/^int queue_new(struct queue_t **queue) {$/;"	f
+queue_newmsg	gtp/queue.c	/^int queue_newmsg(struct queue_t *queue, struct qmsg_t **qmsg,$/;"	f
+queue_print	gtp/queue.c	/^int queue_print(struct queue_t *queue) {$/;"	f
+queue_req	gtp/gtp.h	/^  struct queue_t *queue_req;  \/* Request queue *\/$/;"	m	struct:gsn_t	typeref:struct:gsn_t::queue_t
+queue_resp	gtp/gtp.h	/^  struct queue_t *queue_resp; \/* Response queue *\/$/;"	m	struct:gsn_t	typeref:struct:gsn_t::queue_t
+queue_seqdel	gtp/queue.c	/^int queue_seqdel(struct queue_t *queue, struct qmsg_t *qmsg) {$/;"	f
+queue_seqget	gtp/queue.c	/^int queue_seqget(struct queue_t *queue, struct qmsg_t **qmsg,$/;"	f
+queue_seqhash	gtp/queue.c	/^int queue_seqhash(struct sockaddr_in *peer, uint16_t seq) {$/;"	f
+queue_seqset	gtp/queue.c	/^int queue_seqset(struct queue_t *queue, struct qmsg_t *qmsg,$/;"	f
+queue_t	gtp/queue.h	/^struct queue_t {$/;"	s
+radio_pri	gtp/pdp.h	/^  uint8_t     radio_pri;\/* The RLC\/MAC radio priority level for uplink user data transmission. (4 bit) *\/$/;"	m	struct:pdp_t
+rec_hlr	gtp/pdp.h	/^  uint8_t     rec_hlr;  \/* Indicates if HLR or VLR is performing database recovery. (1 bit, not transmitted) *\/$/;"	m	struct:pdp_t
+rec_sgsn	gtp/pdp.h	/^  uint8_t     rec_sgsn; \/* Indicates if the SGSN is performing database recovery. (1 bit, not transmitted) *\/$/;"	m	struct:pdp_t
+remote	sgsnemu/sgsnemu.c	/^  struct in_addr remote;$/;"	m	struct:__anon1	typeref:struct:__anon1::in_addr	file:
+remote_arg	sgsnemu/cmdline.h	/^  char * remote_arg;	\/* Remote host.  *\/$/;"	m	struct:gengetopt_args_info
+remote_given	sgsnemu/cmdline.h	/^  int remote_given ;	\/* Whether remote was given.  *\/$/;"	m	struct:gengetopt_args_info
+remote_help	sgsnemu/cmdline.h	/^  const char *remote_help; \/* Remote host help description.  *\/$/;"	m	struct:gengetopt_args_info
+remote_orig	sgsnemu/cmdline.h	/^  char * remote_orig;	\/* Remote host original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+reorder	gtp/pdp.h	/^  uint8_t     reorder;  \/* Specifies whether the GGSN shall reorder N-PDUs received from the SGSN \/ Specifies whether the SGSN shall reorder N-PDUs before delivering the N-PSUs to the MS. (1 bit) *\/$/;"	m	struct:pdp_t
+required_argument	ggsn/gnugetopt.h	111;"	d
+required_argument	sgsnemu/gnugetopt.h	111;"	d
+restart_counter	gtp/gtp.h	/^  unsigned char restart_counter; \/* Increment on restart. Stored on disk *\/$/;"	m	struct:gsn_t
+retrans	gtp/queue.h	/^  int retrans;            \/* How many times did we retransmit this? *\/$/;"	m	struct:qmsg_t
+rnc_addr	gtp/pdp.h	/^  struct ul16_t rnc_addr;\/* The IP address of the RNC currently used. *\/$/;"	m	struct:pdp_t	typeref:struct:pdp_t::ul16_t
+routes	ggsn/tun.h	/^  int routes;            \/* One if we allocated an automatic route *\/$/;"	m	struct:tun_t
+routes	sgsnemu/tun.h	/^  int routes;            \/* One if we allocated an automatic route *\/$/;"	m	struct:tun_t
+sa_peer	gtp/pdp.h	/^  struct sockaddr_in sa_peer; \/* Address of last request *\/$/;"	m	struct:pdp_t	typeref:struct:pdp_t::sockaddr_in
+sbindir	Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+sbindir	doc/Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+sbindir	ggsn/Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+sbindir	gtp/Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+sbindir	sgsnemu/Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+secondary	gtp/pdp.h	/^  uint8_t secondary;    \/* 0: Primary (control). 1: Secondary (data only) *\/$/;"	m	struct:pdp_t
+secondary_tei	gtp/pdp.h	/^  uint32_t secondary_tei[PDP_MAXNSAPI]; $/;"	m	struct:pdp_t
+selmode	gtp/pdp.h	/^  uint32_t    selmode;  \/* Selection mode. *\/$/;"	m	struct:pdp_t
+selmode	sgsnemu/sgsnemu.c	/^  uint8_t selmode;$/;"	m	struct:__anon1	file:
+selmode_arg	sgsnemu/cmdline.h	/^  int selmode_arg;	\/* Selection mode (default='0x01').  *\/$/;"	m	struct:gengetopt_args_info
+selmode_given	sgsnemu/cmdline.h	/^  int selmode_given ;	\/* Whether selmode was given.  *\/$/;"	m	struct:gengetopt_args_info
+selmode_help	sgsnemu/cmdline.h	/^  const char *selmode_help; \/* Selection mode help description.  *\/$/;"	m	struct:gengetopt_args_info
+selmode_orig	sgsnemu/cmdline.h	/^  char * selmode_orig;	\/* Selection mode original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+seq	gtp/gtp.h	/^  uint16_t seq;	        \/* 05 Sequence Number *\/$/;"	m	struct:gtp0_header
+seq	gtp/gtp.h	/^  uint16_t seq;	   \/* 10 Sequence Number *\/$/;"	m	struct:gtp1_header_long
+seq	gtp/pdp.h	/^  uint16_t   seq;      \/* Sequence number of last request *\/$/;"	m	struct:pdp_t
+seq	gtp/queue.h	/^  uint16_t seq;           \/* The sequence number *\/$/;"	m	struct:qmsg_t
+seq	sgsnemu/sgsnemu.c	/^  uint16_t seq;                \/* Sequence number *\/$/;"	m	struct:ip_ping	file:
+seq_first	gtp/gtp.h	/^  int seq_first;        \/* First packet in queue (oldest timeout) *\/$/;"	m	struct:gsn_t
+seq_last	gtp/gtp.h	/^  int seq_last;         \/* Last packet in queue (youngest timeout) *\/$/;"	m	struct:gsn_t
+seq_next	gtp/gtp.h	/^  uint16_t seq_next;    \/* Next sequence number to use *\/$/;"	m	struct:gsn_t
+seqnext	gtp/queue.h	/^  struct qmsg_t *seqnext; \/* Pointer to next in sequence hash list *\/$/;"	m	struct:qmsg_t	typeref:struct:qmsg_t::qmsg_t
+sgsnemu_DEPENDENCIES	sgsnemu/Makefile	/^sgsnemu_DEPENDENCIES = $/;"	m
+sgsnemu_LDADD	sgsnemu/Makefile	/^sgsnemu_LDADD =   -lgtp -L..\/gtp $/;"	m
+sgsnemu_OBJECTS	sgsnemu/Makefile	/^sgsnemu_OBJECTS = $(am_sgsnemu_OBJECTS)$/;"	m
+sgsnemu_SOURCES	sgsnemu/Makefile	/^sgsnemu_SOURCES = sgsnemu.c tun.c tun.h cmdline.c cmdline.h ippool.h ippool.c syserr.h syserr.c lookup.c lookup.h$/;"	m
+sharedstatedir	Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+sharedstatedir	doc/Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+sharedstatedir	ggsn/Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+sharedstatedir	gtp/Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+sharedstatedir	sgsnemu/Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+signal_handler	ggsn/ggsn.c	/^void signal_handler(int s) {$/;"	f
+sl_t	gtp/pdp.h	/^struct sl_t {$/;"	s
+sndcpd	gtp/pdp.h	/^  uint8_t     sndcpd;   \/* SNDCP sequence number of the next downlink N-PDU to be sent to the MS. *\/$/;"	m	struct:pdp_t
+sndcpu	gtp/pdp.h	/^  uint8_t     sndcpu;   \/* SNDCP sequence number of the next uplink N-PDU expected from the MS. *\/$/;"	m	struct:pdp_t
+snprint_packet	gtp/gtp.c	/^char* snprint_packet(struct gsn_t *gsn, struct sockaddr_in *peer,$/;"	f
+spare1	gtp/gtp.h	/^  uint8_t  spare1;	\/* 10 Spare *\/$/;"	m	struct:gtp0_header
+spare2	gtp/gtp.h	/^  uint8_t  spare2;	\/* 11 Spare *\/$/;"	m	struct:gtp0_header
+spare3	gtp/gtp.h	/^  uint8_t  spare3;	\/* 12 Spare *\/$/;"	m	struct:gtp0_header
+src	ggsn/tun.h	/^  unsigned int src:32;$/;"	m	struct:tun_packet_t
+src	sgsnemu/sgsnemu.c	/^  uint32_t src;                \/* Source address *\/$/;"	m	struct:ip_ping	file:
+src	sgsnemu/tun.h	/^  unsigned int src:32;$/;"	m	struct:tun_packet_t
+srcdir	Makefile	/^srcdir = .$/;"	m
+srcdir	doc/Makefile	/^srcdir = .$/;"	m
+srcdir	ggsn/Makefile	/^srcdir = .$/;"	m
+srcdir	gtp/Makefile	/^srcdir = .$/;"	m
+srcdir	sgsnemu/Makefile	/^srcdir = .$/;"	m
+stataddr	ggsn/ippool.h	/^  struct in_addr stataddr;       \/* Static address range network address *\/$/;"	m	struct:ippool_t	typeref:struct:ippool_t::in_addr
+stataddr	sgsnemu/ippool.h	/^  struct in_addr stataddr;       \/* Static address range network address *\/$/;"	m	struct:ippool_t	typeref:struct:ippool_t::in_addr
+state	gtp/queue.h	/^  int state;              \/* 0=empty, 1=full *\/$/;"	m	struct:qmsg_t
+state	sgsnemu/sgsnemu.c	/^int state = 0;$/;"	v
+statedir	gtp/gtp.h	/^  char *statedir;       \/* Disk location for permanent storage *\/$/;"	m	struct:gsn_t
+statedir	sgsnemu/sgsnemu.c	/^  char *statedir;$/;"	m	struct:__anon1	file:
+statedir_arg	ggsn/cmdline.h	/^  char * statedir_arg;	\/* Directory of nonvolatile data (default='\/var\/lib\/ggsn\/').  *\/$/;"	m	struct:gengetopt_args_info
+statedir_arg	sgsnemu/cmdline.h	/^  char * statedir_arg;	\/* Directory of nonvolatile data (default='.\/').  *\/$/;"	m	struct:gengetopt_args_info
+statedir_given	ggsn/cmdline.h	/^  int statedir_given ;	\/* Whether statedir was given.  *\/$/;"	m	struct:gengetopt_args_info
+statedir_given	sgsnemu/cmdline.h	/^  int statedir_given ;	\/* Whether statedir was given.  *\/$/;"	m	struct:gengetopt_args_info
+statedir_help	ggsn/cmdline.h	/^  const char *statedir_help; \/* Directory of nonvolatile data help description.  *\/$/;"	m	struct:gengetopt_args_info
+statedir_help	sgsnemu/cmdline.h	/^  const char *statedir_help; \/* Directory of nonvolatile data help description.  *\/$/;"	m	struct:gengetopt_args_info
+statedir_orig	ggsn/cmdline.h	/^  char * statedir_orig;	\/* Directory of nonvolatile data original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+statedir_orig	sgsnemu/cmdline.h	/^  char * statedir_orig;	\/* Directory of nonvolatile data original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+statip_arg	ggsn/cmdline.h	/^  char * statip_arg;	\/* Static IP address pool.  *\/$/;"	m	struct:gengetopt_args_info
+statip_given	ggsn/cmdline.h	/^  int statip_given ;	\/* Whether statip was given.  *\/$/;"	m	struct:gengetopt_args_info
+statip_help	ggsn/cmdline.h	/^  const char *statip_help; \/* Static IP address pool help description.  *\/$/;"	m	struct:gengetopt_args_info
+statip_orig	ggsn/cmdline.h	/^  char * statip_orig;	\/* Static IP address pool original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+statmask	ggsn/ippool.h	/^  struct in_addr statmask;       \/* Static address range network mask *\/$/;"	m	struct:ippool_t	typeref:struct:ippool_t::in_addr
+statmask	sgsnemu/ippool.h	/^  struct in_addr statmask;       \/* Static address range network mask *\/$/;"	m	struct:ippool_t	typeref:struct:ippool_t::in_addr
+string_arg	ggsn/cmdline.c	/^  char * string_arg;$/;"	m	struct:line_list	file:
+string_arg	sgsnemu/cmdline.c	/^  char * string_arg;$/;"	m	struct:line_list	file:
+subdir	Makefile	/^subdir = .$/;"	m
+subdir	doc/Makefile	/^subdir = doc$/;"	m
+subdir	ggsn/Makefile	/^subdir = ggsn$/;"	m
+subdir	gtp/Makefile	/^subdir = gtp$/;"	m
+subdir	sgsnemu/Makefile	/^subdir = sgsnemu$/;"	m
+sys_err	ggsn/syserr.c	/^void sys_err(int pri, char *fn, int ln, int en, char *fmt, ...) {$/;"	f
+sys_err	sgsnemu/syserr.c	/^void sys_err(int pri, char *fn, int ln, int en, char *fmt, ...) {$/;"	f
+sys_errpack	ggsn/syserr.c	/^void sys_errpack(int pri, char *fn, int ln, int en, struct sockaddr_in *peer,$/;"	f
+sys_errpack	sgsnemu/syserr.c	/^void sys_errpack(int pri, char *fn, int ln, int en, struct sockaddr_in *peer,$/;"	f
+sysconfdir	Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+sysconfdir	doc/Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+sysconfdir	ggsn/Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+sysconfdir	gtp/Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+sysconfdir	sgsnemu/Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+t	gtp/gtpie.h	/^  uint8_t t;                   \/* Type *\/$/;"	m	struct:gtpie_ext
+t	gtp/gtpie.h	/^  uint8_t t;                   \/* Type *\/$/;"	m	struct:gtpie_tlv
+t	gtp/gtpie.h	/^  uint8_t t;                   \/* Type *\/$/;"	m	struct:gtpie_tv0
+t	gtp/gtpie.h	/^  uint8_t t;                   \/* Type *\/$/;"	m	struct:gtpie_tv1
+t	gtp/gtpie.h	/^  uint8_t t;                   \/* Type *\/$/;"	m	struct:gtpie_tv2
+t	gtp/gtpie.h	/^  uint8_t t;                   \/* Type *\/$/;"	m	struct:gtpie_tv4
+t	gtp/gtpie.h	/^  uint8_t t;                   \/* Type *\/$/;"	m	struct:gtpie_tv8
+t	gtp/gtpie.h	/^  uint8_t t;$/;"	m	union:gtpie_member
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | GZIP=$(GZIP_ENV) gzip -c >$(distdir).tar.gz$/;"	m
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | bzip2 -9 -c >$(distdir).tar.bz2$/;"	m
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | compress -c >$(distdir).tar.Z$/;"	m
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | lzma -9 -c >$(distdir).tar.lzma$/;"	m
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | xz -c >$(distdir).tar.xz$/;"	m
+target	Makefile	/^target = x86_64-unknown-linux-gnu$/;"	m
+target	doc/Makefile	/^target = x86_64-unknown-linux-gnu$/;"	m
+target	ggsn/Makefile	/^target = x86_64-unknown-linux-gnu$/;"	m
+target	gtp/Makefile	/^target = x86_64-unknown-linux-gnu$/;"	m
+target	sgsnemu/Makefile	/^target = x86_64-unknown-linux-gnu$/;"	m
+target_alias	Makefile	/^target_alias = $/;"	m
+target_alias	doc/Makefile	/^target_alias = $/;"	m
+target_alias	ggsn/Makefile	/^target_alias = $/;"	m
+target_alias	gtp/Makefile	/^target_alias = $/;"	m
+target_alias	sgsnemu/Makefile	/^target_alias = $/;"	m
+target_cpu	Makefile	/^target_cpu = x86_64$/;"	m
+target_cpu	doc/Makefile	/^target_cpu = x86_64$/;"	m
+target_cpu	ggsn/Makefile	/^target_cpu = x86_64$/;"	m
+target_cpu	gtp/Makefile	/^target_cpu = x86_64$/;"	m
+target_cpu	sgsnemu/Makefile	/^target_cpu = x86_64$/;"	m
+target_os	Makefile	/^target_os = linux-gnu$/;"	m
+target_os	doc/Makefile	/^target_os = linux-gnu$/;"	m
+target_os	ggsn/Makefile	/^target_os = linux-gnu$/;"	m
+target_os	gtp/Makefile	/^target_os = linux-gnu$/;"	m
+target_os	sgsnemu/Makefile	/^target_os = linux-gnu$/;"	m
+target_triplet	Makefile	/^target_triplet = x86_64-unknown-linux-gnu$/;"	m
+target_triplet	doc/Makefile	/^target_triplet = x86_64-unknown-linux-gnu$/;"	m
+target_triplet	ggsn/Makefile	/^target_triplet = x86_64-unknown-linux-gnu$/;"	m
+target_triplet	gtp/Makefile	/^target_triplet = x86_64-unknown-linux-gnu$/;"	m
+target_triplet	sgsnemu/Makefile	/^target_triplet = x86_64-unknown-linux-gnu$/;"	m
+target_vendor	Makefile	/^target_vendor = unknown$/;"	m
+target_vendor	doc/Makefile	/^target_vendor = unknown$/;"	m
+target_vendor	ggsn/Makefile	/^target_vendor = unknown$/;"	m
+target_vendor	gtp/Makefile	/^target_vendor = unknown$/;"	m
+target_vendor	sgsnemu/Makefile	/^target_vendor = unknown$/;"	m
+tei	gtp/gtp.h	/^  uint32_t tei;	   \/* 05 Tunnel Endpoint ID *\/$/;"	m	struct:gtp1_header_long
+tei	gtp/gtp.h	/^  uint32_t tei;           \/* 05 - 08 Tunnel Endpoint ID *\/$/;"	m	struct:gtp1_header_short
+tei_iu	gtp/pdp.h	/^  uint32_t    tei_iu;   \/* Tunnel Endpoint Identifier for the Iu interface. *\/$/;"	m	struct:pdp_t
+teic_confirmed	gtp/pdp.h	/^  uint8_t teic_confirmed; \/* 0: Not confirmed. 1: Confirmed *\/$/;"	m	struct:pdp_t
+teic_gn	gtp/pdp.h	/^  uint32_t    teic_gn;  \/* Tunnel Endpoint Identifier for the Gn and Gp interfaces. (Control plane) *\/$/;"	m	struct:pdp_t
+teic_own	gtp/pdp.h	/^  uint32_t    teic_own; \/* (Own Tunnel Endpoint Identifier Control) *\/$/;"	m	struct:pdp_t
+teid_gn	gtp/pdp.h	/^  uint32_t    teid_gn;  \/* Tunnel Endpoint Identifier for the Gn and Gp interfaces. (Data I) *\/$/;"	m	struct:pdp_t
+teid_own	gtp/pdp.h	/^  uint32_t    teid_own; \/* (Own Tunnel Endpoint Identifier Data I) *\/$/;"	m	struct:pdp_t
+tft	gtp/pdp.h	/^  struct ul255_t tft;   \/* Traffic flow template. *\/$/;"	m	struct:pdp_t	typeref:struct:pdp_t::ul255_t
+ti	gtp/pdp.h	/^  uint16_t    ti;       \/* Transaction Identifier. (4 or 12 bit) *\/$/;"	m	struct:pdp_t
+tid	gtp/gtp.h	/^  uint64_t tid;	\/* 13 Tunnel ID *\/$/;"	m	struct:gtp0_header
+tid	gtp/pdp.h	/^  uint64_t    tid;      \/* Combination of imsi and nsapi *\/$/;"	m	struct:pdp_t
+tidnext	gtp/pdp.h	/^  struct pdp_t *tidnext;$/;"	m	struct:pdp_t	typeref:struct:pdp_t::pdp_t
+timelimit	sgsnemu/sgsnemu.c	/^  int timelimit;                  \/* Number of seconds to be connected *\/$/;"	m	struct:__anon1	file:
+timelimit_arg	ggsn/cmdline.h	/^  int timelimit_arg;	\/* Exit after timelimit seconds (default='0').  *\/$/;"	m	struct:gengetopt_args_info
+timelimit_arg	sgsnemu/cmdline.h	/^  int timelimit_arg;	\/* Exit after timelimit seconds (default='0').  *\/$/;"	m	struct:gengetopt_args_info
+timelimit_given	ggsn/cmdline.h	/^  int timelimit_given ;	\/* Whether timelimit was given.  *\/$/;"	m	struct:gengetopt_args_info
+timelimit_given	sgsnemu/cmdline.h	/^  int timelimit_given ;	\/* Whether timelimit was given.  *\/$/;"	m	struct:gengetopt_args_info
+timelimit_help	ggsn/cmdline.h	/^  const char *timelimit_help; \/* Exit after timelimit seconds help description.  *\/$/;"	m	struct:gengetopt_args_info
+timelimit_help	sgsnemu/cmdline.h	/^  const char *timelimit_help; \/* Exit after timelimit seconds help description.  *\/$/;"	m	struct:gengetopt_args_info
+timelimit_orig	ggsn/cmdline.h	/^  char * timelimit_orig;	\/* Exit after timelimit seconds original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+timelimit_orig	sgsnemu/cmdline.h	/^  char * timelimit_orig;	\/* Exit after timelimit seconds original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+timeout	gtp/queue.h	/^  time_t timeout;         \/* When do we retransmit this packet? *\/$/;"	m	struct:qmsg_t
+tlv	gtp/gtpie.h	/^  struct gtpie_tlv tlv;$/;"	m	union:gtpie_member	typeref:struct:gtpie_member::gtpie_tlv
+tlv1	gtp/gtpie.h	/^struct tlv1 {$/;"	s
+tlv2	gtp/gtpie.h	/^struct tlv2 {$/;"	s
+tmax	sgsnemu/sgsnemu.c	/^int tmax = 0;$/;"	v
+tmin	sgsnemu/sgsnemu.c	/^int tmin = 999999999;$/;"	v
+tooshort	gtp/gtp.h	/^  uint64_t tooshort;    \/* Number of too short headers 29.60 11.1.2 *\/$/;"	m	struct:gsn_t
+top_build_prefix	Makefile	/^top_build_prefix = $/;"	m
+top_build_prefix	doc/Makefile	/^top_build_prefix = ..\/$/;"	m
+top_build_prefix	ggsn/Makefile	/^top_build_prefix = ..\/$/;"	m
+top_build_prefix	gtp/Makefile	/^top_build_prefix = ..\/$/;"	m
+top_build_prefix	sgsnemu/Makefile	/^top_build_prefix = ..\/$/;"	m
+top_builddir	Makefile	/^top_builddir = .$/;"	m
+top_builddir	doc/Makefile	/^top_builddir = ..$/;"	m
+top_builddir	ggsn/Makefile	/^top_builddir = ..$/;"	m
+top_builddir	gtp/Makefile	/^top_builddir = ..$/;"	m
+top_builddir	sgsnemu/Makefile	/^top_builddir = ..$/;"	m
+top_distdir	Makefile	/^top_distdir = $(distdir)$/;"	m
+top_srcdir	Makefile	/^top_srcdir = .$/;"	m
+top_srcdir	doc/Makefile	/^top_srcdir = ..$/;"	m
+top_srcdir	ggsn/Makefile	/^top_srcdir = ..$/;"	m
+top_srcdir	gtp/Makefile	/^top_srcdir = ..$/;"	m
+top_srcdir	sgsnemu/Makefile	/^top_srcdir = ..$/;"	m
+tos	sgsnemu/sgsnemu.c	/^  uint8_t tos;                 \/* Type of Service *\/$/;"	m	struct:ip_ping	file:
+traceref	gtp/pdp.h	/^  uint16_t    traceref; \/* Identifies a record or a collection of records for a particular trace. *\/$/;"	m	struct:pdp_t
+tracetype	gtp/pdp.h	/^  uint16_t    tracetype;\/* Indicates the type of trace. *\/$/;"	m	struct:pdp_t
+transform	Makefile	/^transform = $(program_transform_name)$/;"	m
+transform	doc/Makefile	/^transform = $(program_transform_name)$/;"	m
+transform	ggsn/Makefile	/^transform = $(program_transform_name)$/;"	m
+transform	gtp/Makefile	/^transform = $(program_transform_name)$/;"	m
+transform	sgsnemu/Makefile	/^transform = $(program_transform_name)$/;"	m
+triggerid	gtp/pdp.h	/^  struct ul_t triggerid;\/* Identifies the entity that initiated the trace. *\/$/;"	m	struct:pdp_t	typeref:struct:pdp_t::ul_t
+tsum	sgsnemu/sgsnemu.c	/^int tsum = 0;$/;"	v
+ttl	ggsn/tun.h	/^  unsigned int ttl:8;$/;"	m	struct:tun_packet_t
+ttl	sgsnemu/sgsnemu.c	/^  uint8_t ttl;                 \/* Time to live *\/$/;"	m	struct:ip_ping	file:
+ttl	sgsnemu/tun.h	/^  unsigned int ttl:8;$/;"	m	struct:tun_packet_t
+tun	ggsn/ggsn.c	/^struct tun_t *tun;              \/* TUN instance            *\/$/;"	v	typeref:struct:tun_t
+tun	sgsnemu/sgsnemu.c	/^struct tun_t *tun = NULL;       \/* TUN instance *\/$/;"	v	typeref:struct:tun_t
+tun_addaddr	ggsn/tun.c	/^int tun_addaddr(struct tun_t *this,$/;"	f
+tun_addaddr	sgsnemu/tun.c	/^int tun_addaddr(struct tun_t *this,$/;"	f
+tun_addroute	ggsn/tun.c	/^int tun_addroute(struct tun_t *this,$/;"	f
+tun_addroute	sgsnemu/tun.c	/^int tun_addroute(struct tun_t *this,$/;"	f
+tun_decaps	ggsn/tun.c	/^int tun_decaps(struct tun_t *this)$/;"	f
+tun_decaps	sgsnemu/tun.c	/^int tun_decaps(struct tun_t *this)$/;"	f
+tun_delroute	ggsn/tun.c	/^int tun_delroute(struct tun_t *this,$/;"	f
+tun_delroute	sgsnemu/tun.c	/^int tun_delroute(struct tun_t *this,$/;"	f
+tun_encaps	ggsn/tun.c	/^int tun_encaps(struct tun_t *tun, void *pack, unsigned len)$/;"	f
+tun_encaps	sgsnemu/tun.c	/^int tun_encaps(struct tun_t *tun, void *pack, unsigned len)$/;"	f
+tun_free	ggsn/tun.c	/^int tun_free(struct tun_t *tun)$/;"	f
+tun_free	sgsnemu/tun.c	/^int tun_free(struct tun_t *tun)$/;"	f
+tun_gifindex	ggsn/tun.c	/^int tun_gifindex(struct tun_t *this, int *index) {$/;"	f
+tun_gifindex	sgsnemu/tun.c	/^int tun_gifindex(struct tun_t *this, int *index) {$/;"	f
+tun_new	ggsn/tun.c	/^int tun_new(struct tun_t **tun)$/;"	f
+tun_new	sgsnemu/tun.c	/^int tun_new(struct tun_t **tun)$/;"	f
+tun_nlattr	ggsn/tun.c	/^int tun_nlattr(struct nlmsghdr *n, int nsize, int type, void *d, int dlen)$/;"	f
+tun_nlattr	sgsnemu/tun.c	/^int tun_nlattr(struct nlmsghdr *n, int nsize, int type, void *d, int dlen)$/;"	f
+tun_packet_t	ggsn/tun.h	/^struct tun_packet_t {$/;"	s
+tun_packet_t	sgsnemu/tun.h	/^struct tun_packet_t {$/;"	s
+tun_route	ggsn/tun.c	/^int tun_route(struct tun_t *this,$/;"	f
+tun_route	sgsnemu/tun.c	/^int tun_route(struct tun_t *this,$/;"	f
+tun_runscript	ggsn/tun.c	/^int tun_runscript(struct tun_t *tun, char* script) {$/;"	f
+tun_runscript	sgsnemu/tun.c	/^int tun_runscript(struct tun_t *tun, char* script) {$/;"	f
+tun_set_cb_ind	ggsn/tun.c	/^int tun_set_cb_ind(struct tun_t *this, $/;"	f
+tun_set_cb_ind	sgsnemu/tun.c	/^int tun_set_cb_ind(struct tun_t *this, $/;"	f
+tun_setaddr	ggsn/tun.c	/^int tun_setaddr(struct tun_t *this,$/;"	f
+tun_setaddr	sgsnemu/tun.c	/^int tun_setaddr(struct tun_t *this,$/;"	f
+tun_sifflags	ggsn/tun.c	/^int tun_sifflags(struct tun_t *this, int flags) {$/;"	f
+tun_sifflags	sgsnemu/tun.c	/^int tun_sifflags(struct tun_t *this, int flags) {$/;"	f
+tun_t	ggsn/tun.h	/^struct tun_t {$/;"	s
+tun_t	sgsnemu/tun.h	/^struct tun_t {$/;"	s
+tv0	gtp/gtpie.h	/^  struct gtpie_tv0 tv0;$/;"	m	union:gtpie_member	typeref:struct:gtpie_member::gtpie_tv0
+tv1	gtp/gtpie.h	/^  struct gtpie_tv1 tv1;$/;"	m	union:gtpie_member	typeref:struct:gtpie_member::gtpie_tv1
+tv2	gtp/gtpie.h	/^  struct gtpie_tv2 tv2;$/;"	m	union:gtpie_member	typeref:struct:gtpie_member::gtpie_tv2
+tv4	gtp/gtpie.h	/^  struct gtpie_tv4 tv4;$/;"	m	union:gtpie_member	typeref:struct:gtpie_member::gtpie_tv4
+tv8	gtp/gtpie.h	/^  struct gtpie_tv8 tv8;$/;"	m	union:gtpie_member	typeref:struct:gtpie_member::gtpie_tv8
+type	gtp/gtp.h	/^  uint8_t  type;	        \/* 02 Message type. T-PDU = 0xff *\/$/;"	m	struct:gtp0_header
+type	gtp/gtp.h	/^  uint8_t  type;	   \/* 02 Message type. T-PDU = 0xff *\/$/;"	m	struct:gtp1_header_long
+type	gtp/gtp.h	/^  uint8_t  type;	   \/* 02 Message type. T-PDU = 0xff *\/$/;"	m	struct:gtp1_header_short
+type	gtp/gtpie.h	/^  uint8_t  type;$/;"	m	struct:tlv1
+type	gtp/gtpie.h	/^  uint8_t  type;$/;"	m	struct:tlv2
+type	gtp/queue.h	/^  uint8_t type;           \/* The type of packet *\/$/;"	m	struct:qmsg_t
+type	sgsnemu/sgsnemu.c	/^  uint8_t type;                \/* Type and header length*\/$/;"	m	struct:ip_ping	file:
+ub1	gtp/lookupa.h	/^typedef  unsigned       char ub1;$/;"	t
+ub4	gtp/lookupa.h	/^typedef  unsigned long  int  ub4;   \/* unsigned 4-byte quantities *\/$/;"	t
+uid_arg	sgsnemu/cmdline.h	/^  char * uid_arg;	\/* Login user ID (default='mig').  *\/$/;"	m	struct:gengetopt_args_info
+uid_given	sgsnemu/cmdline.h	/^  int uid_given ;	\/* Whether uid was given.  *\/$/;"	m	struct:gengetopt_args_info
+uid_help	sgsnemu/cmdline.h	/^  const char *uid_help; \/* Login user ID help description.  *\/$/;"	m	struct:gengetopt_args_info
+uid_orig	sgsnemu/cmdline.h	/^  char * uid_orig;	\/* Login user ID original value given at command line.  *\/$/;"	m	struct:gengetopt_args_info
+ul16_t	gtp/pdp.h	/^struct ul16_t {$/;"	s
+ul255_t	gtp/pdp.h	/^struct ul255_t {$/;"	s
+ul66_t	gtp/pdp.h	/^struct ul66_t {$/;"	s
+ul_t	gtp/pdp.h	/^struct ul_t {$/;"	s
+ulcpy	gtp/pdp.c	/^int ulcpy(void* dst, void* src, size_t size) {$/;"	f
+unexpect	gtp/gtp.h	/^  uint64_t unexpect;    \/* Number of unexpected messages 29.60 11.1.4 *\/$/;"	m	struct:gsn_t
+unknown	gtp/gtp.h	/^  uint64_t unknown;     \/* Number of unknown messages 29.60 11.1.3 *\/$/;"	m	struct:gsn_t
+unsup	gtp/gtp.h	/^  uint64_t unsup;       \/* Number of unsupported version 29.60 11.1.1 *\/$/;"	m	struct:gsn_t
+v	gtp/gtpie.h	/^  uint16_t v;                  \/* Value *\/$/;"	m	struct:gtpie_tv2
+v	gtp/gtpie.h	/^  uint32_t v;                  \/* Value *\/$/;"	m	struct:gtpie_tv4
+v	gtp/gtpie.h	/^  uint64_t v;                  \/* Value *\/$/;"	m	struct:gtpie_tv8
+v	gtp/gtpie.h	/^  uint8_t v;                   \/* Value *\/$/;"	m	struct:gtpie_tv1
+v	gtp/gtpie.h	/^  uint8_t v[GTPIE_MAX_TLV];    \/* Value *\/$/;"	m	struct:gtpie_tlv
+v	gtp/gtpie.h	/^  uint8_t v[GTPIE_MAX_TV];     \/* Pointer to value *\/$/;"	m	struct:gtpie_tv0
+v	gtp/pdp.h	/^char *v;$/;"	m	struct:sl_t
+v	gtp/pdp.h	/^unsigned char *v;$/;"	m	struct:ul_t
+v	gtp/pdp.h	/^unsigned char v[16];$/;"	m	struct:ul16_t
+v	gtp/pdp.h	/^unsigned char v[255];$/;"	m	struct:ul255_t
+v	gtp/pdp.h	/^unsigned char v[66];$/;"	m	struct:ul66_t
+val	ggsn/gnugetopt.h	/^  int val;$/;"	m	struct:option
+val	sgsnemu/gnugetopt.h	/^  int val;$/;"	m	struct:option
+ver	ggsn/tun.h	/^  unsigned int ver:4;$/;"	m	struct:tun_packet_t
+ver	sgsnemu/tun.h	/^  unsigned int ver:4;$/;"	m	struct:tun_packet_t
+version	gtp/pdp.h	/^  int         version;  \/* Protocol version currently in use. 0 or 1 *\/$/;"	m	struct:pdp_t
+version_given	ggsn/cmdline.h	/^  int version_given ;	\/* Whether version was given.  *\/$/;"	m	struct:gengetopt_args_info
+version_given	sgsnemu/cmdline.h	/^  int version_given ;	\/* Whether version was given.  *\/$/;"	m	struct:gengetopt_args_info
+version_help	ggsn/cmdline.h	/^  const char *version_help; \/* Print version and exit help description.  *\/$/;"	m	struct:gengetopt_args_info
+version_help	sgsnemu/cmdline.h	/^  const char *version_help; \/* Print version and exit help description.  *\/$/;"	m	struct:gengetopt_args_info
+vplmn_allow	gtp/pdp.h	/^  uint8_t  vplmn_allow; \/* Specifies whether the MS is allowed to use the APN in the domain of the HPLMN only, or additionally the APN in the domain of the VPLMN. (1 bit) *\/$/;"	m	struct:pdp_t

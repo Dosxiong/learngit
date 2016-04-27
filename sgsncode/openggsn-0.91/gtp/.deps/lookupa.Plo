@@ -1,0 +1,5 @@
+lookupa.lo: lookupa.c /usr/include/stdc-predef.h lookupa.h
+
+/usr/include/stdc-predef.h:
+
+lookupa.h:
