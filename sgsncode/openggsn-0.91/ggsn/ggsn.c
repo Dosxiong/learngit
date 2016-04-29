@@ -23,6 +23,7 @@
 #include <stdint.h>
 #endif
 
+#include<pthread.h>
 #include <syslog.h>
 #include <ctype.h>
 #include <netdb.h>
@@ -56,6 +57,8 @@
 
 int end = 0;
 int maxfd = 0;	                /* For select()            */
+int gtp_count = 0;
+int gtpu_count = 0;
 
 struct in_addr listen_;
 struct in_addr netaddr, destaddr, net, mask;  /* Network interface       */
@@ -205,11 +208,24 @@ int encaps_tun(struct pdp_t *pdp, void *pack, unsigned len) {
   return tun_encaps((struct tun_t*) pdp->ipif, pack, len);
 }
 
+void *count ()
+{
+    printf("count thread start\n");
+    while(1)
+    {
+        sleep(2);
+        printf("count:%d,gtpu count:%d\n", gtp_count, gtpu_count);
+        printf("ggsn re udp:%d\n", get_re_udp());
+    }
+}
+
 
 int main(int argc, char **argv)
 {
   /* gengeopt declarations */
   struct gengetopt_args_info args_info;
+  pthread_t count_thread;
+  int gtp0_count = 0;
 
   struct hostent *host;
 
@@ -258,6 +274,8 @@ int main(int argc, char **argv)
     if (args_info.statedir_arg) printf("statedir: %s\n", args_info.statedir_arg);
     printf("timelimit: %d\n", args_info.timelimit_arg);
   }
+  /*start a new thread*/
+  pthread_create(&count_thread, NULL, count, NULL);
 
   /* Try out our new parser */
   
@@ -280,6 +298,7 @@ int main(int argc, char **argv)
     if (args_info.statedir_arg) printf("statedir: %s\n", args_info.statedir_arg);
     printf("timelimit: %d\n", args_info.timelimit_arg);
   }
+
 
   /* Handle each option */
 
@@ -502,6 +521,7 @@ int main(int argc, char **argv)
     gtp_retranstimeout(gsn, &idleTime);
     switch (select(maxfd + 1, &fds, NULL, NULL, &idleTime)) {
     case -1:	/* errno == EINTR : unblocked signal */
+        printf("gtp1 count :%d gtp0 count:%d\n", gtp_count, gtp0_count);
       sys_err(LOG_ERR, __FILE__, __LINE__, 0,
 	      "select() returned -1");
       /* On error, select returns without modifying fds */
@@ -522,14 +542,25 @@ int main(int argc, char **argv)
     }
     
     if (FD_ISSET(gsn->fd0, &fds))
-      gtp_decaps0(gsn);
-    
+    {
+        //printf("gtp0\n");
+        gtp0_count ++;
+        gtp_decaps0(gsn);
+    }
+
     if (FD_ISSET(gsn->fd1c, &fds))
-      gtp_decaps1c(gsn);
-    
+    {
+        //printf("gtp1\n");
+        gtp_count ++;
+        gtp_decaps1c(gsn);
+    }
     if (FD_ISSET(gsn->fd1u, &fds))
-      gtp_decaps1u(gsn);
-    
+    {
+        //printf("gtpu\n");
+        gtpu_count ++;
+        gtp_decaps1u(gsn);
+    }
+
   }
 
   cmdline_parser_free(&args_info);

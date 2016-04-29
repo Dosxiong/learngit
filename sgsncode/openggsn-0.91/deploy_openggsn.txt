@@ -1,0 +1,53 @@
+	这个文档将演示如何部署opengsn已经如何使用openggsn：
+
+
+	首先我们拿到openeen的源码，需要找两台机器（后面用3.37和3.33代替），首先吧代码拷贝
+	
+	至3.33和3.37上面，假如在3.37上面部署ggsn在3.33上面部署sgsn，进入两台机器的源码根目录，
+
+openggsn-0.91，然后运行
+
+./configure
+
+make
+
+sudo make install
+
+经过这三步以后openggsn就部署到两台机器上面了.
+
+
+	在源码部署完成后我们还需要在iptables里面添加一条规则用于nat转换，命令如下：
+
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+iptables -A POSTROUTING -s 10.0.0.0/16 -t nat -o eth0 -j MASQUERADE
+
+
+	至此openggsn已经可以在你的机器上正常运行了。那么如何使用openggsn呢，我举一个简单
+
+的例子用于初学者的实验。
+
+	ggsn端运行命令，先吧ggsn跑起来。
+
+ggsn -c examples/ggsn.conf -l 192.170.0.11 --fg --net 10.0.0.0/16 --dynip 10.0.0.0/16
+
+ 	简单解释下各个参数的意义，-c examples/ggsn.conf是指定ggsn的默认的字段的加载文件，如果
+
+某些字段你不想手动设定，ggsn会给他赋一些初始值，具体的值可以参见examples/ggsn.conf里 
+
+面的配置。-l 192.170.0.11是ggsn监听的网口，--fg是只在前台运行，--net 10.0.0.0/16是指
+
+ggsn给sgsn分配的ip网段，--dynip 和--net 保持一致即可。
+
+	sgsn端运行命令，进行通信。
+
+	sgsnemu --listen 192.170.0.10 --remote 192.170.0.11 --dns 202.103.24.68 contexts 
+10000 --udphost 192.168.8.144 --udpcount 10000 --udprate 1000
+
+	同样简单解释下各个参数的意义，--listen通ggsn一样为监听的网口，--remote为ggsn的ip，--d
+
+ns为网管的ip，--contexts为用户的数量，--udphost 为要发送udp报文的主机的ip，--udpcount
+
+为发送报文的数量，--duprate为发送报文的频率。
+
+	跟多信息参见RADEME.TXT

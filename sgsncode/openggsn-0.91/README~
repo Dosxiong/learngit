@@ -48,7 +48,6 @@ Running
 
 *sgsnemu*
 Start the emulator as root using the command:
-
   sgsnemu -l 10.0.0.50 -r 10.0.0.40 --createif --defaultroute
 
 This will cause the sgsn emulator to bind to local address 10.0.0.50

@@ -1,0 +1,22 @@
+openggsn是一个用于模拟GPRS网络网元节点通信的模拟器。
+
+openggsn分为两个部分，ggsn和sgsn,ggsn和ggsn之间通过gtp隧道协议通讯，目前可支
+持的通讯报文有icmp报文和udp报文。
+
+icmp报文的可选参数：pinghost需要ping的主机ip，pingcouunt：ping的数量，pingra
+te：ping的频率，contexts：用户数量
+
+udp报文的可选参数：udphost发送udp报文的目的主机ip，udpcount：udp报文的数量，
+udprate：udp报文发送的的频率，contexts：用户数量
+
+ping通信原理（udp类似）
+
+（注：后面说的ggsn是指部署ggsn的xeth0网口，sgsn是指部署sgsn的eht1网口）假如有1000个用户去ping192.168.3.34，首先sgsn会向ggsn发1000个创建用户的pdp请求，在ggsn接到sgsn的创建用户请求后会向sgsn回复一个gtp报文，里面包括给sgsn用户分配的ip，在sgsn收到这些报文后开始发送icmp报文，首先ggsn会将icmp报文封装成gtp报文，发送给ggsn，ggsn收到后对报文进行解封装，将报文交付到tun0虚拟网口，这里需要用到nat转换，在iptables中的nat表中添加一条源地址动态转换，将10网段的源地址动态转换从ggsn的eth1网口发出去，外网回复的消息发送到eth1后，转到tun0根据nat表做动态目的地址转换，在发送给xeth0，在由ggsn进行gtp封装发送给sgsn，在访问外网的时候ggsn会做dns解析。udp报文和ping报文类似，只不过是报文内容发生了变化，以及自己写了一个server用于接收udp报文和回复udp报文。
+
+    在写openggsn的时候做了如下改进：
+
+    第一：最大用户数只有1024个，真实的网络环境不可能只有这么少的，我想当初限制这个数量的原因是因为网络拥塞问题，所以对ggsn做了改进，创建pdp的时候收发同时进行，所以不会造成拥塞问题。增大了用户数量，测试一万个用户正常运行。
+
+    第二：openggsn只支持ping报文发送，我添加了udp报文的发送。
+
+	第三：同样在接收一万个udp报文的时候当程序处理较慢的时候会造成网络拥塞问题，这个问题是由于，getc和gtpu放在同一个线程里面处理，现在我暂时没有进行改进，在增大网络缓存后这个问题解决，但是程序还可以改进，增加多线程处理，三个端口单独处理。这样效率可能会更好。

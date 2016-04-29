@@ -4,7 +4,7 @@ AM_LDFLAGS = @EXEC_LDFLAGS@
 
 AM_CFLAGS = -O2 -D_GNU_SOURCE -fno-builtin -Wall -DSBINDIR='"$(sbindir)"' -ggdb
 
-ggsn_LDADD = @LIBOBJS@ @EXEC_LDADD@ -lgtp -L../gtp
+ggsn_LDADD = @LIBOBJS@ @EXEC_LDADD@ -lpthread -lgtp -L../gtp
 
 #ggsn_DEPENDENCIES = ../gtp/libgtp.la
 
